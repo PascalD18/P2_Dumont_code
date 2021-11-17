@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=width-device, initial-scale=1.0,user-scalable=no"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;1,400&display=swap"/>
+    <link rel="stylesheet" href="css/Style.css"/>
+    <title>Page Web HEADER</title>
+  </head>
+  <body>
+   <!--<div id="bloc_page">-->
+    <!-- HEADER -->
+    <header>
+      <Section id="entete">
+        <div class="parent_logo">
+         <img class="logo" src="./images/logo/Booki3x.png" alt="logo"/>
+        </div>
+        <nav class="nav_types">
+         <a class="choix_heb" href="#hebergements">Hébergements</a>
+         <a class="choix_act" href="#activites">Activités </a>
+        </nav>
+      </Section>
+       <div class="titres">
+        <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
+        <h2>En plein centre ville ou en pleine nature</h2>
+       </div>
+    </header>
+    <!-- SECTION RECHERCHE -->
+    <section id="recherche">
+     <div class="parent_i_loc">
+      <i class="fas fa-map-marker-alt"></i>
+     </div>
+     <!-- Formulaire pour la sasie de la ville, Pays-->
+     <form method="post" action="#">
+       <p>
+         <input type="text" name="nomville" id="nomville"/>
+        </p>
+     </form>
+      <!-- Text 'Rechercher' pour Desktop ou icone Loupe pour Tel. portable -->
+      <div class="parent_rech">    
+         <p class="rech">Rechercher</p>
+        <i class="fas fa-search" id="i_loupe"></i>
+      </div>
+    </section>
+    <!-- SECTION FILTRES et INFO -->
+    <section id="section_filtres_et_info">
+      <div class="bloc_filtre_et_criteres">
+       <P class="text_filtre">Filtres</P>
+       <!-- Groupes Icones et texts de critére-->
+       <div class="bloc_criteres">
+         <!-- Economique -->
+         <div class="parent_i_text_critere1">
+            <div class="parent_i_critere"> 
+              <i class="fas fa-money-bill-wave" id="finance" style="color:#0065FC;"></i>
+            </div>
+            <p class="text_critere1">Économique</p>
+         </div>
+         <!-- Familial -->
+         <div class="parent_i_text_critere2">
+           <div class="parent_i_critere"> 
+            <i class="fas fa-child" id="famille" style="color:#0065FC;"></i>
+           </div>
+           <p class="text_critere2">Familial</p>
+          </div>
+         <!-- Romantique -->
+         <div class="parent_i_text_critere3">
+           <div class="parent_i_critere"> 
+            <i class="fas fa-heart" id="romantique" style="color:#0065FC;"></i>
+           </div>
+           <p class="text_critere3">Romantique</p>
+          </div>
+         <!-- Animaux-->
+         <div class="parent_i_text_critere4">
+           <div class="parent_i_critere"> 
+            <i class="fas fa-dog" id="animaux" style="color:#0065FC;"></i>
+           </div>
+           <p class="text_critere4">Animaux autorisés</p>
+         </div>
+       </div>
+       <!-- Zone INFO-->
+       <div class="parent_i_text_info">
+         <div class="parent_i_info">
+           <i class="fas fa-info" id="info" style="color:#0065FC;"></i>
+         </div>
+          <p class="text_info">Plus de 500 logements sont disponibles dans cette ville</p>
+       </div>
+      </div>
+    </section>
+  </body>
+</html>
+
