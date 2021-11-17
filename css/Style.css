@@ -262,17 +262,6 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
   flex-direction: column;
   width: 28cm;
  }
- /* ---- début test ---
- .bloc_filtre_et_criteres{
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
- }
- .bloc_criteres{
-   display: flex;
-   flex-wrap: wrap;
-  }
- /* -- fin test -- */
 .text_filtre{
   font-size: 0.9em;
   font-weight: 800;
