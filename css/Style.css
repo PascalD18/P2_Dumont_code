@@ -153,6 +153,14 @@ html>body #entete,.titres,#recherche{
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+#bloc_page{
+  display:block;
+  display: flex;
+  flex-direction: column;
+  
+
+  background-color: salmon;
+}
 #entete{
   width: 100%;
 }
@@ -348,5 +356,12 @@ font-size: 0.8em;
 font-weight: 400;
 padding-left: 0.2cm;  
 }
-
+#hebergements{
+  position: relative;
+  top: 00.5cm;
+  height: 5cm;
+ 
+  
+  background-color: rgb(223, 151, 151);
+}
 
