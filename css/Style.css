@@ -81,6 +81,9 @@ html>body #entete,.titres,#recherche{
    #hebergements{
      top: 8cm;
    }
+  .corps_carte_heb{
+    height: 3.2cm;width: 4cm;
+  }
  footer{
    top: 27.5cm;
  }
@@ -158,6 +161,9 @@ html>body #entete,.titres,#recherche{
  #hebergements{
    top: 13cm;
 
+  }
+  .corps_carte_heb{
+    height: 2.5cm; width: 5.5cm;
   }
 footer{
   top: 19.5cm;
@@ -391,30 +397,37 @@ padding-left: 0.2cm;
 .grp_cartes_heb_marseille{
   display: flex;
   flex-wrap: wrap;
-
+  
   height: 7.2cm; width: 95%;
   margin: 0.3cm;
 
   background-color: rgb(123, 123, 216);
 }
-.corps_carte{
-   
-  height: 3.2cm; width: 4cm;
+
+div[class*="corps_carte"]{
   border-top-left-radius: 0.3cm; border-top-right-radius: 0.3cm;
   border-bottom-right-radius: 0.3cm; border-bottom-left-radius: 0.3cm;
-  margin: 0.25cm;
-
-  background-color: yellowgreen;
+  margin: 0.3cm;
 }
+.corps_carte_heb{
+   
+  background-color:cyan;
+}
+
 .art_heb_pop{
   display: flex;
   flex-direction: column;
 
 
+   
 
-  width: 30%
+}
+.parent_titre-pop_et_i{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 
-  
 }
 .grp_cartes_heb_pop{
   display: flex;
@@ -424,6 +437,11 @@ padding-left: 0.2cm;
   margin: 0.3cm;
 
  background-color: blueviolet;
+}
+.corps_carte_pop{
+  height:2.5cm; width: 5.5cm;
+
+  background-color: rgb(15, 83, 83);
 }
 
 footer{ 
