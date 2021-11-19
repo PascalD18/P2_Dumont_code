@@ -8,6 +8,10 @@
   padding: 0px;
 
 }
+p[class^="titre"]{
+  font-weight: 800;
+}
+
 
 html>body #entete,.titres,#recherche{
   position: fixed;
@@ -417,7 +421,6 @@ padding-left: 0.2cm;
   text-decoration: none;
   border: none;
   color:black;
-  z-index: 0;
 
 }
 
@@ -442,7 +445,7 @@ div[class*="corps_carte"]{
 .nom_carte{
 
   font-size: 0.7em;
-
+font-weight: 800;
 
   
   background-color: white;
