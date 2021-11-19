@@ -418,15 +418,19 @@ div[class*="corps_carte"]{
   padding: 10px; margin: 10px;
 }
 .corps_carte_heb{
-
+  height:134px;
   background-color:cyan;
 }
-.parent_img_cannebiere{
+.parent_img_heb{
   border-top-left-radius: 0.3cm; border-top-right-radius: 0.3cm;
-  height: 84px;
-
+  height: auto; width: auto;
+  padding: 5px;
   background-color: white;
   
+}
+.img_carte_heb{
+  border-top-left-radius: 0.3cm; border-top-right-radius: 0.3cm;
+  height: auto;width: auto;
 }
 
 
