@@ -15,6 +15,7 @@ html>body #entete,.titres,#recherche{
   margin: auto;
 }
 /* CSS suivant type d'écran */
+/* CSS pour écran larg >= 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (min-width: 768px)
 {
   #entete{
@@ -80,6 +81,8 @@ html>body #entete,.titres,#recherche{
    }
    #hebergements{
      top: 8cm;
+     display: flex;
+     justify-content: space-around;
    }
   .corps_carte_heb{
     height: 134px; width: 168px;
@@ -160,10 +163,13 @@ html>body #entete,.titres,#recherche{
   }
  #hebergements{
    top: 13cm;
+   display: flex;
+   justify-content: flex-start;
 
   }
   .corps_carte_heb{
-    height: 2.5cm; width: 5.5cm;
+    height: 105px; 
+    width: 231px; min-width: 105px;
   }
 footer{
   top: 19.5cm;
@@ -379,9 +385,9 @@ padding-left: 0.2cm;
   position: absolute;
   display: flex;
   flex-wrap: wrap-reverse;
-  justify-content: space-around;
+
   
-   height: auto; width: 100%;
+   height: auto; width: auto;
   
   background-color: rgb(223, 151, 151);
 }
@@ -412,14 +418,23 @@ div[class*="corps_carte"]{
   margin: 0.3cm;
 }
 .corps_carte_heb{
-  
   margin: 12px;
   background-color:cyan;
 }
+.parent_img_cannebiére{
+  
+  border-top-left-radius: 0.3cm; border-top-right-radius: 0.3cm;
+  padding: 10px; height: 48px;
+
+  background-color: white;
+  
+}
+
 
 .art_heb_pop{
   display: flex;
   flex-direction: column;
+  justify-content: center;
 
   width: auto;
   
@@ -435,7 +450,7 @@ div[class*="corps_carte"]{
   display: flex;
   flex-wrap: wrap;
 
-  height:440px; width:285px;
+  height:440px; width:auto;
   margin: 21px;
   padding: 12px;
 
@@ -443,7 +458,7 @@ div[class*="corps_carte"]{
 }
 .corps_carte_pop{
   height: 105px;; width: 231px;
-  padding: 12px;
+
   background-color: rgb(15, 83, 83);
 }
 
