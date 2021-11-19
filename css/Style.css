@@ -416,7 +416,8 @@ padding-left: 0.2cm;
 .lien_carte{
   text-decoration: none;
   border: none;
-  color: black;
+  color:black;
+  z-index: 0;
 
 }
 
@@ -441,7 +442,7 @@ div[class*="corps_carte"]{
 .nom_carte{
 
   font-size: 0.7em;
-  color: rgb(185, 16, 16);
+
 
   
   background-color: white;
