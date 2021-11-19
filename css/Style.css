@@ -6,6 +6,7 @@
   max-width: 997px; 
   margin:0px;
   padding: 0px;
+
 }
 html>body #entete,.titres,#recherche{
   position: fixed;
@@ -418,19 +419,28 @@ div[class*="corps_carte"]{
   padding: 10px; margin: 10px;
 }
 .corps_carte_heb{
-  height:134px;
+  height:155px;
   background-color:cyan;
 }
 .parent_img_heb{
   border-top-left-radius: 0.3cm; border-top-right-radius: 0.3cm;
-  height: auto; width: auto;
+  height: 84px; width: auto;
   padding: 5px;
   background-color: white;
   
 }
+.nom_carte{
+  font-size: 0.7em;
+   border-style: none; border-color: Transparent; overflow: auto; 
+  text-decoration: none;
+  border:hidden;
+  
+  background-color: white;
+}
+
 .img_carte_heb{
   border-top-left-radius: 0.3cm; border-top-right-radius: 0.3cm;
-  height: auto;width: auto;
+  height: 100%; width: auto;
 }
 
 
