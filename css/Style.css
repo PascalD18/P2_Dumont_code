@@ -413,6 +413,12 @@ padding-left: 0.2cm;
 
   background-color: rgb(123, 123, 216);
 }
+.lien_carte{
+  text-decoration: none;
+  border: none;
+  color: black;
+
+}
 
 div[class*="corps_carte"]{
   border-top-left-radius: 0.3cm; border-top-right-radius: 0.3cm;
@@ -422,19 +428,20 @@ div[class*="corps_carte"]{
 .corps_carte_heb{
   height:155px;
   background-color:cyan;
-  
+
 }
 .parent_img_heb{
   border-top-left-radius: 0.3cm; border-top-right-radius: 0.3cm;
   height: 84px; width: auto;
   padding: 3px;
   background-color: white;
- 
+
   
 }
 .nom_carte{
+
   font-size: 0.7em;
-  color: black;
+  color: rgb(185, 16, 16);
 
   
   background-color: white;
@@ -468,6 +475,7 @@ div[class*="corps_carte"]{
   height:440px; width:auto;
   margin: 21px;
   padding: 12px;
+
 
  background-color: blueviolet;
 }
