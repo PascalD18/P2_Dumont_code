@@ -394,7 +394,7 @@ padding-left: 0.2cm;
 
 
   
-   height: auto; width: auto;
+   height: auto; width: 100%;
   
 
 }
@@ -406,7 +406,7 @@ padding-left: 0.2cm;
   border-bottom-right-radius: 20px; border-bottom-left-radius: 20px;
 
 
-  width: 67%;
+  width: 65%;
   padding: 20px;
 
    background-color: #F2F2F2;
@@ -416,8 +416,8 @@ padding-left: 0.2cm;
   flex-wrap: wrap;
   
   height: 440px; width: auto; 
-  margin: 12px;
-  padding: 12px;
+
+  padding: 14px;
 
   background-color: #F2F2F2;
 }
@@ -431,10 +431,10 @@ padding-left: 0.2cm;
 div[class*="corps_carte"]{
   border-top-left-radius: 0.3cm; border-top-right-radius: 0.3cm;
   border-bottom-right-radius: 0.3cm; border-bottom-left-radius: 0.3cm;
-  padding: 10px; margin: 10px;
+  margin: 10px;
 }
 .corps_carte_heb{
-  height:155px;
+  height:auto;
   background-color:cyan;
 
 }
