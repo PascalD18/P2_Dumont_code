@@ -83,13 +83,14 @@ html>body #entete,.titres,#recherche{
    .text_info{
      margin-top: 0cm;
    }
-   #bloc_menu{
+   /*#bloc_menu{
      top: 8cm;
-   }
+   }*/
    #hebergements{
      display: flex;
      flex-direction: row;
      justify-content: flex-start;
+     width: 100%;
    }
  footer{
    top: 27.5cm;
@@ -162,19 +163,16 @@ html>body #entete,.titres,#recherche{
   }
   .text_info{
     margin-top: 0.1cm;
-  }
+  }/*
   #bloc_menu{
     top: 13cm;
-  }
+  }*/
  #hebergements{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-   
-  }
-  .art_heb_marseille{
-    width: 7cm;
+  flex-direction: column;
+  flex-wrap: wrap-reverse;
 
+   
   }
 footer{
   top: 30cm;
@@ -379,7 +377,7 @@ font-weight: 400;
 padding-left: 0.2cm;  
 }
 #bloc_menu{
-  position: absolute;
+  position: relative;
    width: 997px;
    height: 40cm;
    background-color: salmon;
