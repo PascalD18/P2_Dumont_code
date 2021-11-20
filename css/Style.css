@@ -13,7 +13,7 @@ p[class^="titre"]{
 }
 
 
-html>body .titres,#entete,#recherche{
+html>body #entete,.titres,#recherche{
   position: fixed;
 }
 /* CSS suivant type d'écran */
@@ -24,7 +24,7 @@ html>body .titres,#entete,#recherche{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 997px;
+    width: 100%;
    }
   .parent_logo{
    justify-content: flex-start;
@@ -38,6 +38,7 @@ html>body .titres,#entete,#recherche{
   }
   #recherche{
     top: 4cm;
+  
   }
   .parent_rech{
     width: 2.5cm;
@@ -54,7 +55,8 @@ html>body .titres,#entete,#recherche{
     height: 2.8cm;
   }
   .bloc_filtre_et_criteres{
-      height: 1.2cm;width: 19cm;
+      height: 1.2cm; width: 19cm;
+      margin-left: 0.5cm;
   }
   .bloc_criteres{
     display: flex;
@@ -103,9 +105,8 @@ html>body .titres,#entete,#recherche{
     display:flex;
     flex-direction: column;
     width: 336px;
-    margin-left: auto;
-    margin-right: auto;
-   }
+ 
+    }
   .parent_logo{
     justify-content: center;
     align-items: center;
@@ -118,6 +119,7 @@ html>body .titres,#entete,#recherche{
   }
   #recherche{
     top: 5.3cm;
+    width: 335px;
   }
   .parent_rech{
     width: 1.2cm;
@@ -134,13 +136,13 @@ html>body .titres,#entete,#recherche{
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      height:4.2cm; width: 7cm;
+      height:4.2cm;
     }
     .bloc_criteres{
       display: flex;
       flex-direction: column;
        height: 2.8cm; width: 7cm;
-       margin-top: 0.2cm;
+        margin-top: 0.2cm;
     }
   .parent_i_text_critere1{
     position: absolute;
@@ -243,13 +245,13 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx*/
   font-size: 0.72em;
 }
 #recherche{
-  left: 0.5cm;
-  display: flex;
+   display: flex;
   flex-direction: row;
   align-items: center;
   height: 1.1cm;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+  margin-left: 0.5cm;
   background-color: #F2F2F2;
 }
 .parent_i_loc{
