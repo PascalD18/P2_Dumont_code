@@ -13,7 +13,7 @@ p[class^="titre"]{
 }
 
 
-html>body #entete,.titres,#recherche{
+html>body .titres,#recherche{
   position: fixed;
 }
 #recherche{
@@ -28,6 +28,7 @@ html>body #entete,.titres,#recherche{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    width: 100%;
    }
   .parent_logo{
    justify-content: flex-start;
@@ -92,6 +93,9 @@ html>body #entete,.titres,#recherche{
      justify-content: flex-start;
      width: auto;
    }
+   .grp_cartes_heb_pop{
+     width: 335px;
+   }
  footer{
    top: 27.5cm;
  }
@@ -102,6 +106,7 @@ html>body #entete,.titres,#recherche{
   #entete{
     display:flex;
     flex-direction: column;
+    width: 336px;
    }
   .parent_logo{
     justify-content: center;
@@ -176,10 +181,12 @@ html>body #entete,.titres,#recherche{
   }
 }
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx*/
 #entete{
-  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+
+  background-color: yellow;
 }
 .parent_logo{
   display: flex;
@@ -378,6 +385,7 @@ padding-left: 0.2cm;
    width: 100%;
    height: 40cm;
    background-color: salmon;
+   
  }
 #hebergements{
 
@@ -461,6 +469,8 @@ padding-left: 0.2cm;
   flex-direction: column;
   justify-content: space-around;
   width: 315px;
+  margin-left: auto;
+  margin-right: auto;
   background-color: darkgoldenrod;
 }
 .parent_titre-pop_et_i{
@@ -476,7 +486,7 @@ padding-left: 0.2cm;
   flex-direction: row;
   justify-content: space-between;
   height:440px;
-width: 100%;
+  width: 100%;
   background-color: blueviolet;
 }
 .corps_carte_pop{
