@@ -13,12 +13,8 @@ p[class^="titre"]{
 }
 
 
-html>body .titres,#recherche{
+html>body .titres,#entete,#recherche{
   position: fixed;
-}
-#recherche{
-  max-width: 997px;
-  margin: auto;
 }
 /* CSS suivant type d'écran */
 /* CSS pour écran larg >= 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
@@ -28,7 +24,7 @@ html>body .titres,#recherche{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    width: 997px;
    }
   .parent_logo{
    justify-content: flex-start;
@@ -107,6 +103,8 @@ html>body .titres,#recherche{
     display:flex;
     flex-direction: column;
     width: 336px;
+    margin-left: auto;
+    margin-right: auto;
    }
   .parent_logo{
     justify-content: center;
@@ -185,7 +183,7 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx*/
 #entete{
   margin-right: auto;
   margin-left: auto;
-
+ 
   background-color: yellow;
 }
 .parent_logo{
@@ -401,6 +399,8 @@ padding-left: 0.2cm;
  border-bottom-left-radius: 20px;
  width: 68%;
  padding: 20px;
+ margin-right: auto;
+ margin-left: auto;
  background-color: #F2F2F2;
 }
 .grp_cartes_heb_marseille{
