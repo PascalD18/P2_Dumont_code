@@ -390,19 +390,22 @@ padding-left: 0.2cm;
 
  background-color: brown;
 }
+
 .art_heb_marseille{
  display: flex;
  flex-direction: column;
  justify-content: space-around;
- border-top-left-radius: 12px;
- border-top-right-radius: 12px;
- border-bottom-right-radius: 12px;
- border-bottom-left-radius: 12px;
  width: 68%;
  padding: 20px;
  margin-right: auto;
  margin-left: auto;
  background-color: #F2F2F2;
+}
+div[class^="grp_cartes_heb"]{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 .grp_cartes_heb_marseille{
   display: flex;
