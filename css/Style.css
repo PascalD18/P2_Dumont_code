@@ -180,7 +180,8 @@ html>body #entete,.titres,#recherche{
   }
 }
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx*/
+xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
+ ---- Debut ZONE ENTETE ---- */
 #entete{
   margin-right: auto;
   margin-left: auto;
@@ -230,6 +231,7 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx*/
   font-weight: 800;
   background-color: #F2F2F2;
 }
+/* ---- Debut ZONE TITRES ---- */
 .titres{
   display: flex;
   flex-direction: column;
@@ -243,6 +245,7 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx*/
   font-weight: 400;
   font-size: 0.72em;
 }
+/* ---- Debut ZONE RECHERCHE ---- */
 #recherche{
    display: flex;
   flex-direction: row;
@@ -287,6 +290,7 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx*/
   font-weight: 800;
   padding-left: 0.3cm; padding-right: 0.3cm;
 }
+/* ---- Debut ZONE FILTRES ----- */
 #section_filtres_et_info{
   position: absolute;
   display: flex;
@@ -379,6 +383,7 @@ font-size: 0.8em;
 font-weight: 400;
 padding-left: 0.2cm;  
 }
+/* ---- Debut ZONE MENU ----- */
 #bloc_menu{
   position: absolute;
    width: 100%;
@@ -386,24 +391,33 @@ padding-left: 0.2cm;
    background-color: salmon;
    
  }
+ /* ---- Debut ZONE HEBERGEMENTS ---- */
 #hebergements{
 
  background-color: brown;
 }
-
+.titre_marseille{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  background-color: #b6ddac;
+}
+article[class^="art_heb"]{
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  background-color: white;
+}
 .art_heb_marseille{
  display: flex;
  flex-direction: column;
  justify-content: space-around;
  width: 68%;
- padding: 20px;
  margin-right: auto;
  margin-left: auto;
  background-color: #F2F2F2;
 }
+
 div[class^="grp_cartes_heb"]{
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
 }
@@ -497,14 +511,13 @@ div[class^="corps_carte"]{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-
   background-color: crimson;
 }
 .grp_cartes_heb_pop{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height:440px;
+  height:460px;
   width: 100%;
   background-color: blueviolet;
 }
