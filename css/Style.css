@@ -399,14 +399,14 @@ padding-left: 0.2cm;
 .titre_marseille{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  padding-top: 6px;
-  padding-bottom: 6px;
+  padding-top: 30px;
+  padding-bottom: 0px;
   padding-left: 0.5cm;
   background-color: #b6ddac;
 }
 article[class^="art_heb"]{
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 15px;
+  padding-right: 15px;
   background-color: white;
 }
 .art_heb_marseille{
@@ -422,15 +422,17 @@ article[class^="art_heb"]{
 .grp_cartes_heb_marseille{
   display: flex;
   flex-wrap: wrap;
-  height: 365px; width: auto; 
-  padding:5px;
+  align-items: center;
+  height: 380px; width: auto; 
+  padding-top:0px; padding-bottom: 20px;
+  padding-left: 25px; padding-right: 25px;
   background-color: #c08989;
 }
 a[class^="lien_carte"]{
   text-decoration: none;
   color:black;
   border: none;
-  margin: 10px;
+  margin: 15px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -505,7 +507,7 @@ div[class^="corps_carte"]{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  width: 315px;
+  width: 320px;
   margin-left: auto;
   margin-right: auto;
   background-color: darkgoldenrod;
@@ -517,15 +519,15 @@ div[class^="corps_carte"]{
   align-items: center;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  padding-bottom: 6px;
-  padding-top: 6px;
+  padding-top: 30px;
+  padding-bottom: 0px;
   background-color: crimson;
 }
 .grp_cartes_heb_pop{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 400px;
+  height: 415px;
   width: 100%;
   background-color: blueviolet;
 }
