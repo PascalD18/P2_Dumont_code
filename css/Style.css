@@ -397,8 +397,11 @@ padding-left: 0.2cm;
  background-color: brown;
 }
 .titre_marseille{
-  padding-top: 5px;
-  padding-bottom: 5px;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 0.5cm;
   background-color: #b6ddac;
 }
 article[class^="art_heb"]{
@@ -419,7 +422,7 @@ article[class^="art_heb"]{
 .grp_cartes_heb_marseille{
   display: flex;
   flex-wrap: wrap;
-  height: 360px; width: auto; 
+  height: 365px; width: auto; 
   padding: 14px;
   background-color: #c08989;
 }
@@ -511,12 +514,16 @@ div[class^="corps_carte"]{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-bottom: 6px;
+  padding-top: 6px;
   background-color: crimson;
 }
 .grp_cartes_heb_pop{
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   height: 400px;
   width: 100%;
   background-color: blueviolet;
