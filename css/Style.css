@@ -394,10 +394,10 @@ padding-left: 0.2cm;
  display: flex;
  flex-direction: column;
  justify-content: space-around;
- border-top-left-radius: 20px;
- border-top-right-radius: 20px;
- border-bottom-right-radius: 20px;
- border-bottom-left-radius: 20px;
+ border-top-left-radius: 12px;
+ border-top-right-radius: 12px;
+ border-bottom-right-radius: 12px;
+ border-bottom-left-radius: 12px;
  width: 68%;
  padding: 20px;
  margin-right: auto;
@@ -412,30 +412,37 @@ padding-left: 0.2cm;
   background-color: #c08989;
 }
 a[class^="lien_carte"]{
-  border-top-left-radius: 20px;
- border-top-right-radius: 20px;
- border-bottom-right-radius: 20px;
- border-bottom-left-radius: 20px;
+  text-decoration: none;
+  color:black;
+  border: none;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
 
  background-color: #F2F2F2;
 }
 .lien_carte_heb{
-  text-decoration: none;
-  color:black;
-  border: none;
+
   width: 168px;
   height: 134px;
 
   background-color: aqua;
 }
-
+div[class^="corps_carte"]{
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+  width: 100%; height: 100%;
+}
 .corps_carte_heb{
   width: 100%;
 }
 
 .container_img_heb{
-  border-top-left-radius: 0.3cm;
-  border-top-right-radius: 0.3cm;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   height: 84px;
   width: auto;
   padding: 3px;
@@ -443,8 +450,8 @@ a[class^="lien_carte"]{
 }
 
 .img_carte_heb{
-  border-top-left-radius: 0.3cm;
-  border-top-right-radius: 0.3cm;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
   height: 100%;
   /* width: auto; */
 }
@@ -463,7 +470,7 @@ a[class^="lien_carte"]{
   background-color: white;
 }
 .etoiles{
-  border-bottom-left-radius: 0.3cm; border-bottom-right-radius: 0.3cm;
+  border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;
   padding-left: 10px;
   font-size: 2em;
   font-weight: 800;
@@ -498,6 +505,9 @@ a[class^="lien_carte"]{
   width: 100%;
   background-color: blueviolet;
 }
+.lien_carte_pop{
+  height: 95px;
+}
 .corps_carte_pop{
   display: flex;
   flex-direction: row;
@@ -506,8 +516,8 @@ a[class^="lien_carte"]{
   background-color: green;
 }
 .container_img_pop{
-  border-bottom-left-radius: 0.3cm; border-top-left-radius: 0.3cm;
-  height: 105px; width: 84px;
+  border-bottom-left-radius: 12px; border-top-left-radius: 12px;
+  height: 105px; width: 98px;
   padding: 3px;
   background-color: white;
 } 
@@ -519,10 +529,10 @@ a[class^="lien_carte"]{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  border-bottom-right-radius: 0.3cm; border-top-right-radius: 0.3cm;
+  border-bottom-right-radius: 12px; border-top-right-radius: 12px;
   height: 105px; width: 134px;
 
-  background-color: yellow;
+  background-color: white;
 }
 
 footer{ 
