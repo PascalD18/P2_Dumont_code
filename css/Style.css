@@ -423,13 +423,14 @@ article[class^="art_heb"]{
   display: flex;
   flex-wrap: wrap;
   height: 365px; width: auto; 
-  padding: 14px;
+  padding:5px;
   background-color: #c08989;
 }
 a[class^="lien_carte"]{
   text-decoration: none;
   color:black;
   border: none;
+  margin: 10px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
