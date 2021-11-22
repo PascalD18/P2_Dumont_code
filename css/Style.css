@@ -106,8 +106,23 @@ html>body #entete,.titres,#recherche{
    #bloc_menu{
      top: 8cm;
    }
+   .art_heb_marseille{
+     padding-right: 15px;
+     padding-left: 15px;
+   }
+   .titre_marseille{
+     background-color: #F2F2F2;
+   }
    .grp_cartes_heb_marseille{
+    padding-left: 5px; padding-right: 5px;
      background-color:#F2F2F2;
+   }
+   .lien_carte_heb{
+     margin-right: 15px; margin-left: 15px;
+     width: 190px;
+   }
+   .aff_plus{
+     background-color: #F2F2F2;
    }
     .grp_cartes_heb_pop{
      width: 525px;
@@ -194,12 +209,24 @@ html>body #entete,.titres,#recherche{
   flex-wrap: wrap-reverse;
   width: 295px;
   }
+  .art_heb_marseille{
+    padding-right: 0px;
+    padding-left: 0px;
+  }
+  .titre_marseille{
+    background-color: white;
+  }
   .grp_cartes_heb_marseille{
+    padding-left: 0px; padding-right: 0px;
     background-color:white;
   }
   .lien_carte_heb{
     box-shadow: 2px 2px 2px 2px #F2F2F2;
+    margin-left: 0px; margin-right: 0px;
     width: 232px;
+  }
+  .aff_plus{
+    background-color: white;
   }
   footer{
   top: 30cm;
@@ -428,7 +455,6 @@ padding-left: 0.2cm;
   padding-top: 30px;
   padding-bottom: 0px;
   padding-left: 0.5cm;
-  background-color: #b6ddac;
 }
 article[class^="art_heb"]{
   padding-left: 15px;
@@ -451,14 +477,14 @@ article[class^="art_heb"]{
   justify-content: center;
   height: 100%;
   padding-top:0px; padding-bottom: 20px;
-  padding-left: 5px; padding-right: 5px;
+
 
 }
 a[class^="lien_carte"]{
   text-decoration: none;
   color:black;
   border: none;
-  margin: 15px;
+  margin-top: 15px; margin-bottom: 15px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -466,12 +492,10 @@ a[class^="lien_carte"]{
 
  background-color: #F2F2F2;
 }
+
 .lien_carte_heb{
 
-  width: 190px;
   height: 150px;
-
-  background-color: aqua;
 }
 div[class^="corps_carte"]{
   border-top-left-radius: 12px;
@@ -530,7 +554,6 @@ div[class^="corps_carte"]{
   padding-bottom: 10px;
   padding-left: 10px;
   border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
-  background-color: yellowgreen;
 }
 .art_heb_pop{
   display: flex;
@@ -561,6 +584,7 @@ div[class^="corps_carte"]{
   background-color: blueviolet;
 }
 .lien_carte_pop{
+  margin-right: 15px; margin-left: 15px;
   height: 95px;
 }
 .corps_carte_pop{
