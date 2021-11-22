@@ -15,7 +15,10 @@ p[class^="titre"]{
 
 html>body #entete,.titres,#recherche{
   position: fixed;
+  z-index: 10;
+  background-color: white;
 }
+
 /* CSS suivant type d'écran */
 
 /* CSS pour écran larg >=980 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
@@ -125,6 +128,8 @@ html>body #entete,.titres,#recherche{
      background-color: #F2F2F2;
    }
     .grp_cartes_heb_pop{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
      width: 525px;
    }
  footer{
@@ -227,6 +232,10 @@ html>body #entete,.titres,#recherche{
   }
   .aff_plus{
     background-color: white;
+  }
+  .grp_cartes_heb_pop{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
   }
   footer{
   top: 30cm;
@@ -441,7 +450,6 @@ padding-left: 0.2cm;
   position: absolute;
    width: 100%;
    height: 40cm;
-   background-color: salmon;
    
  }
  /* ---- Debut ZONE HEBERGEMENTS ---- */
@@ -550,8 +558,7 @@ div[class^="corps_carte"]{
 .aff_plus{
   font-size: 0.8em;
   font-weight: 800;
-
-  padding-bottom: 50px;
+  padding-bottom: 35px;
   padding-left: 20px;
   border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
 }
@@ -577,8 +584,8 @@ div[class^="corps_carte"]{
 }
 .grp_cartes_heb_pop{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
   height: 425px;
   width: 100%;
   background-color: #F2F2F2;
@@ -590,9 +597,8 @@ div[class^="corps_carte"]{
 .corps_carte_pop{
   display: flex;
   flex-direction: row;
-  width: 231px;
 
-  background-color: green;
+
 }
 .container_img_pop{
   border-bottom-left-radius: 12px; border-top-left-radius: 12px;
