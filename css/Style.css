@@ -18,14 +18,11 @@ html>body #entete,.titres,#recherche{
 }
 /* CSS suivant type d'écran */
 /* CSS pour écran larg >=995 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-@media screen and (min-width: 970px)
+@media screen and (min-width: 995px)
 {
-  .art_heb_marseille{
-    width: 68%;
-  }
   .grp_cartes_heb_marseille{
     height: 380px;
-    }
+  }
 }
 /* CSS pour écran larg >= 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (min-width: 768px)
@@ -102,7 +99,7 @@ html>body #entete,.titres,#recherche{
      width: auto;
    }
     .grp_cartes_heb_pop{
-     width: 335px;
+     width: 525px;
    }
  footer{
    top: 27.5cm;
@@ -516,7 +513,7 @@ div[class^="corps_carte"]{
 .art_heb_pop{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: flex-start;
   width: 320px;
   margin-left: auto;
   margin-right: auto;
