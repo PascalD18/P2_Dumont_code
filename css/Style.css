@@ -18,10 +18,10 @@ html>body #entete,.titres,#recherche{
 }
 /* CSS suivant type d'écran */
 /* CSS pour écran larg >=995 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-@media screen and (min-width: 995px)
+@media screen and (max-width: 980px)
 {
-  .grp_cartes_heb_marseille{
-    height: 380px;
+#hebergements{
+  width: 780px
   }
 }
 /* CSS pour écran larg >= 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
@@ -96,7 +96,6 @@ html>body #entete,.titres,#recherche{
      display: flex;
      flex-direction: row;
      justify-content: flex-start;
-     width: auto;
    }
     .grp_cartes_heb_pop{
      width: 525px;
@@ -420,7 +419,7 @@ article[class^="art_heb"]{
  display: flex;
  flex-direction: column;
  justify-content: space-around;
- width: 68%;
+ width: auto;
  margin-right: auto;
  margin-left: auto;
  background-color: #F2F2F2;
@@ -430,7 +429,7 @@ article[class^="art_heb"]{
   display: flex;
   flex-wrap: wrap;
   align-items: center;
-  width: auto; 
+  height: 100%;
   padding-top:0px; padding-bottom: 20px;
   padding-left: 20px; padding-right: 20px;
   background-color: #c08989;
