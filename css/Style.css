@@ -239,7 +239,7 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
   margin-right: auto;
   margin-left: auto;
  
-  background-color: yellow;
+  background-color: white;
 }
 .parent_logo{
   display: flex;
@@ -263,7 +263,7 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
 .choix_heb,.choix_act{
   text-decoration: none;
   border-style: none;
-  margin-right: 10%; margin-top: 0.3cm;
+  margin-right: 5px; margin-top: 12px;
   font-size: 0.65em; font-weight: 400;
 }
 .choix_heb{
@@ -476,9 +476,7 @@ article[class^="art_heb"]{
   flex-wrap: wrap;
   justify-content: center;
   height: 100%;
-  padding-top:0px; padding-bottom: 20px;
-
-
+ 
 }
 a[class^="lien_carte"]{
   text-decoration: none;
@@ -550,9 +548,11 @@ div[class^="corps_carte"]{
 
 }
 .aff_plus{
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 10px;
+  font-size: 0.8em;
+  font-weight: 800;
+
+  padding-bottom: 50px;
+  padding-left: 20px;
   border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
 }
 .art_heb_pop{
@@ -562,7 +562,7 @@ div[class^="corps_carte"]{
   width: 320px;
   margin-left: auto;
   margin-right: auto;
-  background-color: darkgoldenrod;
+
 }
 .parent_titre-pop_et_i{
   display: flex;
@@ -573,15 +573,15 @@ div[class^="corps_carte"]{
   border-top-right-radius: 20px;
   padding-top: 30px;
   padding-bottom: 0px;
-  background-color: crimson;
+  background-color: #F2F2F2;
 }
 .grp_cartes_heb_pop{
   display: flex;
   flex-direction: row;
   justify-content: center;
-  height: 415px;
+  height: 425px;
   width: 100%;
-  background-color: blueviolet;
+  background-color: #F2F2F2;
 }
 .lien_carte_pop{
   margin-right: 15px; margin-left: 15px;
