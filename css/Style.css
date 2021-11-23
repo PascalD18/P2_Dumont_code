@@ -12,6 +12,10 @@ p[class^="titre"]{
   font-weight: 800;
 }
 
+body{
+ max-width: 1350px;
+ margin-left: auto; margin-right: auto;
+}
 
 
 /* CSS suivant type d'écran */
