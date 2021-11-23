@@ -13,11 +13,6 @@ p[class^="titre"]{
 }
 
 
-html>body #entete,.titres,#recherche{
-  /*position: fixed;
-  z-index: 10;*/
-  background-color: white;
-}
 
 /* CSS suivant type d'écran */
 
