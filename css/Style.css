@@ -3,7 +3,7 @@
    /* Largeur de la boîte de contenu : width - (2 * padding) - (2 * border)
       Hauteur de la boîte de contenu : height - (2 * padding) - (2 * border) */
   font-family: 'Raleway', sans-serif; /*font-weight: normal;*/
-  max-width: 997px; 
+  max-width: 1350px; 
   margin:0px;
   padding: 0px;
 
@@ -13,7 +13,6 @@ p[class^="titre"]{
 }
 
 body{
- max-width: 1350px;
  margin-left: auto; margin-right: auto;
 }
 
@@ -55,12 +54,6 @@ body{
    width: 40%;
 
   }
-  #bloc_menu{
-    top: 2.3cm;
-  }
-  .titres{
-    width: 15cm;
-  }
 
   .parent_rech{
     width: 2.5cm;
@@ -70,35 +63,10 @@ body{
   #i_loupe{
     display:none;
   }
-  #section_filtres_et_info{
-    display: flex;
-    flex-direction: column;
-    top: 5.5cm;
-    height: 2.8cm;
-  }
-  .bloc_filtre_et_criteres{
-      height: 1.2cm; width: 19cm;
-      margin-left: 0.5cm;
-  }
-  .bloc_criteres{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-     height: 1cm; width: 22cm;
-  }
-  .parent_i_text_critere2{
-    position:relative;
-  }
-  .parent_i_text_critere3{
-    position: relative; 
-  }
-  .parent_i_text_critere4{
-    position:relative;
-  }
   .parent_i_text_info{
     display: flex;
     align-items: flex-end;
-    left: 0.5cm; top: 1.3cm;
+    left: 0.5cm; 
     width: auto;
    }
    .text_info{
@@ -107,9 +75,6 @@ body{
    .art_heb_marseille{
      padding-right: 15px;
      padding-left: 15px;
-   }
-   .titre_marseille{
-     background-color: #F2F2F2;
    }
    .grp_cartes_heb_marseille{
     padding-left: 5px; padding-right: 5px;
@@ -127,9 +92,6 @@ body{
     border-bottom-right-radius: 20px;
      width: 525px;
    }
- footer{
-   top: 27.5cm;
- }
 }
 /* CSS pour écran larg < 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (max-width: 768px)
@@ -137,7 +99,8 @@ body{
   #entete{
     display:flex;
     flex-direction: column;
-    width: 336px;
+    margin-left: auto;
+    margin-right: auto;
  
     }
   .parent_logo{
@@ -145,15 +108,9 @@ body{
     align-items: center;
     width: 5.8cm
   }
-  #bloc_menu{
-    top: 3cm;
-  }
   .titres{
     width: 6cm;
   }
-  #recherche{
-    top: 5.3cm;
-    }
   .parent_rech{
     width: 1.2cm;
     border-radius: 0.3cm;
@@ -161,41 +118,9 @@ body{
   .rech{
     display: none;
   }
-  #section_filtres_et_info{
-   top: 7cm;
-   height: 5.7cm;
-  }
-  .bloc_filtre_et_criteres{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      height:4.2cm;
-    }
-    .bloc_criteres{
-      display: flex;
-      flex-direction: column;
-       height: 2.8cm; width: 7cm;
-        margin-top: 0.2cm;
-    }
-  .parent_i_text_critere1{
-    position: absolute;
-    left:0.3cm; top:1cm;
-  }
-  .parent_i_text_critere2{
-    position:absolute;
-    left:4.4cm; top:1cm;
-  }
-  .parent_i_text_critere3{
-    position: absolute;
-    left:0.3cm; top: 2.3cm; 
-  }
-  .parent_i_text_critere4{
-    position:absolute;
-    left:0.3cm; top:3.6cm;
-  }
   .parent_i_text_info{
     align-items: center;
-    left: 0.5cm; top: 4.8cm;
+    margin-left: 0.5cm; 
     width: 8.5cm;
   }
   .text_info{
@@ -346,11 +271,19 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
   padding-left: 0.3cm; padding-right: 0.3cm;
 }
 /* ---- Debut ZONE FILTRES ----- */
-#section_filtres_et_info{
-  position: absolute;
+.bloc_filtre_et_criteres{
   display: flex;
   flex-direction: column;
-
+  justify-content: space-around;
+}
+.bloc_criteres{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.2cm;
+}
+#section_filtres_et_info{
+  display: flex;
+  flex-direction: column;
  }
 .text_filtre{
   font-size: 0.9em;
@@ -415,7 +348,6 @@ p[class^="text_critere"]{
   margin-left: 0.3cm; margin-right: 0.3cm
  }
  .parent_i_text_info{
-   position: absolute;
   display: flex;
   flex-direction: row;
   height: 35px; 
@@ -440,10 +372,8 @@ padding-left: 0.2cm;
 }
 /* ---- Debut ZONE MENU ----- */
 #bloc_menu{
-  position: absolute;
    width: 100%;
-   height: 40cm;
-   
+   margin-left: auto; margin-right: auto;
  }
  /* ---- Debut ZONE HEBERGEMENTS ---- */
 #hebergements{
@@ -614,7 +544,6 @@ div[class^="corps_carte"]{
 }
 
 footer{ 
-  position: absolute;
 
   background-color: rgb(160, 231, 160);
 }
