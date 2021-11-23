@@ -55,14 +55,13 @@ body{
    width: 40%;
 
   }
-  .titres{
+  #bloc_menu{
     top: 2.3cm;
+  }
+  .titres{
     width: 15cm;
   }
-  #recherche{
-    top: 4cm;
-  
-  }
+
   .parent_rech{
     width: 2.5cm;
     border-top-right-radius: 10px;
@@ -105,9 +104,6 @@ body{
    .text_info{
      margin-top: 0cm;
    }
-   #bloc_menu{
-     top: 8cm;
-   }
    .art_heb_marseille{
      padding-right: 15px;
      padding-left: 15px;
@@ -149,9 +145,10 @@ body{
     align-items: center;
     width: 5.8cm
   }
-
-  .titres{
+  #bloc_menu{
     top: 3cm;
+  }
+  .titres{
     width: 6cm;
   }
   #recherche{
@@ -203,9 +200,6 @@ body{
   }
   .text_info{
     margin-top: 0.1cm;
-  }
-  #bloc_menu{
-    top: 13cm;
   }
  #hebergements{
   display: flex;
