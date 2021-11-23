@@ -3,7 +3,7 @@
    /* Largeur de la boîte de contenu : width - (2 * padding) - (2 * border)
       Hauteur de la boîte de contenu : height - (2 * padding) - (2 * border) */
   font-family: 'Raleway', sans-serif; /*font-weight: normal;*/
-  max-width: 1350px; 
+  max-width: 1230px; 
   margin:0px;
   padding: 0px;
 
@@ -11,11 +11,11 @@
 p[class^="titre"]{
   font-weight: 800;
 }
-
 body{
- margin-left: auto; margin-right: auto;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
 }
-
 
 /* CSS suivant type d'écran */
 
@@ -26,8 +26,9 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-  width: auto
-  }
+  width: auto;
+  
+ }
 
 }
 /* CSS pour écran larg < 980 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
@@ -54,7 +55,9 @@ body{
    width: 40%;
 
   }
-
+#recherche{
+  width: 298px;
+}
   .parent_rech{
     width: 2.5cm;
     border-top-right-radius: 10px;
@@ -62,6 +65,9 @@ body{
   }
   #i_loupe{
     display:none;
+  }
+  .bloc_filtre_et_criteres{
+    width: auto;
   }
   .parent_i_text_info{
     display: flex;
@@ -111,6 +117,9 @@ body{
   .titres{
     width: 6cm;
   }
+  #recherche{
+    width: 250px;
+  }
   .parent_rech{
     width: 1.2cm;
     border-radius: 0.3cm;
@@ -118,11 +127,17 @@ body{
   .rech{
     display: none;
   }
+  .bloc_filtre_et_criteres{
+    width: 7.5cm;
+    margin-left: auto;
+    margin-right: auto;
+  }
   .parent_i_text_info{
     align-items: center;
-    margin-left: 0.5cm; 
+    margin-left: auto;
+    margin-right: auto;
     width: 8.5cm;
-  }
+   }
   .text_info{
     margin-top: 0.1cm;
   }
@@ -130,7 +145,8 @@ body{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
-  width: 295px;
+  margin-left: auto;
+  margin-right: auto;
   }
   .art_heb_marseille{
     padding-right: 0px;
@@ -138,6 +154,7 @@ body{
   }
   .titre_marseille{
     background-color: white;
+    width: auto;
   }
   .grp_cartes_heb_marseille{
     padding-left: 0px; padding-right: 0px;
@@ -154,6 +171,7 @@ body{
   .grp_cartes_heb_pop{
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
+    width: 6.5cm;
   }
   footer{
   top: 30cm;
@@ -227,12 +245,14 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
 }
 /* ---- Debut ZONE RECHERCHE ---- */
 #recherche{
-   display: flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   height: 1.1cm;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   margin-left: 0.5cm;
   background-color: #F2F2F2;
 }
@@ -376,10 +396,6 @@ padding-left: 0.2cm;
    margin-left: auto; margin-right: auto;
  }
  /* ---- Debut ZONE HEBERGEMENTS ---- */
-#hebergements{
-
- background-color: brown;
-}
 .titre_marseille{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
