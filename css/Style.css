@@ -12,7 +12,6 @@ p[class^="titre"]{
   font-weight: 800;
 }
 body{
-  width: 100%;
   margin-left: auto;
   margin-right: auto;
 }
@@ -43,11 +42,14 @@ body{
 /* CSS pour écran larg >= 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (min-width: 768px)
 {
+  body{
+    width: 100%;
+  }
   #entete{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    width: 100%;
+    
    }
   .parent_logo{
    justify-content: flex-start;
@@ -55,8 +57,13 @@ body{
    width: 40%;
 
   }
+  .titres{
+    width: auto;
+    margin-left: 0.6cm;
+  }
 #recherche{
   width: 298px;
+  margin-left: 0.5cm;
 }
   .parent_rech{
     width: 2.5cm;
@@ -72,7 +79,6 @@ body{
   .parent_i_text_info{
     display: flex;
     align-items: flex-end;
-    left: 0.5cm; 
     width: auto;
    }
    .text_info{
@@ -102,23 +108,26 @@ body{
 /* CSS pour écran larg < 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (max-width: 768px)
 {
+  body{
+    width: 6cm;
+  }
   #entete{
     display:flex;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
- 
     }
   .parent_logo{
     justify-content: center;
     align-items: center;
-    width: 5.8cm
   }
   .titres{
     width: 6cm;
+    margin-left: auto;
+    margin-right: auto;
   }
   #recherche{
     width: 250px;
+    margin-left: auto;
+    margin-right: auto;
   }
   .parent_rech{
     width: 1.2cm;
@@ -128,15 +137,12 @@ body{
     display: none;
   }
   .bloc_filtre_et_criteres{
-    width: 7.5cm;
-    margin-left: auto;
-    margin-right: auto;
+    width: 273px;
   }
+  
   .parent_i_text_info{
     align-items: center;
-    margin-left: auto;
-    margin-right: auto;
-    width: 8.5cm;
+    width: 273px;
    }
   .text_info{
     margin-top: 0.1cm;
@@ -145,6 +151,7 @@ body{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
+  width: 6.5cm;
   margin-left: auto;
   margin-right: auto;
   }
@@ -202,7 +209,6 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
  flex-direction: row;
  justify-content: space-around;
  align-items: center;
- margin-left: 0.6cm;
  height: 0.9cm; width: 6cm;
 }
 .choix_heb,.choix_act{
@@ -234,7 +240,6 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
   display: flex;
   flex-direction: column;
   font-weight: 800;
-  margin-left: 0.6cm;
 }
 .titres>h1{
   font-size: 1em;
@@ -253,21 +258,21 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
   border-bottom-left-radius: 8px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
-  margin-left: 0.5cm;
   background-color: #F2F2F2;
 }
 .parent_i_loc{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1cm; width:30px;
+  height: 1cm; width:60px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  background-color: #DEEBFF;
+  background-color: #F2F2F2;
 }
 #i_loupe{
   color:white;
-  font-size:0.4cm;
+  font-size:0.8em;
+  padding-top: 2px;
 }
 #nomville{
   border-style:none;
@@ -322,7 +327,7 @@ div[class*="parent_i_text_critere"]{
   border-top-left-radius: 17px; border-top-right-radius: 17px;
   border-bottom-left-radius: 17px; border-bottom-right-radius: 17px;
   height: 34px;
-  margin-right: 0.3cm;
+  margin-left: 0.3cm;
 
 }
 
