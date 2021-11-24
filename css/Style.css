@@ -77,6 +77,8 @@ img[class^="img_"]{
   .parent_i_text_info{
     display: flex;
     align-items: flex-end;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
      width: auto;
    }
    .parent_i_info{
@@ -95,11 +97,7 @@ img[class^="img_"]{
     padding-left: 5px; padding-right: 5px;
      background-color:#F2F2F2;
    }
-   .parent_i_text_info{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-   }
-   .lien_carte_heb{
+    .lien_carte_heb{
      margin-right: 15px; margin-left: 15px;
      width: 190px;
    }
@@ -108,6 +106,10 @@ img[class^="img_"]{
    }
    .art_heb_pop{
      margin-left: 10px;
+   }
+   .parent_titre-pop_et_i{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;    
    }
     .grp_cartes_heb_pop{
     border-bottom-left-radius: 20px;
@@ -201,13 +203,12 @@ img[class^="img_"]{
   .aff_plus{
     background-color: white;
   }
-  .parent_i_text_info{
-  border-top-left-radius: 0px;
-  border-top-right-radius: 0px;    
-  }
-
   .art_heb_pop{
     margin-left: 0px;
+  }
+  .parent_titre-pop_et_i{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;    
   }
   .grp_cartes_heb_pop{
     border-bottom-left-radius: 0px;
@@ -342,6 +343,7 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
   font-size: 0.9em;
   font-weight: 800;
   margin-left: 0.5cm;
+  margin-top: 30px;
   width: 1.8cm;
 }
 
@@ -356,7 +358,7 @@ div[class*="parent_i_text_critere"]{
   border-bottom-left-radius: 17px; border-bottom-right-radius: 17px;
   height: 34px;
   margin-left: 0.3cm;
- margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 div[class*="parent_i_text_critere"]:hover{
@@ -438,7 +440,7 @@ article[class^="art_heb"]{
  flex-direction: column;
  justify-content: space-around;
  width: auto;
- background-color: #F2F2F2;
+
 }
 
 .grp_cartes_heb_marseille{
