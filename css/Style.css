@@ -3,17 +3,13 @@
    /* Largeur de la boîte de contenu : width - (2 * padding) - (2 * border)
       Hauteur de la boîte de contenu : height - (2 * padding) - (2 * border) */
   font-family: 'Raleway', sans-serif; /*font-weight: normal;*/
-  max-width: 1230px; 
+  max-width: 1200px; 
   margin:0px;
   padding: 0px;
 
 }
 p[class^="titre"]{
   font-weight: 800;
-}
-body{
-  margin-left: auto;
-  margin-right: auto;
 }
 
 /* CSS suivant type d'écran */
@@ -26,7 +22,6 @@ body{
   flex-direction: row;
   justify-content: flex-start;
   width: auto;
-  
  }
 
 }
@@ -63,13 +58,15 @@ body{
     border-bottom:none;
     padding-top: 20px;
   }
+  #bloc_menu{
+    display: static;
+    width: auto;
+  }
   .titres{
     width: auto;
-    margin-left: 0.6cm;
   }
 #recherche{
   width: 298px;
-  margin-left: 0.5cm;
 }
   .parent_rech{
     width: 2.5cm;
@@ -89,10 +86,6 @@ body{
    }
    .text_info{
      margin-top: 0cm;
-   }
-   .art_heb_marseille{
-     padding-right: 15px;
-     padding-left: 15px;
    }
    .grp_cartes_heb_marseille{
     padding-left: 5px; padding-right: 5px;
@@ -120,6 +113,8 @@ body{
   #entete{
     display:flex;
     flex-direction: column;
+    margin-right: auto;
+    margin-left: auto;
     }
   .parent_logo{
     justify-content: center;
@@ -130,19 +125,18 @@ body{
     border-color: #F2F2F2;
     border-top:none;
     padding-bottom: 10px;
-    
-    
-
+  }
+  #bloc_menu{
+    display: flex;
+    flex-direction: column;
+   align-items: center;
+     width: auto;
   }
   .titres{
     width: 6cm;
-    margin-left: auto;
-    margin-right: auto;
-  }
+   }
   #recherche{
     width: 260px;
-    margin-left: auto;
-    margin-right: auto;
   }
   .parent_rech{
     width: 1.2cm;
@@ -167,12 +161,7 @@ body{
   flex-direction: row;
   flex-wrap: wrap-reverse;
   width: 6.5cm;
-  margin-left: auto;
-  margin-right: auto;
-  }
-  .art_heb_marseille{
-    padding-right: 0px;
-    padding-left: 0px;
+
   }
   .titre_marseille{
     background-color: white;
@@ -203,8 +192,7 @@ body{
 xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
  ---- Debut ZONE ENTETE ---- */
 #entete{
-  margin-right: auto;
-  margin-left: auto;
+
  
   background-color: white;
 }
@@ -216,6 +204,7 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
 }
 .logo{
   width: 1.9cm;
+  object-fit: cover;
   margin-left: 0.9cm;
   margin-right: 0.9cm;
 }
@@ -411,8 +400,9 @@ padding-left: 0.2cm;
 }
 /* ---- Debut ZONE MENU ----- */
 #bloc_menu{
-   width: 100%;
-   margin-left: auto; margin-right: auto;
+
+
+   background-color: cyan;
  }
  /* ---- Debut ZONE HEBERGEMENTS ---- */
 .titre_marseille{
@@ -423,7 +413,6 @@ padding-left: 0.2cm;
   padding-left: 0.5cm;
 }
 article[class^="art_heb"]{
-  padding-left: 15px;
   padding-right: 15px;
   background-color: white;
 }
@@ -432,8 +421,6 @@ article[class^="art_heb"]{
  flex-direction: column;
  justify-content: space-around;
  width: auto;
- margin-right: auto;
- margin-left: auto;
  background-color: #F2F2F2;
 }
 
