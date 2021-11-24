@@ -11,7 +11,9 @@
 p[class^="titre"]{
   font-weight: 800;
 }
-
+img[class^="img_"]{
+  object-fit: cover;
+}
 /* CSS suivant type d'écran */
 
 /* CSS pour écran larg >=980 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
@@ -132,10 +134,10 @@ p[class^="titre"]{
   #bloc_menu{
     display: flex;
     flex-direction: column;
-   align-items: center;
-   width: 100%;
-   margin-left: auto;
-   margin-right: auto;
+    align-items: center;
+     width: 100%;
+     margin-left: auto;
+     margin-right: auto;
   }
   .titres{
     width: 6cm;
@@ -510,8 +512,9 @@ div[class^="corps_carte"]{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 320px;
-  margin-left: 10px;
+  width: 280px;
+
+  background-color: cyan;
 }
 .parent_titre-pop_et_i{
   display: flex;
@@ -539,8 +542,6 @@ div[class^="corps_carte"]{
 .corps_carte_pop{
   display: flex;
   flex-direction: row;
-
-
 }
 .container_img_pop{
   border-bottom-left-radius: 12px; border-top-left-radius: 12px;
