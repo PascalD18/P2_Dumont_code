@@ -125,7 +125,7 @@ body{
     margin-right: auto;
   }
   #recherche{
-    width: 250px;
+    width: 260px;
     margin-left: auto;
     margin-right: auto;
   }
@@ -228,6 +228,7 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
 .choix_heb:hover{
   border-top: solid 2px; border-color: blue;
   font-weight: 800;
+
   background-color: #F2F2F2;
 }
 .choix_act:hover{
@@ -243,10 +244,12 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
 }
 .titres>h1{
   font-size: 1em;
+  padding-top: 0px;
 }
 .titres>h2 {
   font-weight: 400;
   font-size: 0.72em;
+  padding-bottom: 22px;
 }
 /* ---- Debut ZONE RECHERCHE ---- */
 #recherche{
@@ -264,14 +267,17 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1cm; width:60px;
+  height: 42px; width:45px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   background-color: #F2F2F2;
 }
+#i_localisation{
+  font-size: 1em;
+}
 #i_loupe{
   color:white;
-  font-size:0.8em;
+  font-size:0.9em;
   padding-top: 2px;
 }
 #nomville{
@@ -279,7 +285,7 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
   font-size: 0.9em;
   font-weight:800;
   padding-left: 0.3cm;
-  height: 1cm; width: 4.6cm;
+  height: 1cm; width: 4.5cm;
 }
 .parent_rech{
   display: flex;
