@@ -77,7 +77,10 @@ img[class^="img_"]{
   .parent_i_text_info{
     display: flex;
     align-items: flex-end;
-    width: auto;
+     width: auto;
+   }
+   .parent_i_info{
+     margin-bottom: 0px;
    }
    .text_info{
      margin-top: 0cm;
@@ -91,6 +94,10 @@ img[class^="img_"]{
    .grp_cartes_heb_marseille{
     padding-left: 5px; padding-right: 5px;
      background-color:#F2F2F2;
+   }
+   .parent_i_text_info{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
    }
    .lien_carte_heb{
      margin-right: 15px; margin-left: 15px;
@@ -157,8 +164,14 @@ img[class^="img_"]{
   }
   
   .parent_i_text_info{
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    margin-top: 15px;
     width: 273px;
+   }
+   .parent_i_info{
+     margin-bottom: 12px;
    }
   .text_info{
     margin-top: 0.1cm;
@@ -167,7 +180,7 @@ img[class^="img_"]{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
-  width: 6.5cm;
+  width: 7.4cm;
   }
   .titre_marseille{
     background-color: white;
@@ -188,6 +201,11 @@ img[class^="img_"]{
   .aff_plus{
     background-color: white;
   }
+  .parent_i_text_info{
+  border-top-left-radius: 0px;
+  border-top-right-radius: 0px;    
+  }
+
   .art_heb_pop{
     margin-left: 0px;
   }
@@ -338,7 +356,7 @@ div[class*="parent_i_text_critere"]{
   border-bottom-left-radius: 17px; border-bottom-right-radius: 17px;
   height: 34px;
   margin-left: 0.3cm;
-
+ margin-bottom: 10px;
 }
 
 div[class*="parent_i_text_critere"]:hover{
@@ -383,15 +401,13 @@ p[class^="text_critere"]{
   margin-left: 0.3cm; margin-right: 0.3cm
  }
  .parent_i_text_info{
-  display: flex;
-  flex-direction: row;
   height: 35px; 
+  margin-bottom: 35px;
  }
  .parent_i_info{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20px; width: 20px;
   border:solid 1.5px; border-color:#F2F2F2;
   border-radius: 10px;
  }
@@ -521,8 +537,6 @@ div[class^="corps_carte"]{
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
   padding-top: 30px;
   padding-bottom: 0px;
   background-color: #F2F2F2;
