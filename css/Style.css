@@ -57,6 +57,12 @@ body{
    width: 40%;
 
   }
+  .choix_heb,.choix_act{
+    border-top-style: solid;
+    border-color: white;
+    border-bottom:none;
+    padding-top: 20px;
+  }
   .titres{
     width: auto;
     margin-left: 0.6cm;
@@ -118,6 +124,15 @@ body{
   .parent_logo{
     justify-content: center;
     align-items: center;
+  }
+  .choix_heb,.choix_act{
+    border-bottom-style: solid;
+    border-color: #F2F2F2;
+    border-top:none;
+    padding-bottom: 10px;
+    
+    
+
   }
   .titres{
     width: 6cm;
@@ -208,33 +223,26 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
   display:flex;
  flex-direction: row;
  justify-content: space-around;
- align-items: center;
- height: 0.9cm; width: 6cm;
+  width: 6cm;
 }
 .choix_heb,.choix_act{
   text-decoration: none;
-  border-style: none;
-  margin-right: 5px; margin-top: 12px;
-  font-size: 0.65em; font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 0.8em; font-weight: 400;
 }
-.choix_heb{
-  color:#0065FC ;
-}
-.choix_act{
-  color: black;
-}
+
   /* -- la selection .choix_heb,.choix_act:hover ne fonctionne que pour .choix_act
     => décomposition en .choix_heb:hover puis .choix_act:hover -- */
 .choix_heb:hover{
-  border-top: solid 2px; border-color: blue;
   font-weight: 800;
-
-  background-color: #F2F2F2;
+  border-color: #0065FC;
+  color: #0065FC;
 }
 .choix_act:hover{
-  border-top: solid 2px; border-color: blue;
   font-weight: 800;
-  background-color: #F2F2F2;
+  border-color: #0065FC;
+  color: #0065FC;
 }
 /* ---- Debut ZONE TITRES ---- */
 .titres{
