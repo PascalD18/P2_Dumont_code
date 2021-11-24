@@ -37,9 +37,6 @@ p[class^="titre"]{
 /* CSS pour écran larg >= 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (min-width: 768px)
 {
-  body{
-    width: 100%;
-  }
   #entete{
     display:flex;
     flex-wrap: wrap;
@@ -58,11 +55,7 @@ p[class^="titre"]{
     border-bottom:none;
     padding-top: 20px;
   }
-  #bloc_menu{
-    display: static;
-    width: auto;
-  }
-  .titres{
+   .titres{
     width: auto;
   }
 #recherche{
@@ -87,6 +80,12 @@ p[class^="titre"]{
    .text_info{
      margin-top: 0cm;
    }
+   .titre_marseille{
+     background-color: #F2F2F2;
+   }
+   .art_heb_marseille{
+    margin-right: 10px;
+   }
    .grp_cartes_heb_marseille{
     padding-left: 5px; padding-right: 5px;
      background-color:#F2F2F2;
@@ -98,6 +97,9 @@ p[class^="titre"]{
    .aff_plus{
      background-color: #F2F2F2;
    }
+   .art_heb_pop{
+     margin-left: 10px;
+   }
     .grp_cartes_heb_pop{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
@@ -107,10 +109,7 @@ p[class^="titre"]{
 /* CSS pour écran larg < 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (max-width: 768px)
 {
-  body{
-    width: 6cm;
-  }
-  #entete{
+   #entete{
     display:flex;
     flex-direction: column;
     margin-right: auto;
@@ -126,11 +125,17 @@ p[class^="titre"]{
     border-top:none;
     padding-bottom: 10px;
   }
+  .nav_types{
+    margin-left: auto;
+    margin-right: auto;
+  }
   #bloc_menu{
     display: flex;
     flex-direction: column;
    align-items: center;
-     width: auto;
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
   }
   .titres{
     width: 6cm;
@@ -161,11 +166,13 @@ p[class^="titre"]{
   flex-direction: row;
   flex-wrap: wrap-reverse;
   width: 6.5cm;
-
   }
   .titre_marseille{
     background-color: white;
     width: auto;
+  }
+  .art_heb_marseille{
+    margin-right: 0px;
   }
   .grp_cartes_heb_marseille{
     padding-left: 0px; padding-right: 0px;
@@ -179,6 +186,9 @@ p[class^="titre"]{
   .aff_plus{
     background-color: white;
   }
+  .art_heb_pop{
+    margin-left: 0px;
+  }
   .grp_cartes_heb_pop{
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -191,11 +201,6 @@ p[class^="titre"]{
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
  ---- Debut ZONE ENTETE ---- */
-#entete{
-
- 
-  background-color: white;
-}
 .parent_logo{
   display: flex;
   flex-direction: row;
@@ -399,11 +404,6 @@ font-weight: 400;
 padding-left: 0.2cm;  
 }
 /* ---- Debut ZONE MENU ----- */
-#bloc_menu{
-
-
-   background-color: cyan;
- }
  /* ---- Debut ZONE HEBERGEMENTS ---- */
 .titre_marseille{
   border-top-left-radius: 20px;
@@ -413,7 +413,6 @@ padding-left: 0.2cm;
   padding-left: 0.5cm;
 }
 article[class^="art_heb"]{
-  padding-right: 15px;
   background-color: white;
 }
 .art_heb_marseille{
@@ -512,9 +511,7 @@ div[class^="corps_carte"]{
   flex-direction: column;
   justify-content: flex-start;
   width: 320px;
-  margin-left: auto;
-  margin-right: auto;
-
+  margin-left: 10px;
 }
 .parent_titre-pop_et_i{
   display: flex;
