@@ -3,8 +3,8 @@
    /* Largeur de la boîte de contenu : width - (2 * padding) - (2 * border)
       Hauteur de la boîte de contenu : height - (2 * padding) - (2 * border) */
   font-family: 'Raleway', sans-serif; /*font-weight: normal;*/
-  max-width: 1200px; 
-  margin:0px;
+  max-width: 1200px;
+   margin:0px;
   padding: 0px;
 
 }
