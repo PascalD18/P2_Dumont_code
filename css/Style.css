@@ -71,7 +71,15 @@ img[class^="img_"]{
   #i_loupe{
     display:none;
   }
+  .text_filtre{
+    margin-top: 0px;
+    margin-left: 0.2cm;
+  }
   .bloc_filtre_et_criteres{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 15px;
     width: auto;
   }
   .parent_i_text_info{
@@ -161,8 +169,16 @@ img[class^="img_"]{
   .rech{
     display: none;
   }
+  .text_filtre{
+    margin-top: 30px;
+    margin-left: 20px;
+  }
   .bloc_filtre_et_criteres{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
     width: 273px;
+    margin-top: 0px;
   }
   
   .parent_i_text_info{
@@ -325,11 +341,6 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
   padding-left: 0.3cm; padding-right: 0.3cm;
 }
 /* ---- Debut ZONE FILTRES ----- */
-.bloc_filtre_et_criteres{
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
 .bloc_criteres{
   display: flex;
   flex-wrap: wrap;
@@ -338,13 +349,11 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
 #section_filtres_et_info{
   display: flex;
   flex-direction: column;
- }
+  }
 .text_filtre{
   font-size: 0.9em;
   font-weight: 800;
-  margin-left: 0.5cm;
-  margin-top: 30px;
-  width: 1.8cm;
+   width: 1.8cm;
 }
 
 div[class*="parent_i_text_critere"]{
