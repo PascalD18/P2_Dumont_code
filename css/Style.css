@@ -455,15 +455,15 @@ article[class^="art_heb"]{
 .grp_cartes_heb_marseille{
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
   height: 100%;
 }
 a[class^="lien_carte"]{
   text-decoration: none;
   color:black;
   border: none;
-  margin-top: 8px;
-  margin-bottom: 8px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
@@ -498,32 +498,41 @@ div[class^="corps_carte"]{
   border-top-right-radius: 12px;
   height: 100%;
 }
-.nom_carte{
+
+p[class^="nom_carte"]{
   font-size: 0.7em;
   font-weight: 800;
-  padding-top: 10px;
   padding-left: 10px;
+  margin-top: 4px;
   background-color: white;
-  width: 100%;
 }
-.tarif_carte{
+.lien_carte_pop{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.nom_carte_pop{
+  padding-top: 10px;
+}
+p[class^="tarif_carte"]{
   font-size: 0.7em;
   padding-left: 10px;
-  padding-bottom: 20px;
-  margin-top: 4px;
-  width:100%;
   background-color: white;
 }
-.etoiles{
+.tarif_carte_pop{
+  padding-bottom: 20px;
+}
+p[class^="etoiles"]{
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   padding-left: 10px;
-  padding-bottom: 3px;
   font-size: 2em;
   font-weight: 800;
+  height: 20px;
   color: #0065FC;
   background-color: white;
-  height: 20px; width: 100%;
+}
+.etoiles_pop{
+  padding-bottom: 3px;
 
 }
 .aff_plus{
@@ -537,7 +546,7 @@ div[class^="corps_carte"]{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 280px;
+  width: 290px;
 
 }
 .parent_titre-pop_et_i{
