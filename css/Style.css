@@ -365,9 +365,9 @@ div[class*="parent_i_text_critere"]{
   align-items: center;
   border:solid 2px;
   border-color:#F2F2F2;
-  border-top-left-radius: 17px; border-top-right-radius: 17px;
-  border-bottom-left-radius: 17px; border-bottom-right-radius: 17px;
-  height: 34px;
+  border-top-left-radius: 19px; border-top-right-radius: 19px;
+  border-bottom-left-radius: 19px; border-bottom-right-radius: 19px;
+  height: 38px;
   margin-left: 0.3cm;
   margin-bottom: 10px;
 }
@@ -415,7 +415,7 @@ p[class^="text_critere"]{
  }
  .parent_i_text_info{
   height: 35px; 
-  margin-bottom: 35px;
+  margin-bottom: 25px;
  }
  .parent_i_info{
   display: flex;
@@ -501,7 +501,7 @@ div[class^="corps_carte"]{
 .nom_carte{
   font-size: 0.7em;
   font-weight: 800;
-  padding-top: 5px;
+  padding-top: 10px;
   padding-left: 10px;
   background-color: white;
   width: 100%;
@@ -509,14 +509,16 @@ div[class^="corps_carte"]{
 .tarif_carte{
   font-size: 0.7em;
   padding-left: 10px;
+  padding-bottom: 20px;
   margin-top: 4px;
   width:100%;
   background-color: white;
 }
 .etoiles{
-  border-bottom-left-radius: 12px; border-bottom-right-radius: 12px;
-  padding-top: 4px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
   padding-left: 10px;
+  padding-bottom: 3px;
   font-size: 2em;
   font-weight: 800;
   color: #0065FC;
