@@ -100,13 +100,15 @@ img[class^="img_"]{
    }
    .art_heb_marseille{
     margin-right: 10px;
+    width: 70%;
    }
    .grp_cartes_heb_marseille{
     padding-left: 5px; padding-right: 5px;
      background-color:#F2F2F2;
    }
     .lien_carte_heb{
-     margin-right: 15px; margin-left: 15px;
+     margin-right: 15px;
+     margin-left: 15px;
      width: 190px;
    }
    .aff_plus{
@@ -122,7 +124,6 @@ img[class^="img_"]{
     .grp_cartes_heb_pop{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
-     width: 525px;
    }
 }
 /* CSS pour écran larg < 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
@@ -241,12 +242,12 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
 .parent_logo{
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-left: 0.6cm;
   height:2cm;
 }
-.logo{
+.img_logo{
   width: 1.9cm;
-  object-fit: cover;
   margin-left: 0.9cm;
   margin-right: 0.9cm;
 }
@@ -254,6 +255,7 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
   display:flex;
  flex-direction: row;
  justify-content: space-around;
+  padding-bottom: 15px;
   width: 6cm;
 }
 .choix_heb,.choix_act{
@@ -448,8 +450,6 @@ article[class^="art_heb"]{
  display: flex;
  flex-direction: column;
  justify-content: space-around;
- width: auto;
-
 }
 
 .grp_cartes_heb_marseille{
@@ -457,7 +457,6 @@ article[class^="art_heb"]{
   flex-wrap: wrap;
   justify-content: center;
   height: 100%;
- 
 }
 a[class^="lien_carte"]{
   text-decoration: none;
@@ -473,7 +472,6 @@ a[class^="lien_carte"]{
 }
 
 .lien_carte_heb{
-
   height: 150px;
 }
 div[class^="corps_carte"]{
@@ -558,11 +556,7 @@ div[class^="corps_carte"]{
   padding-bottom: 20px;
   width: 100%;
   background-color: #F2F2F2;
-}/*
-.lien_carte_pop{
-  margin-right: 15px; margin-left: 15px;
-  height: 95px;
-}*/
+}
 .corps_carte_pop{
   display: flex;
   flex-direction: row;
