@@ -480,15 +480,6 @@ a[class^="lien_carte"]{
 .lien_carte_heb{
   height: 150px;
 }
-div[class^="corps_carte"]{
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-}
-.corps_carte_heb{
-  background-color: white;
-}
 
 .container_img_heb{
   border-top-left-radius: 12px;
@@ -509,7 +500,7 @@ p[class^="nom_carte"]{
   font-size: 0.7em;
   font-weight: 800;
   padding-left: 10px;
-  margin-top: 4px;
+  padding-top: 4px;
   background-color: white;
 }
 .lien_carte_pop{
