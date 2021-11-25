@@ -463,13 +463,13 @@ a[class^="lien_carte"]{
   text-decoration: none;
   color:black;
   border: none;
-  margin-top: 15px; margin-bottom: 15px;
+  margin-top: 8px;
+  margin-bottom: 8px;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
-
- background-color: #F2F2F2;
+  background-color: #F2F2F2;
 }
 
 .lien_carte_heb{
@@ -481,10 +481,8 @@ div[class^="corps_carte"]{
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
   border-bottom-left-radius: 12px;
-  width: 100%; height: 100%;
 }
 .corps_carte_heb{
-  width: 100%;
   background-color: white;
 }
 
@@ -541,7 +539,6 @@ div[class^="corps_carte"]{
   justify-content: flex-start;
   width: 280px;
 
-  background-color: cyan;
 }
 .parent_titre-pop_et_i{
   display: flex;
@@ -556,20 +553,23 @@ div[class^="corps_carte"]{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: 425px;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
   width: 100%;
   background-color: #F2F2F2;
-}
+}/*
 .lien_carte_pop{
   margin-right: 15px; margin-left: 15px;
   height: 95px;
-}
+}*/
 .corps_carte_pop{
   display: flex;
   flex-direction: row;
 }
 .container_img_pop{
-  border-bottom-left-radius: 12px; border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
   height: 105px; width: 98px;
   padding: 3px;
   background-color: white;
