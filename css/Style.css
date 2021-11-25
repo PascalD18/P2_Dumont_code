@@ -3,7 +3,7 @@
    /* Largeur de la boîte de contenu : width - (2 * padding) - (2 * border)
       Hauteur de la boîte de contenu : height - (2 * padding) - (2 * border) */
   font-family: 'Raleway', sans-serif; /*font-weight: normal;*/
-  max-width: 1200px;
+  max-width: 1350x;
    margin:0px;
   padding: 0px;
 
@@ -25,7 +25,11 @@ img[class^="img_"]{
   justify-content: flex-start;
   width: auto;
  }
-
+#bloc_menu, #entete{
+  width: 997px;
+  margin-left: auto;
+  margin-right: auto;
+}
 }
 /* CSS pour écran larg < 980 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (max-width: 980px){
@@ -35,6 +39,9 @@ img[class^="img_"]{
   justify-content: flex-start;
   width: 780px;
   }
+#bloc_menu{
+  width: auto;
+}
 }
 /* CSS pour écran larg >= 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (min-width: 768px)
@@ -99,11 +106,12 @@ img[class^="img_"]{
      background-color: #F2F2F2;
    }
    .art_heb_marseille{
-    margin-right: 10px;
+    margin-right: 20px;
     width: 70%;
    }
    .grp_cartes_heb_marseille{
-    padding-left: 5px; padding-right: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
      background-color:#F2F2F2;
    }
     .lien_carte_heb{
@@ -153,9 +161,7 @@ img[class^="img_"]{
     display: flex;
     flex-direction: column;
     align-items: center;
-     width: 100%;
-     margin-left: auto;
-     margin-right: auto;
+
   }
   .titres{
     width: 6cm;
