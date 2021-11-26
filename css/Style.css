@@ -591,17 +591,25 @@ p[class^="etoiles"]{
 }
 #activites{
   width: 100%;
+  background-color: yellow;
 }
 .grp_cartes_act{
-  width: 95%;
+  width: 100px;
+  background-color: rgb(201, 120, 120);
 }
 .lien_carte_act1{
-  height:328px;
+ margin-left: 10px;
+margin-right: 10px;
+ height: 318px;
+ width: 300px;
+
+ background-color: aqua;
+}
+.container_img_act{
+  height:280px;
   width: 218px;
 }
-.img_carte_act1{
-  width: auto;
-}
+
 footer{ 
 
   background-color: rgb(160, 231, 160);
