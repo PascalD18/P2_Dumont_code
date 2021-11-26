@@ -470,12 +470,7 @@ a[class^="lien_carte"]{
   text-decoration: none;
   color:black;
   border: none;
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  border-bottom-right-radius: 12px;
-  border-bottom-left-radius: 12px;
-  background-color: #F2F2F2;
-}
+  }
 
 .lien_carte_heb{
   height: 150px;
@@ -590,24 +585,35 @@ p[class^="etoiles"]{
   background-color: white;
 }
 #activites{
+  display: flex;
+  flex-direction: column;
   width: 100%;
   background-color: yellow;
 }
 .grp_cartes_act{
-  width: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
   background-color: rgb(201, 120, 120);
 }
 .lien_carte_act1{
+  display: flex;
  margin-left: 10px;
 margin-right: 10px;
- height: 318px;
- width: 300px;
+ height: 7.8cm;
+ width: 5.8cm;
 
- background-color: aqua;
+background-color: aqua;
 }
 .container_img_act{
-  height:280px;
-  width: 218px;
+  border-bottom-right-radius: 12px;
+  height: 6.8cm;
+  
+
+}
+.img_act1{
+  border-bottom-right-radius: 12px;
+  background-size: contain;
 }
 
 footer{ 
