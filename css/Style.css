@@ -593,7 +593,7 @@ p[class^="etoiles"]{
 .grp_cartes_act{
   display: flex;
   flex-wrap:wrap-reverse;
-  justify-content: space-between;
+  justify-content: space-around;
   width: 100%;
   margin-top: 10px;
   margin-bottom: 20px;
@@ -604,16 +604,16 @@ p[class^="etoiles"]{
   flex-direction: column;
   justify-content: flex-start;
   width: 220px;
-
-  background-color: aqua;
+   background-color: aqua;
 }
+
 div[class^="container_img_act"]{
   box-shadow: 2px 2px 2px 2px #F2F2F2;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
 .container_img_act1{
- height: 285px; 
+  height: 285px;
 }
 .container_img_act2{
   height: 3.2cm; 
@@ -621,6 +621,9 @@ div[class^="container_img_act"]{
  .container_img_act3{
   height: 1.8cm; 
  }
+ .container_img_act4{
+  height: 285px;
+}
 .img_act{
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
