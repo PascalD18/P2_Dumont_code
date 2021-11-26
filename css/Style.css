@@ -594,19 +594,27 @@ p[class^="etoiles"]{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  margin-top: 10px;
+  margin-bottom: 20px;
   background-color: rgb(201, 120, 120);
 }
-.lien_carte_act{
+.lien_carte_act1{
+  display: flex;
+  flex-direction: column;
+  width: 243px;
+  
 
+  background-color: aqua;
 }
-.container_img_act{
+div[class^="container_img_act"]{
   box-shadow: 2px 2px 2px 2px #F2F2F2;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  height: 285px;
-  width: 244px;
 }
-.img_act1{
+.container_img_act{
+ height: 285px;
+}
+.img_act{
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   height: 100%; width: 100%;
@@ -614,12 +622,12 @@ p[class^="etoiles"]{
 .lieu_carte_act{
   font-size: 0.7em;
   font-weight: 800;
+  box-shadow: 2px 2px 2px 2px #F2F2F2;
   padding-top: 13px;
   padding-left: 10px;
   padding-bottom: 20px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
-  box-shadow: 2px 2px 2px 2px #F2F2F2;
   background-color: white;
 }
 footer{ 
