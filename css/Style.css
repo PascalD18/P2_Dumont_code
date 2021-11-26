@@ -598,13 +598,13 @@ p[class^="etoiles"]{
   background-color: rgb(201, 120, 120);
 }
 .lien_carte_act1{
-
+  display: flex;
  margin-left: 10px;
  margin-right: 10px;
  height: 328px;
  width: 244px;
 
-background-color: aqua;
+background-color: aqua
 }
 .container_img_act{
   border-top-right-radius: 12px;
@@ -617,12 +617,13 @@ background-color: aqua;
 .lieu_carte_act{
   font-size: 0.7em;
   font-weight: 800;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 20px;
-  margin: 0px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+  margin: auto;
+  vertical-align: center;
   background-color: white;
 }
 footer{ 
