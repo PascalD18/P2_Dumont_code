@@ -594,28 +594,37 @@ p[class^="etoiles"]{
   display: flex;
   flex-wrap: wrap;
   width: 100%;
+  padding: 10px;
   background-color: rgb(201, 120, 120);
 }
 .lien_carte_act1{
-  display: flex;
+
  margin-left: 10px;
-margin-right: 10px;
- height: 7.8cm;
- width: 5.8cm;
+ margin-right: 10px;
+ height: 328px;
+ width: 244px;
 
 background-color: aqua;
 }
 .container_img_act{
-  border-bottom-right-radius: 12px;
-  height: 6.8cm;
-  
-
+  border-top-right-radius: 12px;
+  height: 285px;
 }
 .img_act1{
-  border-bottom-right-radius: 12px;
-  background-size: contain;
+   border-top-right-radius: 12px;
+  height: 100%; width: 100%;
 }
-
+.lieu_carte_act{
+  font-size: 0.7em;
+  font-weight: 800;
+  padding-top: 20px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  margin: 0px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: white;
+}
 footer{ 
 
   background-color: rgb(160, 231, 160);
