@@ -589,7 +589,19 @@ p[class^="etoiles"]{
 
   background-color: white;
 }
-
+#activites{
+  width: 100%;
+}
+.grp_cartes_act{
+  width: 95%;
+}
+.lien_carte_act1{
+  height:328px;
+  width: 218px;
+}
+.img_carte_act1{
+  width: auto;
+}
 footer{ 
 
   background-color: rgb(160, 231, 160);
