@@ -244,6 +244,12 @@ img[class^="img_"]{
 }
 /* CSS pour écran larg >= 450 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (min-width: 450px){
+  a[class^="lien_carte_act"]{
+    width: 220px;
+    height: fit-content;
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
   .container_img_act1{
     height: 285px;
   }
@@ -268,7 +274,12 @@ img[class^="img_"]{
 div[class^="container_img_act"]{
  height: 75px;  
 }
-
+a[class^="lien_carte_act"]{
+  margin-left: 0px;
+  margin-right: 0px;
+  margin: auto;
+  width: 252px;
+}
 }
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
@@ -629,10 +640,6 @@ p[class^="etoiles"]{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  width: 220px;
-  height: fit-content;
-  margin: 10px;
-  /*background-color: aqua;*/
 }
 .grp_cartes_act{
   display: flex;
