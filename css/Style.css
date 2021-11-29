@@ -13,13 +13,14 @@ p[class^="titre"]{
 }
 p1[class^="titre"]{
   font-weight: 800;
-  font-size: 0.7em;
+  font-size: 0.75em;
+  padding-top: 25px;
+  padding-bottom: 5px;
 }
 ul{
   font-weight: 400;
-  font-size: 0.7em;
-  padding-top: 3px;
-  padding-bottom: 3px;
+  font-size: 0.75em;
+  padding-top: 8px;
 }
 img[class^="img_"]{
   object-fit: cover;
@@ -77,7 +78,7 @@ img[class^="img_"]{
   margin: auto;
  }
 }
-/* CSS pour écran larg < 980 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* CSS pour écran larg < 960 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (max-width: 960px){
 
   .grp_cartes_act1{
@@ -223,6 +224,10 @@ img[class^="img_"]{
 #pied_de_page{
   flex-direction: row;
   justify-content: flex-start;
+  padding-left: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  background-color:white;
 }
 .nav_heb{
   margin-left: 100px;
@@ -234,8 +239,7 @@ img[class^="img_"]{
    #entete{
     display:flex;
     flex-direction: column;
-    margin-right: auto;
-    margin-left: auto;
+
     }
   .parent_logo{
     justify-content: center;
@@ -370,7 +374,8 @@ a[class^="lien_carte_act"]{
   width: 260px;
   margin-left: auto;
   margin-right: auto;
-  background-color: #F2F2F2);
+  padding-left: 20px;
+  background-color: #F2F2F2;
 }
 .nav_heb{
   margin-left: 0px;
@@ -782,14 +787,14 @@ div[class^="container_img_act"]{
 #pied_de_page{
   display: flex;
   margin-top: 10px;
-  padding-left: 20px;
-  background-color: rgb(160, 231, 160);
+
+ 
 }
 .nav_propos,.nav_heb{
   display: flex;
   flex-direction: column;
    
-  background-color: aqua;
+
 }
 
 
