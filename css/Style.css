@@ -25,7 +25,7 @@ img[class^="img_"]{
   justify-content: flex-start;
   width: auto;
  }
-#bloc_menu, #entete{
+#bloc_menu, #entete,#recherche_et_filtres{
   width: 997px;
   margin-left: auto;
   margin-right: auto;
@@ -235,16 +235,14 @@ img[class^="img_"]{
     margin-left: auto;
     margin-right: auto;
   }
-  #bloc_menu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
+
   .titres{
     width: 6cm;
+    margin: auto;
    }
   #recherche{
     width: 260px;
+    margin: auto;
   }
   .parent_rech{
     width: 1.2cm;
@@ -253,7 +251,7 @@ img[class^="img_"]{
   .rech{
     display: none;
   }
-  .text_filtre{
+   .text_filtre{
     margin-top: 30px;
     margin-left: 20px;
   }
@@ -262,21 +260,27 @@ img[class^="img_"]{
     flex-direction: column;
     justify-content: space-around;
     width: 273px;
-    margin-top: 0px;
+    margin: auto;
   }
   
   .parent_i_text_info{
     display: flex;
     flex-direction: row;
     align-items: center;
-    margin-top: 15px;
+    padding-top: 15px;
     width: 273px;
+    margin: auto;
    }
    .parent_i_info{
      margin-bottom: 12px;
    }
   .text_info{
     margin-top: 0.1cm;
+  }
+  #bloc_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
  #hebergements{
   display: flex;
