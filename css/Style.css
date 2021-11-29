@@ -17,7 +17,10 @@ p1[class^="titre"]{
   padding-top: 25px;
   padding-bottom: 5px;
 }
-ul{
+a[class^="footer"]{
+  text-decoration: none;
+  color:black;
+  border: none;
   font-weight: 400;
   font-size: 0.75em;
   padding-top: 8px;
@@ -76,6 +79,11 @@ img[class^="img_"]{
 .grp_cartes_act2{
   width: 480px;
   margin: auto;
+ }
+ #pied_de_page{
+  width: min-content;
+  margin-left: auto;
+  margin-right: auto;
  }
 }
 /* CSS pour écran larg < 960 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
@@ -230,7 +238,10 @@ img[class^="img_"]{
   background-color:white;
 }
 .nav_heb{
-  margin-left: 100px;
+  margin-left: 150px;
+}
+.nav_ass{
+  margin-left: 220px;
 }
 }
 /* CSS pour écran larg < 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
@@ -372,12 +383,10 @@ a[class^="lien_carte_act"]{
 #pied_de_page{
   flex-direction: column;
   width: 260px;
-  margin-left: auto;
-  margin-right: auto;
   padding-left: 20px;
   background-color: #F2F2F2;
 }
-.nav_heb{
+.nav_heb,.nav_ass{
   margin-left: 0px;
 }
 }
@@ -787,14 +796,11 @@ div[class^="container_img_act"]{
 #pied_de_page{
   display: flex;
   margin-top: 10px;
-
- 
 }
-.nav_propos,.nav_heb{
+.nav_propos,.nav_heb,.nav_ass{
   display: flex;
   flex-direction: column;
    
-
 }
 
 
