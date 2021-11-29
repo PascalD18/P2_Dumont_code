@@ -30,6 +30,15 @@ img[class^="img_"]{
   margin-left: auto;
   margin-right: auto;
 }
+
+.grp_cartes_act1{
+  padding-right: 20px;
+  width: 498.5px;
+}
+.grp_cartes_act2{
+  padding-left: 20px;
+  width: 498.5px;
+}
 }
 /* CSS pour écran larg < 980 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (max-width: 980px){
@@ -38,10 +47,39 @@ img[class^="img_"]{
   flex-direction: row;
   justify-content: flex-start;
   width: 780px;
-  }
+ }
 #bloc_menu{
   width: auto;
+ }
+ #activites{
+   width: 480px;
+ }
+.grp_cartes_acts{
+  flex-direction: column;
+  width: 480px;
+ }
+.grp_cartes_act1{
+  width: 480px;
+  margin: auto;
+ }
+.grp_cartes_act2{
+  width: 480px;
+  margin: auto;
+ }
 }
+/* CSS pour écran larg < 980 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+@media screen and (max-width: 960px){
+
+  .grp_cartes_act1{
+    padding-right: 0px;
+    margin: auto;
+  }
+
+  .grp_cartes_act2{
+    padding-left: 0px;
+    margin: auto;
+  }
+
 }
 /* CSS pour écran larg >= 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (min-width: 768px)
@@ -133,6 +171,46 @@ img[class^="img_"]{
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
    }
+   
+   .grp_cartes_acts{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .grp_cartes_act1{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  }
+  a[class^="lien_carte_act"]{
+    width: 220px;
+  }
+  .container_img_act1{
+    height: 285px;
+  }
+   .container_img_act2{
+    height: 135px; 
+   }
+  .container_img_act3{
+    height: 75px; 
+   }
+   .grp_cartes_act2{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ 
+  }
+  .container_img_act4{
+    height: 285px;
+  }
+  .container_img_act5{
+    height: 100px;
+  }
+  .container_img_act6{
+    height: 110px;
+  }
+
 }
 /* CSS pour écran larg < 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (max-width: 768px)
@@ -161,7 +239,6 @@ img[class^="img_"]{
     display: flex;
     flex-direction: column;
     align-items: center;
-
   }
   .titres{
     width: 6cm;
@@ -219,9 +296,11 @@ img[class^="img_"]{
     background-color:white;
   }
   .lien_carte_heb{
-    box-shadow: 2px 2px 2px 2px #F2F2F2;
     margin-left: 0px; margin-right: 0px;
     width: 232px;
+  }
+   .container_img_heb,.nom_carte_heb,.tarif_carte_heb,.etoiles_heb{
+    box-shadow: 2px 2px 2px 2px #f2f2f2;
   }
   .aff_plus{
     background-color: white;
@@ -238,48 +317,37 @@ img[class^="img_"]{
     border-bottom-right-radius: 0px;
     width: 6.5cm;
   }
-  footer{
-  top: 30cm;
+  #activites{
+    width: min-content;
   }
-}
-/* CSS pour écran larg >= 450 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-@media screen and (min-width: 450px){
-  a[class^="lien_carte_act"]{
-    width: 220px;
-    height: fit-content;
-    margin-top: 15px;
-    margin-bottom: 15px;
+  .titre_act{
+    text-align: left;
   }
-  .container_img_act1{
-    height: 285px;
+   .grp_cartes_acts{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: min-content;
   }
-  .container_img_act2{
-    height: 135px; 
-   }
-  .container_img_act3{
-    height: 75px; 
-   }
-  .container_img_act4{
-    height: 285px;
+  .grp_cartes_act1{
+    flex-direction: column;
+    width: 232px;
+    padding-right: 0px;
   }
-  .container_img_act5{
-    height: 100px;
+  .grp_cartes_act2{
+    flex-direction: column;
+    width: 232px;
+    padding-left: 0px;
   }
-  .container_img_act6{
-    height: 115px;
-  }
-}
-/* CSS pour écran larg < 450 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-@media screen and (max-width: 450px){
 div[class^="container_img_act"]{
  height: 75px;  
 }
 a[class^="lien_carte_act"]{
-  margin-left: 0px;
-  margin-right: 0px;
-  margin: auto;
-  width: 252px;
+  width: 232px;
 }
+footer{
+  top: 30cm;
+  }
 }
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
@@ -556,7 +624,7 @@ p[class^="etoiles"]{
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   padding-left: 10px;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: 800;
   height: 20px;
   color: #0065FC;
@@ -566,13 +634,7 @@ p[class^="etoiles"]{
   padding-bottom: 3px;
 
 }
-.aff_plus{
-  font-size: 0.8em;
-  font-weight: 800;
-  padding-bottom: 35px;
-  padding-left: 20px;
-  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
-}
+
 .art_heb_pop{
   display: flex;
   flex-direction: column;
@@ -623,31 +685,34 @@ p[class^="etoiles"]{
 
   background-color: white;
 }
+.aff_plus{
+  font-size: 0.8em;
+  font-weight: 800;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+}
 /* ---- Debut Zone ACTIVITES ---*/
 #activites{
-  display: flex;
-  flex-direction: column;
-  width: 100%;
-  height: fit-content;
-  background-color:yellow;
+  margin: auto;
 }
 .titre_act{
-
-  background-color: red;
+  padding-top: 30px;
 }
 
-.lien_carte_act{
+.grp_cartes_acts{
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
+  margin: auto;
 }
-.grp_cartes_act{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  width: 100%;
+a[class^="lien_carte_act"]{
   height: fit-content;
-}
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  }
+
+
 div[class^="container_img_act"]{
   box-shadow: 2px 2px 2px 2px #F2F2F2;
   border-top-left-radius: 12px;
@@ -656,38 +721,22 @@ div[class^="container_img_act"]{
 
 .grp_cartes_act1{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: auto;
-
-
-  background-color: rgb(206, 124, 124);
-}
+ }
 
 
  .grp_cartes_act1-1{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height:fit-content;
  }
 
 .grp_cartes_act2{
   display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  margin: auto;
-  height: 100%;
-
-  background-color: royalblue;
 }
 .grp_cartes_act2-1{
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-  height: fit-content;
 }
 
 .img_act{
