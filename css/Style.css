@@ -11,6 +11,14 @@
 p[class^="titre"]{
   font-weight: 800;
 }
+p1[class^="titre"]{
+  font-weight: 800;
+  font-size: 0.7em;
+}
+ul{
+  font-weight: 400;
+  font-size: 0.7em;
+}
 img[class^="img_"]{
   object-fit: cover;
 }
@@ -25,7 +33,7 @@ img[class^="img_"]{
   justify-content: flex-start;
   width: auto;
  }
-#bloc_menu, #entete,#recherche_et_filtres,#pied_de_page{
+#bloc_menu,#entete,#recherche_et_filtres,#pied_de_page{
   width: 997px;
   margin-left: auto;
   margin-right: auto;
@@ -212,7 +220,7 @@ img[class^="img_"]{
   }
 #pied_de_page{
   flex-direction: row;
-  width: 100%;
+
 }
 }
 /* CSS pour écran larg < 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
@@ -768,6 +776,8 @@ div[class^="container_img_act"]{
 .nav_propos{
   display: flex;
   flex-direction: column;
+
+  background-color: aqua;
 }
 
  
