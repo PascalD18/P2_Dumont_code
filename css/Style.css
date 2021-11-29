@@ -3,37 +3,111 @@
    /* Largeur de la boîte de contenu : width - (2 * padding) - (2 * border)
       Hauteur de la boîte de contenu : height - (2 * padding) - (2 * border) */
   font-family: 'Raleway', sans-serif; /*font-weight: normal;*/
-  max-width: 997px; 
-  margin:0px;
+  max-width: 1350px;
+   margin:0px;
   padding: 0px;
+
 }
-html>body #entete,.titres,#recherche{
-  position: fixed;
+p[class^="titre"]{
+  font-weight: 800;
 }
-#recherche{
-  max-width: 997px;
-  margin: auto;
+img[class^="img_"]{
+  object-fit: cover;
 }
 /* CSS suivant type d'écran */
+
+/* CSS pour écran larg >=980 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+@media screen and (min-width: 980px)
+{
+#hebergements{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: auto;
+ }
+#bloc_menu, #entete{
+  width: 997px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.grp_cartes_act1{
+  padding-right: 20px;
+  width: 498.5px;
+}
+.grp_cartes_act2{
+  padding-left: 20px;
+  width: 498.5px;
+}
+}
+/* CSS pour écran larg < 980 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+@media screen and (max-width: 980px){
+#hebergements{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  width: 780px;
+ }
+#bloc_menu{
+  width: auto;
+ }
+ #activites{
+   width: 480px;
+ }
+.grp_cartes_acts{
+  flex-direction: column;
+  width: 480px;
+ }
+.grp_cartes_act1{
+  width: 480px;
+  margin: auto;
+ }
+.grp_cartes_act2{
+  width: 480px;
+  margin: auto;
+ }
+}
+/* CSS pour écran larg < 980 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+@media screen and (max-width: 960px){
+
+  .grp_cartes_act1{
+    padding-right: 0px;
+    margin: auto;
+  }
+
+  .grp_cartes_act2{
+    padding-left: 0px;
+    margin: auto;
+  }
+
+}
+/* CSS pour écran larg >= 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (min-width: 768px)
 {
   #entete{
     display:flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    
    }
   .parent_logo{
    justify-content: flex-start;
    align-items: flex-end;
    width: 40%;
+
   }
-  .titres{
-    top: 2.3cm;
-    width: 15cm;
+  .choix_heb,.choix_act{
+    border-top-style: solid;
+    border-color: white;
+    border-bottom:none;
+    padding-top: 20px;
   }
-  #recherche{
-    top: 4cm;
+   .titres{
+    width: auto;
   }
+#recherche{
+  width: 298px;
+}
   .parent_rech{
     width: 2.5cm;
     border-top-right-radius: 10px;
@@ -42,62 +116,135 @@ html>body #entete,.titres,#recherche{
   #i_loupe{
     display:none;
   }
-  #section_filtres_et_info{
-    display: flex;
-    flex-direction: column;
-    top: 5.5cm;
-    height: 2.8cm;
+  .text_filtre{
+    margin-top: 0px;
+    margin-left: 0.2cm;
   }
   .bloc_filtre_et_criteres{
-      height: 1.2cm;width: 19cm;
-  }
-  .bloc_criteres{
     display: flex;
     flex-direction: row;
     align-items: center;
-     height: 1cm; width: 22cm;
-  }
-  .parent_i_text_critere2{
-    position:relative;
-  }
-  .parent_i_text_critere3{
-    position: relative; 
-  }
-  .parent_i_text_critere4{
-    position:relative;
+    margin-top: 15px;
+    width: auto;
   }
   .parent_i_text_info{
     display: flex;
     align-items: flex-end;
-    left: 0.5cm; top: 1.3cm;
-    width: 11cm;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+     width: auto;
+   }
+   .parent_i_info{
+     margin-bottom: 0px;
    }
    .text_info{
      margin-top: 0cm;
    }
-   #section_hebergements{
-     top: 8.3cm;
+   .titre_marseille{
+     background-color: #F2F2F2;
    }
+   .art_heb_marseille{
+    margin-right: 20px;
+    width: 70%;
+   }
+   .grp_cartes_heb_marseille{
+    padding-left: 10px;
+    padding-right: 10px;
+     background-color:#F2F2F2;
+   }
+    .lien_carte_heb{
+     margin-right: 15px;
+     margin-left: 15px;
+     width: 190px;
+   }
+   .aff_plus{
+     background-color: #F2F2F2;
+   }
+   .art_heb_pop{
+     margin-left: 10px;
+   }
+   .parent_titre-pop_et_i{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;    
+   }
+    .grp_cartes_heb_pop{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   }
+   
+   .grp_cartes_acts{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .grp_cartes_act1{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  
+  }
+  a[class^="lien_carte_act"]{
+    width: 220px;
+  }
+  .container_img_act1{
+    height: 285px;
+  }
+   .container_img_act2{
+    height: 135px; 
+   }
+  .container_img_act3{
+    height: 75px; 
+   }
+   .grp_cartes_act2{
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+ 
+  }
+  .container_img_act4{
+    height: 285px;
+  }
+  .container_img_act5{
+    height: 100px;
+  }
+  .container_img_act6{
+    height: 110px;
+  }
+
 }
 /* CSS pour écran larg < 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (max-width: 768px)
 {
-  #entete{
+   #entete{
     display:flex;
     flex-direction: column;
-   }
+    margin-right: auto;
+    margin-left: auto;
+    }
   .parent_logo{
     justify-content: center;
     align-items: center;
-    width: 5.8cm
   }
-
+  .choix_heb,.choix_act{
+    border-bottom-style: solid;
+    border-color: #F2F2F2;
+    border-top:none;
+    padding-bottom: 10px;
+  }
+  .nav_types{
+    margin-left: auto;
+    margin-right: auto;
+  }
+  #bloc_menu{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
   .titres{
-    top: 3cm;
     width: 6cm;
-  }
+   }
   #recherche{
-    top: 5.3cm;
+    width: 260px;
   }
   .parent_rech{
     width: 1.2cm;
@@ -106,63 +253,113 @@ html>body #entete,.titres,#recherche{
   .rech{
     display: none;
   }
-  #section_filtres_et_info{
-   top: 7cm;
-   height: 5.7cm;
+  .text_filtre{
+    margin-top: 30px;
+    margin-left: 20px;
   }
   .bloc_filtre_et_criteres{
-      display: flex;
-      flex-direction: column;
-      justify-content: space-around;
-      height:4.2cm; width: 10cm;
-    }
-    .bloc_criteres{
-      display: flex;
-      flex-direction: column;
-       height: 2.8cm; width: 10cm;
-       margin-top: 0.2cm;
-    }
-  .parent_i_text_critere1{
-    position: absolute;
-    left:0.3cm; top:1cm;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 273px;
+    margin-top: 0px;
   }
-  .parent_i_text_critere2{
-    position:absolute;
-    left:4.4cm; top:1cm;
-  }
-  .parent_i_text_critere3{
-    position: absolute;
-    left:0.3cm; top: 2.3cm; 
-  }
-  .parent_i_text_critere4{
-    position:absolute;
-    left:0.3cm; top:3.6cm;
-  }
+  
   .parent_i_text_info{
+    display: flex;
+    flex-direction: row;
     align-items: center;
-    left: 0.5cm; top: 4.8cm;
-    width: 8.5cm;
-  }*/
+    margin-top: 15px;
+    width: 273px;
+   }
+   .parent_i_info{
+     margin-bottom: 12px;
+   }
   .text_info{
     margin-top: 0.1cm;
   }
-  #section_hebergements{
-    top: 12.5cm;
+ #hebergements{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap-reverse;
+  width: 7.4cm;
+  }
+  .titre_marseille{
+    background-color: white;
+    width: auto;
+  }
+  .art_heb_marseille{
+    margin-right: 0px;
+  }
+  .grp_cartes_heb_marseille{
+    padding-left: 0px; padding-right: 0px;
+    background-color:white;
+  }
+  .lien_carte_heb{
+    margin-left: 0px; margin-right: 0px;
+    width: 232px;
+  }
+   .container_img_heb,.nom_carte_heb,.tarif_carte_heb,.etoiles_heb{
+    box-shadow: 2px 2px 2px 2px #f2f2f2;
+  }
+  .aff_plus{
+    background-color: white;
+  }
+  .art_heb_pop{
+    margin-left: 0px;
+  }
+  .parent_titre-pop_et_i{
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;    
+  }
+  .grp_cartes_heb_pop{
+    border-bottom-left-radius: 0px;
+    border-bottom-right-radius: 0px;
+    width: 6.5cm;
+  }
+  #activites{
+    width: min-content;
+  }
+  .titre_act{
+    text-align: left;
+  }
+   .grp_cartes_acts{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: min-content;
+  }
+  .grp_cartes_act1{
+    flex-direction: column;
+    width: 232px;
+    padding-right: 0px;
+  }
+  .grp_cartes_act2{
+    flex-direction: column;
+    width: 232px;
+    padding-left: 0px;
+  }
+div[class^="container_img_act"]{
+ height: 75px;  
+}
+a[class^="lien_carte_act"]{
+  width: 232px;
+}
+footer{
+  top: 30cm;
   }
 }
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-#entete{
-  width: 100%;
-}
+ ---- Debut ZONE ENTETE ---- */
 .parent_logo{
   display: flex;
   flex-direction: row;
+  align-items: center;
   margin-left: 0.6cm;
   height:2cm;
 }
-.logo{
+.img_logo{
   width: 1.9cm;
   margin-left: 0.9cm;
   margin-right: 0.9cm;
@@ -171,76 +368,78 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
   display:flex;
  flex-direction: row;
  justify-content: space-around;
- align-items: center;
- margin-left: 0.6cm;
- height: 0.9cm; width: 6cm;
+  padding-bottom: 15px;
+  width: 6cm;
 }
 .choix_heb,.choix_act{
   text-decoration: none;
-  border:hidden;
-  margin-right: 10%; margin-top: 0.3cm;
-  font-size: 0.65em; font-weight: 400;
+  padding-left: 25px;
+  padding-right: 25px;
+  font-size: 0.8em; font-weight: 400;
 }
-.choix_heb{
-  color:#0065FC ;
-}
-.choix_act{
-  color: black;
-}
+
   /* -- la selection .choix_heb,.choix_act:hover ne fonctionne que pour .choix_act
     => décomposition en .choix_heb:hover puis .choix_act:hover -- */
 .choix_heb:hover{
-  border-top: solid 2px; border-color: blue;
   font-weight: 800;
-  background-color: #F2F2F2;
+  border-color: #0065FC;
+  color: #0065FC;
 }
 .choix_act:hover{
-  border-top: solid 2px; border-color: blue;
   font-weight: 800;
-  background-color: #F2F2F2;
+  border-color: #0065FC;
+  color: #0065FC;
 }
+/* ---- Debut ZONE TITRES ---- */
 .titres{
   display: flex;
   flex-direction: column;
   font-weight: 800;
-  margin-left: 0.6cm;
 }
 .titres>h1{
   font-size: 1em;
+  padding-top: 0px;
 }
 .titres>h2 {
   font-weight: 400;
   font-size: 0.72em;
+  padding-bottom: 22px;
 }
+/* ---- Debut ZONE RECHERCHE ---- */
 #recherche{
-  left: 0.5cm;
   display: flex;
   flex-direction: row;
   align-items: center;
   height: 1.1cm;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color: #F2F2F2;
 }
 .parent_i_loc{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 1cm; width:30px;
+  height: 42px; width:45px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  background-color: #DEEBFF;
+  background-color: #F2F2F2;
+}
+#i_localisation{
+  font-size: 1em;
 }
 #i_loupe{
   color:white;
-  font-size:0.4cm;
+  font-size:0.9em;
+  padding-top: 2px;
 }
 #nomville{
-  border:hidden;
+  border-style:none;
   font-size: 0.9em;
   font-weight:800;
   padding-left: 0.3cm;
-  height: 1cm; width: 4.6cm;
+  height: 1cm; width: 4.5cm;
 }
 .parent_rech{
   display: flex;
@@ -256,17 +455,20 @@ xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
   font-weight: 800;
   padding-left: 0.3cm; padding-right: 0.3cm;
 }
+/* ---- Debut ZONE FILTRES ----- */
+.bloc_criteres{
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 0.2cm;
+}
 #section_filtres_et_info{
-  position: absolute;
   display: flex;
   flex-direction: column;
-  width: 28cm;
- }
+  }
 .text_filtre{
   font-size: 0.9em;
   font-weight: 800;
-  margin-left: 0.5cm;
-  width: 1.8cm;
+   width: 1.8cm;
 }
 
 div[class*="parent_i_text_critere"]{
@@ -276,11 +478,11 @@ div[class*="parent_i_text_critere"]{
   align-items: center;
   border:solid 2px;
   border-color:#F2F2F2;
-  border-top-left-radius: 17px; border-top-right-radius: 17px;
-  border-bottom-left-radius: 17px; border-bottom-right-radius: 17px;
-  height: 34px;
-  margin-right: 0.3cm;
-
+  border-top-left-radius: 19px; border-top-right-radius: 19px;
+  border-bottom-left-radius: 19px; border-bottom-right-radius: 19px;
+  height: 38px;
+  margin-left: 0.3cm;
+  margin-bottom: 10px;
 }
 
 div[class*="parent_i_text_critere"]:hover{
@@ -325,16 +527,13 @@ p[class^="text_critere"]{
   margin-left: 0.3cm; margin-right: 0.3cm
  }
  .parent_i_text_info{
-   position: absolute;
-  display: flex;
-  flex-direction: row;
   height: 35px; 
+  margin-bottom: 25px;
  }
  .parent_i_info{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 20px; width: 20px;
   border:solid 1.5px; border-color:#F2F2F2;
   border-radius: 10px;
  }
@@ -348,5 +547,216 @@ font-size: 0.8em;
 font-weight: 400;
 padding-left: 0.2cm;  
 }
+/* ---- Debut ZONE MENU ----- */
+ /* ---- Debut ZONE HEBERGEMENTS ---- */
+.titre_marseille{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  padding-left: 0.5cm;
+}
+article[class^="art_heb"]{
+  background-color: white;
+}
+.art_heb_marseille{
+ display: flex;
+ flex-direction: column;
+ justify-content: space-around;
+}
+
+.grp_cartes_heb_marseille{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  height: 100%;
+}
+a[class^="lien_carte"]{
+  text-decoration: none;
+  color:black;
+  border: none;
+  }
+
+.lien_carte_heb{
+  height: 150px;
+}
+
+.container_img_heb{
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 84px;
+  width: auto;
+  padding: 3px;
+  background-color: white;
+}
+
+.img_carte_heb{
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 100%;
+}
+
+p[class^="nom_carte"]{
+  font-size: 0.7em;
+  font-weight: 800;
+  padding-left: 10px;
+  padding-top: 4px;
+  background-color: white;
+}
+.lien_carte_pop{
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+.nom_carte_pop{
+  padding-top: 10px;
+}
+p[class^="tarif_carte"]{
+  font-size: 0.7em;
+  padding-left: 10px;
+  background-color: white;
+}
+.tarif_carte_pop{
+  padding-bottom: 20px;
+}
+p[class^="etoiles"]{
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  padding-left: 10px;
+  font-size: 1.5em;
+  font-weight: 800;
+  height: 20px;
+  color: #0065FC;
+  background-color: white;
+}
+.etoiles_pop{
+  padding-bottom: 3px;
+
+}
+
+.art_heb_pop{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 290px;
+
+}
+.parent_titre-pop_et_i{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 30px;
+  padding-bottom: 0px;
+  background-color: #F2F2F2;
+}
+.grp_cartes_heb_pop{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding-top: 15px;
+  padding-bottom: 20px;
+  width: 100%;
+  background-color: #F2F2F2;
+}
+.corps_carte_pop{
+  display: flex;
+  flex-direction: row;
+}
+.container_img_pop{
+  border-bottom-left-radius: 12px;
+  border-top-left-radius: 12px;
+  height: 105px; width: 98px;
+  padding: 3px;
+  background-color: white;
+} 
+.img_carte_pop{
+  border-bottom-left-radius: 0.3cm; border-top-left-radius: 0.3cm;
+  height: 100%; width: auto;
+}
+.bloc_infos_pop{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  border-bottom-right-radius: 12px; border-top-right-radius: 12px;
+  height: 105px; width: 134px;
+
+  background-color: white;
+}
+.aff_plus{
+  font-size: 0.8em;
+  font-weight: 800;
+  padding-bottom: 35px;
+  padding-left: 20px;
+  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+}
+/* ---- Debut Zone ACTIVITES ---*/
+#activites{
+  margin: auto;
+}
+.titre_act{
+  padding-top: 30px;
+}
+
+.grp_cartes_acts{
+  display: flex;
+  margin: auto;
+}
+a[class^="lien_carte_act"]{
+  height: fit-content;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  margin-left: 0px;
+  margin-right: 0px;
+  }
 
 
+div[class^="container_img_act"]{
+  box-shadow: 2px 2px 2px 2px #F2F2F2;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+}
+
+.grp_cartes_act1{
+  display: flex;
+ }
+
+
+ .grp_cartes_act1-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+ }
+
+.grp_cartes_act2{
+  display: flex;
+}
+.grp_cartes_act2-1{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.img_act{
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  width: 100%; height: 100%;
+}
+.lieu_carte_act{
+  font-size: 0.7em;
+  font-weight: 800;
+  box-shadow: 2px 2px 2px 2px #F2F2F2;
+  padding-top: 13px;
+  padding-left: 10px;
+  padding-bottom: 20px;
+  border-bottom-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+  background-color: white;
+}
+footer{ 
+
+  background-color: rgb(160, 231, 160);
+}
+ 

@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
+    <title>Page Web BOOKI</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=width-device, initial-scale=1.0,user-scalable=no"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css"/>
@@ -9,87 +10,240 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;1,400&display=swap"/>
     <link rel="stylesheet" href="css/Style.css"/>
-    <title>Page Web HEADER</title>
   </head>
   <body>
-   <!--<div id="bloc_page">-->
     <!-- HEADER -->
     <header>
-      <Section id="entete">
+      <section id="entete">
         <div class="parent_logo">
-         <img class="logo" src="./images/logo/Booki3x.png" alt="logo"/>
+          <img class="img_logo" src="./images/logo/Booki_3x.png" alt="logo">
         </div>
         <nav class="nav_types">
-         <a class="choix_heb" href="#hebergements">Hébergements</a>
-         <a class="choix_act" href="#activites">Activités </a>
+          <a class="choix_heb" href="#hebergements">Hébergements</a>
+          <a class="choix_act" href="#activites">Activités</a>
         </nav>
-      </Section>
-       <div class="titres">
+      </section>
+    </header>
+    <main id="bloc_menu">
+      <!-- SECTION TITRES -->
+      <div class="titres">
         <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
         <h2>En plein centre ville ou en pleine nature</h2>
-       </div>
-    </header>
-    <!-- SECTION RECHERCHE -->
-    <section id="recherche">
-     <div class="parent_i_loc">
-      <i class="fas fa-map-marker-alt"></i>
-     </div>
-     <!-- Formulaire pour la sasie de la ville, Pays-->
-     <form method="post" action="#">
-       <p>
-         <input type="text" name="nomville" id="nomville"/>
-        </p>
-     </form>
-      <!-- Text 'Rechercher' pour Desktop ou icone Loupe pour Tel. portable -->
-      <div class="parent_rech">    
-         <p class="rech">Rechercher</p>
-        <i class="fas fa-search" id="i_loupe"></i>
       </div>
-    </section>
-    <!-- SECTION FILTRES et INFO -->
-    <section id="section_filtres_et_info">
-      <div class="bloc_filtre_et_criteres">
-       <P class="text_filtre">Filtres</P>
-       <!-- Groupes Icones et texts de critére-->
-       <div class="bloc_criteres">
-         <!-- Economique -->
-         <div class="parent_i_text_critere1">
-            <div class="parent_i_critere"> 
-              <i class="fas fa-money-bill-wave" id="finance" style="color:#0065FC;"></i>
+      <!-- SECTION RECHERCHE -->
+      <section id="recherche">
+        <div class="parent_i_loc">
+          <i class="fas fa-map-marker-alt" id="i_localisation"></i>
+        </div>
+        <!-- Formulaire pour la sasie de la ville, Pays-->
+        <form method="post" action="#">
+          <p>
+            <input type="text" name="nomville" id="nomville">
+          </p>
+        </form>
+        <!-- Text 'Rechercher' pour Desktop ou icone Loupe pour Tel. portable -->
+        <div class="parent_rech">    
+          <p class="rech">Rechercher</p>
+          <i class="fas fa-search" id="i_loupe"></i>
+        </div>
+      </section>
+      <!-- SECTION FILTRES et INFO -->
+      <section id="section_filtres_et_info">
+        <div class="bloc_filtre_et_criteres">
+          <P class="text_filtre">Filtres</P>
+          <!-- Groupes Icones et texts de critére-->
+          <div class="bloc_criteres">
+            <!-- Economique -->
+            <div class="parent_i_text_critere1">
+              <div class="parent_i_critere"> 
+                <i class="fas fa-money-bill-wave" id="finance" style="color:#0065FC;"></i>
+              </div>
+              <p class="text_critere1">Économique</p>
             </div>
-            <p class="text_critere1">Économique</p>
-         </div>
-         <!-- Familial -->
-         <div class="parent_i_text_critere2">
-           <div class="parent_i_critere"> 
-            <i class="fas fa-child" id="famille" style="color:#0065FC;"></i>
-           </div>
-           <p class="text_critere2">Familial</p>
+            <!-- Familial -->
+            <div class="parent_i_text_critere2">
+              <div class="parent_i_critere"> 
+                <i class="fas fa-child" id="famille" style="color:#0065FC;"></i>
+              </div>
+              <p class="text_critere2">Familial</p>
+            </div>
+            <!-- Romantique -->
+            <div class="parent_i_text_critere3">
+              <div class="parent_i_critere"> 
+                <i class="fas fa-heart" id="romantique" style="color:#0065FC;"></i>
+              </div>
+              <p class="text_critere3">Romantique</p>
+            </div>
+            <!-- Animaux-->
+            <div class="parent_i_text_critere4">
+              <div class="parent_i_critere"> 
+                <i class="fas fa-dog" id="animaux" style="color:#0065FC;"></i>
+              </div>
+              <p class="text_critere4">Animaux autorisés</p>
+            </div>  
           </div>
-         <!-- Romantique -->
-         <div class="parent_i_text_critere3">
-           <div class="parent_i_critere"> 
-            <i class="fas fa-heart" id="romantique" style="color:#0065FC;"></i>
-           </div>
-           <p class="text_critere3">Romantique</p>
+        </div>
+        <!-- Zone INFO-->
+        <div class="parent_i_text_info">
+          <div class="parent_i_info">
+            <i class="fas fa-info" id="info" style="color:#0065FC;"></i>
           </div>
-         <!-- Animaux-->
-         <div class="parent_i_text_critere4">
-           <div class="parent_i_critere"> 
-            <i class="fas fa-dog" id="animaux" style="color:#0065FC;"></i>
-           </div>
-           <p class="text_critere4">Animaux autorisés</p>
-         </div>
-       </div>
-       <!-- Zone INFO-->
-       <div class="parent_i_text_info">
-         <div class="parent_i_info">
-           <i class="fas fa-info" id="info" style="color:#0065FC;"></i>
-         </div>
-          <p class="text_info">Plus de 500 logements sont disponibles dans cette ville.</p>
-       </div>
-      </div>
-    </section>
+          <p class="text_info">Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>  
+      </section>
+      <section id="hebergements">
+       <!-- *** Cartes Hebergements Marseille *** -->
+       <article class="art_heb_marseille">
+         <P class="titre_marseille">Hébergements à Marseille</P> 
+         <div class="grp_cartes_heb_marseille">
+           <a class="lien_carte_heb" href="#">
+              <div class="container_img_heb">
+                <img class="img_carte_heb" src="./images/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="Cannebiére" style="width: 100%;">
+              </div>
+              <p class="nom_carte_heb">Hôtel de la Cannebiére</p>
+              <p class="tarif_carte_heb">Nuit à partir de <span style="font-weight: 800;">25€</span></p>
+              <p class="etoiles_heb">****<span style="color: #F2F2F2;">*</span></p>
+            </a>
+            <a class="lien_carte_heb" href="#">
+              <div class="container_img_heb">
+                 <img class="img_carte_heb" src="./images/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port" style="width: 100%;">
+               </div>
+              <p class="nom_carte_heb">Hôtel du port</p>
+              <p class="tarif_carte_heb">Nuit à partir de <span style="font-weight: 800;">52€</span></p>
+              <p class="etoiles_heb">*****<span style="color: #F2F2F2;"></span></p>
+            </a>
+            <a class="lien_carte_heb" href="#">
+              <div class="container_img_heb">
+                <img class="img_carte_heb" src="./images/hebergements/1_xlarge/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hotel les mouettes" style="width: 100%;">
+               </div>
+               <p class="nom_carte_heb">Hôtel Les mouettes</p>
+               <p class="tarif_carte_heb">Nuit à partir de <span style="font-weight: 800;">76€</span></p>
+               <p class="etoiles_heb">****<span style="color: #F2F2F2;">*</span></p>
+            </a>
+            <a class="lien_carte_heb" href="#">
+               <div class="container_img_heb">
+                 <img class="img_carte_heb" src="./images/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de la mer" style="width: 100%;">
+               </div>
+              <p class="nom_carte_heb">Hôtel de la mer</p>
+              <p class="tarif_carte_heb">Nuit à partir de <span style="font-weight: 800;">46€</span></p>
+              <p class="etoiles_heb">***<span style="color: #F2F2F2;">**</span></p>
+            </a>
+            <a class="lien_carte_heb" href="#">
+              <div class="container_img_heb">
+                <img class="img_carte_heb" src="./images/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge le panier" style="width: 100%;">
+               </div>
+               <p class="nom_carte_heb">Auberge le panier</p>
+               <p class="tarif_carte_heb">Nuit à partir de <span style="font-weight: 800;">23€</span></p>
+               <p class="etoiles_heb">****<span style="color: #F2F2F2;">*</span></p>
+            </a>
+            <a class="lien_carte_heb" href="#">
+              <div class="container_img_heb">
+                <img class="img_carte_heb" src="./images/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel Amina" style="width: 100%;">
+               </div>
+               <p class="nom_carte_heb">Hôtel chez Amina</p>
+               <p class="tarif_carte_heb">Nuit à partir de <span style="font-weight: 800;">96€</span></p>
+               <p class="etoiles_heb">*****<span style="color: #F2F2F2;"></span></p>
+            </a>
+          </div>
+          <p class="aff_plus">Afficher plus</p>
+        </article>
+        <!-- *** Cartes Hebergements populaires *** -->
+        <article class="art_heb_pop">
+          <div class="parent_titre-pop_et_i">
+           <p class="titre_pop">Les plus populaires</p>
+           <i class="fas fa-chart-line" id="i_populaire"></i>
+          </div>
+          <div class="grp_cartes_heb_pop">
+            <a class="lien_carte_pop" href="#">
+             <div class="corps_carte_pop">
+                <div class="container_img_pop">
+                  <img class="img_carte_pop" src="./images/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="Hotel matin du soleil" style="width: 100%;">
+                </div>
+                <div class="bloc_infos_pop">
+                 <p class="nom_carte_pop" style="margin-right: 5px;">Hôtel le soleil du matin</p>
+                 <p class="tarif_carte_pop">Nuit à partir de <span style="font-weight: 800;">128€</span></p>
+                 <p class="etoiles_pop">*****<span style="color: #F2F2F2;"></span></p>
+                </div>
+              </div>
+            </a>
+            <a class="lien_carte_pop" href="#">
+             <div class="corps_carte_pop">
+                <div class="container_img_pop">
+                  <img class="img_carte_pop" src="./images/hebergements/4_small/aw-creative-VGs8z60yT2c-unsplash.jpg" alt="Au couer de l'eau" style="width: 100%;">
+                </div>
+                <div class="bloc_infos_pop">
+                  <p class="nom_carte_pop" style="margin-right: 5px;">Au coeur de l'eau Chambres d'hôtes</p>
+                  <p class="tarif_carte_pop">Nuit à partir de <span style="font-weight: 800;">71€</span></p>
+                  <p class="etoiles_pop">****<span style="color: #F2F2F2;">*</span></p>
+                </div>
+              </div>
+            </a>
+            <a class="lien_carte_pop" href="#">
+             <div class="corps_carte_pop">
+               <div class="container_img_pop">
+                  <img class="img_carte_pop" src="./images/hebergements/4_small/febrian-zakaria-sjvU0THccQA-unsplash.jpg" alt="Hotel tout bleu et blanc" style="width: 100%;">
+                </div>
+                <div class="bloc_infos_pop">
+                 <p class="nom_carte_pop" style="margin-right: 5px;">Hôtel Tout bleu et Blanc</p>
+                 <p class="tarif_carte_pop">Nuit à partir de <span style="font-weight: 800;">68€</span></p>
+                 <p class="etoiles_pop">****<span style="color: #F2F2F2;">*</span></p>
+                </div>
+              </div>
+            </a> 
+          </div>
+        </article>
+      </section>
+      <section id="activites">
+      <!-- SECTION ACTIVITÉS-->
+        <p class="titre_act">Activités à Marseille</p>
+         <div class="grp_cartes_acts">
+          <div class="grp_cartes_act1">
+           <a class="lien_carte_act1" href="#">
+             <div class="container_img_act1">
+               <img class="img_act" src="./images/activites/4_small/reno-laithienne-QUgJhdY5Fyk-unsplash.jpg" alt="Vieux port" style="width: 100%;">
+             </div>
+             <p class="lieu_carte_act">Vieux Port</p>
+           </a>
+           <div class="grp_cartes_act1-1">
+             <a class="lien_carte_act2" href="#">
+               <div class="container_img_act2">
+                 <img class="img_act" src="./images/activites/4_small/paul-hermann-QFTrLdQIRhI-unsplash.jpg" alt="Fort de Pomègues" style="width: 100%;">
+               </div>
+               <p class="lieu_carte_act">Fort de Pomègues</p>
+              </a>
+              <a class="lien_carte_act3" href="#">
+               <div class="container_img_act3">
+                 <img class="img_act" src="./images/activites/4_small/kevin-hikari-rV_Qd1l-VXg-unsplash.jpg" alt="Îles du Frioul" style="width: 100%;">
+               </div>
+               <p class="lieu_carte_act">Îles du Frioul</p>
+              </a>
+            </div>
+          </div>
+          <div class="grp_cartes_act2">
+            <a class="lien_carte_act4" href="#">
+             <div class="container_img_act4">
+               <img class="img_act" src="./images/activites/4_small/kilyan-sockalingum-NR8-cBCN3aI-unsplash.jpg" alt="Les Calanques" style="width: 100%;">
+             </div>
+             <p class="lieu_carte_act">Parc National des Calanques</p>
+            </a>
+            <div class="grp_cartes_act2-1">
+             <a class="lien_carte_act5" href="#">
+               <div class="container_img_act5">
+                  <img class="img_act" src="./images/activites/4_small/florian-wehde-xW9e8gdotxI-unsplash.jpg" alt="Notre Dame" style="width: 100%;">
+                </div>
+                <p class="lieu_carte_act">Notre-Dame-de-la-garde</p>
+              </a>
+              <a class="lien_carte_act6" href="#">
+                <div class="container_img_act6">
+                  <img class="img_act" src="./images/activites/4_small/lena-paulin-wH2-EJoDcV0-unsplash.jpg" alt="Parc Longchamp" style="width: 100%;">
+                </div>
+                <p class="lieu_carte_act">Parc longchamp</p>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
   </body>
 </html>
 
