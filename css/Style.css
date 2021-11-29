@@ -25,7 +25,7 @@ img[class^="img_"]{
   justify-content: flex-start;
   width: auto;
  }
-#bloc_menu, #entete,#recherche_et_filtres{
+#bloc_menu, #entete,#recherche_et_filtres,#pied_de_page{
   width: 997px;
   margin-left: auto;
   margin-right: auto;
@@ -210,7 +210,10 @@ img[class^="img_"]{
   .container_img_act6{
     height: 110px;
   }
-
+#pied_de_page{
+  flex-direction: row;
+  width: 100%;
+}
 }
 /* CSS pour écran larg < 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (max-width: 768px)
@@ -286,7 +289,7 @@ img[class^="img_"]{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
-  width: 7.4cm;
+  width: 310px;
   }
   .titre_marseille{
     background-color: white;
@@ -349,9 +352,11 @@ div[class^="container_img_act"]{
 a[class^="lien_carte_act"]{
   width: 232px;
 }
-footer{
-  top: 30cm;
-  }
+#pied_de_page{
+  flex-direction: column;
+  width: 260px;
+}
+
 }
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
@@ -715,8 +720,6 @@ a[class^="lien_carte_act"]{
   margin-left: 0px;
   margin-right: 0px;
   }
-
-
 div[class^="container_img_act"]{
   box-shadow: 2px 2px 2px 2px #F2F2F2;
   border-top-left-radius: 12px;
@@ -726,8 +729,6 @@ div[class^="container_img_act"]{
 .grp_cartes_act1{
   display: flex;
  }
-
-
  .grp_cartes_act1-1{
   display: flex;
   flex-direction: column;
@@ -759,8 +760,14 @@ div[class^="container_img_act"]{
   border-bottom-right-radius: 12px;
   background-color: white;
 }
-footer{ 
-
+/* ---- SECTION PIED DE PAGE ---- */
+#pied_de_page{
+  display: flex;
   background-color: rgb(160, 231, 160);
 }
+.nav_propos{
+  display: flex;
+  flex-direction: column;
+}
+
  
