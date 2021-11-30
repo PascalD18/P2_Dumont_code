@@ -96,10 +96,8 @@ img[class^="img_"]{
     margin: auto;
   }
 
-}
-/* CSS pour écran larg >= 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-@media screen and (min-width: 768px)
-{
+
+
   #entete{
     display:flex;
     flex-wrap: wrap;
@@ -242,7 +240,7 @@ img[class^="img_"]{
 }
 }
 /* CSS pour écran larg < 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-@media screen and (max-width: 768px)
+@media screen and (max-width: 350px)
 {
    #entete{
     display:flex;
@@ -590,6 +588,7 @@ padding-left: 0.2cm;
 .titre_marseille{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
+  margin: 0px;
   padding-top: 30px;
   padding-bottom: 0px;
   padding-left: 0.5cm;
@@ -639,6 +638,7 @@ a[class^="lien_carte"]{
 p[class^="nom_carte"]{
   font-size: 0.7em;
   font-weight: 800;
+  margin: 0px;
   padding-left: 10px;
   padding-top: 4px;
   background-color: white;
@@ -652,6 +652,7 @@ p[class^="nom_carte"]{
 }
 p[class^="tarif_carte"]{
   font-size: 0.7em;
+  margin: 0px;
   padding-left: 10px;
   background-color: white;
 }
@@ -661,6 +662,7 @@ p[class^="tarif_carte"]{
 p[class^="etoiles"]{
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
+  margin: 0px;
   padding-left: 10px;
   font-size: 1.5em;
   font-weight: 800;
@@ -726,6 +728,7 @@ p[class^="etoiles"]{
 .aff_plus{
   font-size: 0.8em;
   font-weight: 800;
+  margin: 0px;
   padding-bottom: 35px;
   padding-left: 20px;
   border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
