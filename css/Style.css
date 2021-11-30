@@ -50,15 +50,6 @@ img[class^="img_"]{
   padding-left: 20px;
   width: 498.5px;
 }
-}
-/* CSS pour écran larg < 980 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-@media screen and (max-width: 980px){
-#hebergements{
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  width: 780px;
- }
 #bloc_menu{
   width: auto;
  }
@@ -95,9 +86,6 @@ img[class^="img_"]{
     padding-left: 0px;
     margin: auto;
   }
-
-
-
   #entete{
     display:flex;
     flex-wrap: wrap;
@@ -169,7 +157,7 @@ img[class^="img_"]{
     .lien_carte_heb{
      margin-right: 15px;
      margin-left: 15px;
-     width: 190px;
+     width: 40%;
    }
    .aff_plus{
      background-color: #F2F2F2;
@@ -231,12 +219,6 @@ img[class^="img_"]{
   margin-right: auto;
   margin-left: auto;
   background-color:white;
-}
-.nav_heb{
-  margin-left: 150px;
-}
-.nav_ass{
-  margin-left: 220px;
 }
 }
 /* CSS pour écran larg < 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
