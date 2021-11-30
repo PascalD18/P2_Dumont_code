@@ -221,7 +221,7 @@ img[class^="img_"]{
   background-color:white;
 }
 }
-/* CSS pour écran larg < 768 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
+/* CSS pour écran larg < 350 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (max-width: 350px)
 {
    #entete{
@@ -567,6 +567,9 @@ padding-left: 0.2cm;
 }
 /* ---- Debut ZONE MENU ----- */
  /* ---- Debut ZONE HEBERGEMENTS ---- */
+ #hebergement{
+   display: flex;
+ }
 .titre_marseille{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
