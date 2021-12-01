@@ -307,7 +307,7 @@ img[class^="img_"]{
    .grp_cartes_acts{
       flex-direction: column;
     flex-wrap: wrap;
-    width: min-content;
+  
   }
   .grp_cartes_act1{
     flex-direction: column;
@@ -674,7 +674,6 @@ p[class^="etoiles"]{
 .corps_carte_pop{
   display: flex;
   flex-direction: row;
-  width: fit-content;
 }
 .container_img_pop{
   border-bottom-left-radius: 12px;
@@ -735,8 +734,6 @@ div[class^="container_img_act"]{
  }
  .grp_cartes_act1-1{
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
  }
 
 .grp_cartes_act2{
