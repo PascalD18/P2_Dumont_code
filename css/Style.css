@@ -87,9 +87,7 @@ img[class^="img_"]{
     border-bottom:none;
     padding-top: 20px;
   }
-   .titres{
-    width: auto;
-  }
+
 #recherche{
   width: 298px;
 }
@@ -222,6 +220,9 @@ img[class^="img_"]{
     border-top:none;
     padding-bottom: 10px;
   }
+  .titres>h1{
+    width: 5.5cm;
+  }
   #recherche{
     width: 260px;
    }
@@ -259,7 +260,7 @@ img[class^="img_"]{
     align-items: center;
   }
  #hebergements{
-  flex-direction: row;
+  flex-direction: column;
   flex-wrap: wrap-reverse;
   width: 310px;
   }
@@ -268,6 +269,7 @@ img[class^="img_"]{
     width: auto;
   }
   .art_heb_marseille{
+    flex-direction: column;
     margin-right: 0px;
   }
   .grp_cartes_heb_marseille{
@@ -376,6 +378,7 @@ xxxxxxxxxxxxxxxxx CSS HORS MEDIA QUERYS pour toute largeur d'écran xxxxxxxxxxxx
 /* ---- Debut ZONE TITRES ---- */
 .titres{
   display: flex;
+  flex-direction: column;
    font-weight: 800;
 }
 .titres>h1{
