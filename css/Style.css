@@ -93,11 +93,6 @@ img[class^="img_"]{
 #recherche{
   width: 298px;
 }
-  .parent_rech{
-    width: 2.5cm;
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-  }
   .text_filtre{
     margin-top: 0px;
     margin-left: 0.2cm;
@@ -205,8 +200,14 @@ img[class^="img_"]{
     display: none;
   }
 }
-/* XXXXXXXXXX ECRANS LARG < 480 px XXXXXXXXXX */
-@media screen and (max-width: 480px)
+/* XXXXXXXXXX ECRANS LARG >= 480 px XXXXXXXXXX */
+@media screen and (min-width: 480px){
+  .parent_rech{
+    width: 84px;
+  }
+} 
+/* XXXXXXXXXX ECRANS LARG <= 479 px XXXXXXXXXX */
+@media screen and (max-width: 479px)
 {
    #entete{
       flex-direction: column;
@@ -224,10 +225,9 @@ img[class^="img_"]{
   #recherche{
     width: 260px;
    }
-  .parent_rech{
-    width: 1.2cm;
-    border-radius: 0.3cm;
-  }
+.parent_rech{
+  width: 18%;
+}
   .rech{
     display: none;
   }
@@ -390,6 +390,7 @@ xxxxxxxxxxxxxxxxx CSS HORS MEDIA QUERYS pour toute largeur d'écran xxxxxxxxxxxx
 /* ---- Debut ZONE RECHERCHE ---- */
 #recherche{
   display: flex;
+  align-items: center;
   width: 100%;
 }
 .bloc_gauche_rech{
@@ -398,7 +399,7 @@ xxxxxxxxxxxxxxxxx CSS HORS MEDIA QUERYS pour toute largeur d'écran xxxxxxxxxxxx
   justify-content: flex-start;
   align-items: center;
   height: 46px;
-  width: 230px;
+  width: 223px;
   border-style: solid;
   border-bottom-width: 2px;
   border-top-width: 2px;
@@ -407,9 +408,7 @@ xxxxxxxxxxxxxxxxx CSS HORS MEDIA QUERYS pour toute largeur d'écran xxxxxxxxxxxx
   border-color: #f2f2f2;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background-color: white;
+   background-color: white;
 }
 .parent_i_loc{
   display: flex;
@@ -428,6 +427,7 @@ xxxxxxxxxxxxxxxxx CSS HORS MEDIA QUERYS pour toute largeur d'écran xxxxxxxxxxxx
   color:white;
   font-size:0.9em;
   padding-top: 2px;
+  padding-right: 10px;
 }
 .saisie_ville{
   display: flex;
@@ -443,19 +443,27 @@ xxxxxxxxxxxxxxxxx CSS HORS MEDIA QUERYS pour toute largeur d'écran xxxxxxxxxxxx
   height: 42px;
   width: 100%;
 }
+.partie_gauche_parent_rech{
+  height: 46px;
+  width: 10px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  background-color: #0065FC;
+}
 .parent_rech{
   display: flex;
   justify-content: center;
-    align-items: center;
-  height: 42px;
-  width: 18%;
+  align-items: center;
+  height: 46px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
   background-color:#0065FC;
 }
 .rech{
   font-size: 13px;
   color:white;
   font-weight: 800;
-  padding-left: 0.3cm; padding-right: 0.3cm;
+  padding-right: 0.3cm;
 }
 /* ---- Debut ZONE FILTRES ----- */
 .bloc_criteres{
