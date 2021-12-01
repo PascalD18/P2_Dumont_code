@@ -14,14 +14,7 @@ h1[class^="titre"]{
   padding-top: 25px;
   padding-bottom: 5px;
 }
-a[class^="footer"]{
-  text-decoration: none;
-  color:black;
-  border: none;
-  font-weight: 400;
-  font-size: 0.75em;
-  padding-top: 8px;
-}
+
 img[class^="img_"]{
   object-fit: cover;
 }
@@ -31,15 +24,12 @@ img[class^="img_"]{
 @media screen and (min-width: 980px)
 {
 #hebergements{
-  display: flex;
   flex-direction: row;
   justify-content: flex-start;
   width: auto;
  }
 #bloc_menu,#entete,#recherche_et_filtres,#pied_de_page{
   width: 997px;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 .grp_cartes_act1{
@@ -62,16 +52,12 @@ img[class^="img_"]{
  }
 .grp_cartes_act1{
   width: 480px;
-  margin: auto;
- }
+  }
 .grp_cartes_act2{
   width: 480px;
-  margin: auto;
  }
  #pied_de_page{
   width: min-content;
-  margin-left: auto;
-  margin-right: auto;
  }
 }
 /* CSS pour écran larg < 960 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
@@ -79,16 +65,13 @@ img[class^="img_"]{
 
   .grp_cartes_act1{
     padding-right: 0px;
-    margin: auto;
   }
 
   .grp_cartes_act2{
     padding-left: 0px;
-    margin: auto;
   }
   #entete{
-    display:flex;
-    flex-wrap: wrap;
+     flex-wrap: wrap;
     justify-content: space-between;
     
    }
@@ -115,22 +98,17 @@ img[class^="img_"]{
     border-top-right-radius: 10px;
     border-bottom-right-radius: 10px;
   }
-  #i_loupe{
-    display:none;
-  }
   .text_filtre{
     margin-top: 0px;
     margin-left: 0.2cm;
   }
   .bloc_filtre_et_criteres{
-    display: flex;
     flex-direction: row;
     align-items: center;
     margin-top: 15px;
     width: auto;
   }
   .parent_i_text_info{
-    display: flex;
     align-items: flex-end;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -221,13 +199,17 @@ img[class^="img_"]{
   background-color:white;
 }
 }
-/* CSS pour écran larg < 350 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-@media screen and (max-width: 350px)
+/* XXXXXXXXXX ECRANS LARG >480 ET <= 763 PX XXXXXXXXXX*/
+@media screen and (min-width: 480px) and (max-width: 768px){
+  #i_loupe{
+    display: none;
+  }
+}
+/* XXXXXXXXXX ECRANS LARG < 480 px XXXXXXXXXX */
+@media screen and (max-width: 480px)
 {
    #entete{
-    display:flex;
-    flex-direction: column;
-
+      flex-direction: column;
     }
   .parent_logo{
     justify-content: center;
@@ -239,19 +221,9 @@ img[class^="img_"]{
     border-top:none;
     padding-bottom: 10px;
   }
-  .nav_types{
-    margin-left: auto;
-    margin-right: auto;
-  }
-
-  .titres{
-    width: 6cm;
-    margin: auto;
-   }
   #recherche{
     width: 260px;
-    margin: auto;
-  }
+   }
   .parent_rech{
     width: 1.2cm;
     border-radius: 0.3cm;
@@ -264,20 +236,16 @@ img[class^="img_"]{
     margin-left: 20px;
   }
   .bloc_filtre_et_criteres{
-    display: flex;
-    flex-direction: column;
+       flex-direction: column;
     justify-content: space-around;
     width: 273px;
-    margin: auto;
   }
   
   .parent_i_text_info{
-    display: flex;
     flex-direction: row;
     align-items: center;
     padding-top: 15px;
     width: 273px;
-    margin: auto;
    }
    .parent_i_info{
      margin-bottom: 12px;
@@ -291,7 +259,6 @@ img[class^="img_"]{
     align-items: center;
   }
  #hebergements{
-  display: flex;
   flex-direction: row;
   flex-wrap: wrap-reverse;
   width: 310px;
@@ -336,8 +303,7 @@ img[class^="img_"]{
     text-align: left;
   }
    .grp_cartes_acts{
-    display: flex;
-    flex-direction: column;
+      flex-direction: column;
     flex-wrap: wrap;
     width: min-content;
   }
@@ -368,12 +334,13 @@ a[class^="lien_carte_act"]{
 }
 }
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
+xxxxxxxxxxxxxxxxx CSS HORS MEDIA QUERYS pour toute largeur d'écran xxxxxxxxxxxx
  ---- Debut ZONE ENTETE ---- */
+ #entete{
+   display: flex;
+ }
 .parent_logo{
   display: flex;
-  flex-direction: row;
-  align-items: center;
   margin-left: 0.6cm;
   height:2cm;
 }
@@ -384,8 +351,6 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
 }
 .nav_types{
   display:flex;
- flex-direction: row;
- justify-content: space-around;
   padding-bottom: 15px;
   width: 6cm;
 }
@@ -411,8 +376,7 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
 /* ---- Debut ZONE TITRES ---- */
 .titres{
   display: flex;
-  flex-direction: column;
-  font-weight: 800;
+   font-weight: 800;
 }
 .titres>h1{
   font-size: 1em;
@@ -428,7 +392,7 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
   display: flex;
   flex-direction: row;
   align-items: center;
-  height: 1.1cm;
+   height:44px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   border-top-right-radius: 10px;
@@ -437,9 +401,8 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
 }
 .parent_i_loc{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 42px; width:45px;
+  height: 42px;
+  width:17%;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   background-color: #F2F2F2;
@@ -452,18 +415,18 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
   font-size:0.9em;
   padding-top: 2px;
 }
+.saisie_ville{
+  width: 65%;
+}
 #nomville{
   border-style:none;
   font-size: 0.9em;
   font-weight:800;
   padding-left: 0.3cm;
-  height: 1cm; width: 4.5cm;
+  height: 42px;
 }
 .parent_rech{
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   height: 1.1cm;
   background-color:#0065FC;
 }
@@ -476,7 +439,6 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
 /* ---- Debut ZONE FILTRES ----- */
 .bloc_criteres{
   display: flex;
-  flex-wrap: wrap;
   margin-top: 0.2cm;
 }
 #section_filtres_et_info{
@@ -488,7 +450,9 @@ xxxxxxxxxxxxxxxxx CSS pour toute largeur d'écran xxxxxxxxxxxx
   font-weight: 800;
    width: 1.8cm;
 }
-
+.bloc_filtre_et_criteres{
+  display: flex;
+}
 div[class*="parent_i_text_critere"]{
   display: flex;
   flex-direction: row;
@@ -545,13 +509,12 @@ p[class^="text_critere"]{
   margin-left: 0.3cm; margin-right: 0.3cm
  }
  .parent_i_text_info{
+   display: flex;
   height: 35px; 
   margin-bottom: 25px;
  }
  .parent_i_info{
   display: flex;
-  justify-content: center;
-  align-items: center;
   border:solid 1.5px; border-color:#F2F2F2;
   border-radius: 10px;
  }
@@ -567,7 +530,7 @@ padding-left: 0.2cm;
 }
 /* ---- Debut ZONE MENU ----- */
  /* ---- Debut ZONE HEBERGEMENTS ---- */
- #hebergement{
+ #hebergements{
    display: flex;
  }
 .titre_marseille{
@@ -583,8 +546,6 @@ article[class^="art_heb"]{
 }
 .art_heb_marseille{
  display: flex;
- flex-direction: column;
- justify-content: space-around;
 }
 
 .grp_cartes_heb_marseille{
@@ -657,15 +618,12 @@ p[class^="etoiles"]{
 }
 .etoiles_pop{
   padding-bottom: 3px;
-
 }
-
 .art_heb_pop{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   width: 290px;
-
 }
 .parent_titre-pop_et_i{
   display: flex;
@@ -678,9 +636,6 @@ p[class^="etoiles"]{
 }
 .grp_cartes_heb_pop{
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
   padding-top: 15px;
   padding-bottom: 20px;
   width: 100%;
@@ -703,8 +658,6 @@ p[class^="etoiles"]{
 }
 .bloc_infos_pop{
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
   border-bottom-right-radius: 12px; border-top-right-radius: 12px;
   height: 105px; width: 134px;
 
@@ -728,7 +681,6 @@ p[class^="etoiles"]{
 
 .grp_cartes_acts{
   display: flex;
-  margin: auto;
 }
 a[class^="lien_carte_act"]{
   height: fit-content;
@@ -757,8 +709,6 @@ div[class^="container_img_act"]{
 }
 .grp_cartes_act2-1{
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
 }
 
 .img_act{
@@ -782,10 +732,17 @@ div[class^="container_img_act"]{
   display: flex;
   margin-top: 10px;
 }
+a[class^="footer"]{
+  text-decoration: none;
+  color:black;
+  border: none;
+  font-weight: 400;
+  font-size: 0.75em;
+  padding-top: 8px;
+}
 .nav_propos,.nav_heb,.nav_ass{
   display: flex;
-  flex-direction: column;
-   
+  
 }
 
 
