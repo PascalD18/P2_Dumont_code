@@ -32,19 +32,21 @@
     <nav id="recherche_et_filtres">
       <!-- SECTION RECHERCHE -->
       <section id="recherche">
-        <div class="parent_i_loc">
-          <i class="fas fa-map-marker-alt" id="i_localisation"></i>
+        <div class="bloc_gauche_rech">
+          <div class="parent_i_loc">
+           <i class="fas fa-map-marker-alt" id="i_localisation"></i>
+         </div>
+         <!-- Formulaire pour la sasie de la ville, Pays-->
+         <form class="saisie_ville" method="post" action="#">
+           <p>
+             <input type="text" name="nomville" id="nomville">
+           </p>
+          </form>
         </div>
-        <!-- Formulaire pour la sasie de la ville, Pays-->
-        <form class="saisie_ville" method="post" action="#">
-          <p>
-            <input type="text" name="nomville" id="nomville">
-          </p>
-        </form>
         <!-- Text 'Rechercher' pour Desktop ou icone Loupe pour Tel. portable -->
         <div class="parent_rech">    
-          <p class="rech">Rechercher</p>
-          <i class="fas fa-search" id="i_loupe"></i>
+         <p class="rech">Rechercher</p>
+         <i class="fas fa-search" id="i_loupe"></i>
         </div>
       </section>
       <!-- SECTION FILTRES et INFO -->
