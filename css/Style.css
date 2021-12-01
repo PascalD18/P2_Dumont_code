@@ -137,10 +137,7 @@ img[class^="img_"]{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;    
    }
-    .grp_cartes_heb_pop{
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-   }
+
    
    .grp_cartes_acts{
     flex-direction: row;
@@ -294,7 +291,7 @@ img[class^="img_"]{
   }
   .grp_cartes_heb_pop{
     flex-direction: column;
-    justify-content: space space-around;
+    justify-content: space-around;
     align-items: center;
     width: 100%;
     border-bottom-left-radius: 0px;
@@ -677,11 +674,13 @@ p[class^="etoiles"]{
 .corps_carte_pop{
   display: flex;
   flex-direction: row;
+  width: fit-content;
 }
 .container_img_pop{
   border-bottom-left-radius: 12px;
   border-top-left-radius: 12px;
-  height: 105px; width: 98px;
+  height: 105px;
+  width: 40%;
   padding: 3px;
   background-color: white;
 } 
@@ -695,7 +694,7 @@ p[class^="etoiles"]{
   border-bottom-right-radius: 12px;
   border-top-right-radius: 12px;
   height: 105px;
-  width: 83%;
+  width: 60%;
   
   background-color: white;
 }
