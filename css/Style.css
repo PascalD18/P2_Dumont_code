@@ -133,10 +133,7 @@ img[class^="img_"]{
    .aff_plus{
      background-color: #F2F2F2;
    }
-   .art_heb_pop{
-     margin-left: 10px;
-   }
-   .parent_titre-pop_et_i{
+     .parent_titre-pop_et_i{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;    
    }
@@ -260,7 +257,7 @@ img[class^="img_"]{
     align-items: center;
   }
  #hebergements{
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: wrap-reverse;
   width: 310px;
   }
@@ -287,16 +284,22 @@ img[class^="img_"]{
     background-color: white;
   }
   .art_heb_pop{
-    margin-left: 0px;
+    flex-direction: column;
+    justify-content: flex-start;
+     width: 100%;
   }
   .parent_titre-pop_et_i{
     border-top-left-radius: 0px;
     border-top-right-radius: 0px;    
   }
   .grp_cartes_heb_pop{
+    flex-direction: column;
+    justify-content: space space-around;
+    align-items: center;
+    width: 100%;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
-    width: 6.5cm;
+
   }
   #activites{
     width: min-content;
@@ -617,13 +620,14 @@ p[class^="nom_carte"]{
   font-size: 0.7em;
   font-weight: 800;
   margin: 0px;
-  padding-left: 10px;
+  padding-left: 10px;   
   padding-top: 4px;
   background-color: white;
 }
 .lien_carte_pop{
   margin-top: 8px;
   margin-bottom: 8px;
+  width: 83%;
 }
 .nom_carte_pop{
   padding-top: 10px;
@@ -653,9 +657,7 @@ p[class^="etoiles"]{
 }
 .art_heb_pop{
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  width: 290px;
+ 
 }
 .parent_titre-pop_et_i{
   display: flex;
@@ -670,7 +672,6 @@ p[class^="etoiles"]{
   display: flex;
   padding-top: 15px;
   padding-bottom: 20px;
-  width: 100%;
   background-color: #F2F2F2;
 }
 .corps_carte_pop{
@@ -690,9 +691,12 @@ p[class^="etoiles"]{
 }
 .bloc_infos_pop{
   display: flex;
-  border-bottom-right-radius: 12px; border-top-right-radius: 12px;
-  height: 105px; width: 134px;
-
+  flex-direction: column;
+  border-bottom-right-radius: 12px;
+  border-top-right-radius: 12px;
+  height: 105px;
+  width: 83%;
+  
   background-color: white;
 }
 .aff_plus{
