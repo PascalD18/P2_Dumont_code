@@ -391,8 +391,10 @@ xxxxxxxxxxxxxxxxx CSS HORS MEDIA QUERYS pour toute largeur d'écran xxxxxxxxxxxx
 #recherche{
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   align-items: center;
-   height:44px;
+  height:44px;
+  width: 90%;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   border-top-right-radius: 10px;
@@ -401,6 +403,8 @@ xxxxxxxxxxxxxxxxx CSS HORS MEDIA QUERYS pour toute largeur d'écran xxxxxxxxxxxx
 }
 .parent_i_loc{
   display: flex;
+  justify-content: center;
+    align-items: center;
   height: 42px;
   width:17%;
   border-top-left-radius: 8px;
@@ -424,10 +428,14 @@ xxxxxxxxxxxxxxxxx CSS HORS MEDIA QUERYS pour toute largeur d'écran xxxxxxxxxxxx
   font-weight:800;
   padding-left: 0.3cm;
   height: 42px;
+  width: 100%;
 }
 .parent_rech{
   display: flex;
-  height: 1.1cm;
+  justify-content: center;
+    align-items: center;
+  height: 42px;
+  width: 18%;
   background-color:#0065FC;
 }
 .rech{
