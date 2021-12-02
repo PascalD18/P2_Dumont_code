@@ -12,7 +12,6 @@ p[class^="titre"]{
 h1[class^="titre"]{
   font-weight: 800;
   font-size: 0.75em;
-  padding-top: 25px;
   padding-bottom: 5px;
 }
 
@@ -167,14 +166,12 @@ img[class^="img_"]{
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  background-color: aqua;
 }
 .grp_cartes_act2{
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  background-color: rgb(31, 88, 88);
 }
 a[class^="lien_carte_act"]{
   width: 90%;
@@ -197,7 +194,10 @@ a[class^="lien_carte_act"]{
   .parent_i_text_info{
     align-items: center;
   }
-
+.titre_marseille{
+  padding-left: 7%;
+  background-color: #F2F2F2;
+}
   .art_heb_marseille{
     flex-direction: column;
     margin-right: 20px;
@@ -205,6 +205,9 @@ a[class^="lien_carte_act"]{
    }
    .art_heb_pop{
      width: 30%;
+   }
+   .aff_plus{
+     background-color: #F2F2F2;
    }
    .grp_cartes_act1-1,.grp_cartes_act2-1{
     flex-direction: column;
@@ -231,10 +234,9 @@ a[class^="lien_carte_act"]{
   }
   #pied_de_page{
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-between;
     padding-left: 0px;
-    margin-right: auto;
-    margin-left: auto;
+    width: 80%;
     background-color:white;
   }
   .nav_propos,.nav_heb,.nav_ass{
@@ -313,6 +315,7 @@ a[class^="lien_carte_act"]{
   }
   .titre_marseille{
     background-color: white;
+    padding-left: 10%;
     width: auto;
   }
   .art_heb_marseille{
@@ -374,16 +377,16 @@ a[class^="lien_carte_act"]{
     width: 80%;
   }
 div[class^="container_img_act"]{
-  box-shadow: 2px 2px 2px 2px #F2F2F2;
- height: 75px;  
+  height: 75px;  
 }
 .lien_carte_act{
   box-shadow: 2px 2px 2px 2px #F2F2F2;
 }
 #pied_de_page{
   flex-direction: column;  
-  width: 100%;
+  width: 90%;
   padding-left: 20px;
+  margin: auto;
   background-color: #F2F2F2;
 }
 .nav_propos,.nav_heb,.nav_ass{
@@ -640,7 +643,7 @@ padding-left: 0.2cm;
   margin: 0px;
   padding-top: 30px;
   padding-bottom: 0px;
-  padding-left: 10%;
+
 }
 article[class^="art_heb"]{
   background-color: white;
@@ -797,6 +800,7 @@ a[class^="lien_carte_act"]{
   }
 div[class^="container_img_act"]{
   width: 100%;
+  box-shadow: 2px 2px 2px 2px #F2F2F2;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -812,6 +816,7 @@ div[class^="container_img_act"]{
   padding-left: 10px;
   padding-bottom: 20px;
   margin: 0px;
+  box-shadow: 2px 2px 2px 2px #F2F2F2;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   background-color: white;
@@ -819,8 +824,6 @@ div[class^="container_img_act"]{
 /* ---- SECTION PIED DE PAGE ---- */
 #pied_de_page{
   display: flex;
-   margin-top: 10px;
-  width: 100%;
 }
 a[class^="footer"]{
   text-decoration: none;
