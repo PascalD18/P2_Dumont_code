@@ -73,11 +73,7 @@ img[class^="img_"]{
   .grp_cartes_act2{
     padding-left: 0px;
   }
-  #entete{
-     flex-wrap: wrap;
-    justify-content: space-between;
-    
-   }
+
   .choix_heb,.choix_act{
     border-top-style: solid;
     border-color: white;
@@ -88,10 +84,7 @@ img[class^="img_"]{
 #recherche{
   width: 298px;
 }
-  .text_filtre{
-    margin-top: 0px;
-    margin-left: 0.2cm;
-  }
+
   .bloc_filtre_et_criteres{
     flex-direction: row;
     align-items: center;
@@ -113,10 +106,7 @@ img[class^="img_"]{
    .titre_marseille{
      background-color: #F2F2F2;
    }
-   .art_heb_marseille{
-    margin-right: 20px;
-    width: 70%;
-   }
+ 
    .grp_cartes_heb_marseille{
     padding-left: 10px;
     padding-right: 10px;
@@ -139,7 +129,7 @@ img[class^="img_"]{
     flex-wrap: wrap;
     justify-content: space-between;
   
-  }/*
+  }
   a[class^="lien_carte_act"]{
     width: 220px;
   }
@@ -174,19 +164,44 @@ img[class^="img_"]{
   margin-right: auto;
   margin-left: auto;
   background-color:white;
-}*/
+}
 }
 /* XXXXXXXXXX ECRANS LARG >480 ET <= 763 PX XXXXXXXXXX*/
 @media screen and (min-width: 480px) and (max-width: 768px){
-  #i_loupe{
-    display: none;
-  }
+.grp_cartes_heb_marseille{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.lien_carte_heb{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 40%;
+}
 }
 /* XXXXXXXXXX ECRANS LARG >= 480 px XXXXXXXXXX */
 @media screen and (min-width: 480px){
+  #entete{
+    justify-content: space-between;
+   }
   .parent_rech{
     width: 84px;
   }
+  #i_loupe{
+    display: none;
+  }
+  .text_filtre{
+    margin-left: 8px;
+  }
+  .art_heb_marseille{
+    flex-direction: column;
+    margin-right: 20px;
+    width: 70%;
+   }
+   .art_heb_pop{
+     width: 30%;
+   }
 } 
 /* XXXXXXXXXX ECRANS LARG <= 479 px XXXXXXXXXX */
 @media screen and (max-width: 479px)
@@ -198,7 +213,6 @@ img[class^="img_"]{
   .parent_logo{
     justify-content: center;
     align-items: center;
-    width: 80px;
   }
   .nav_types{
     align-items: center;
@@ -238,9 +252,6 @@ img[class^="img_"]{
    flex-direction: row;
    flex-wrap: wrap;
     width: 100%;
-  }
-  .bloc_criteres{
-    flex-wrap: wrap;
   }
   .parent_i_text_info{
     justify-content: center;
@@ -292,8 +303,6 @@ img[class^="img_"]{
     background-color: white;
   }
   .art_heb_pop{
-    flex-direction: column;
-    justify-content: flex-start;
      width: 100%;
   }
   .parent_titre-pop_et_i{
@@ -301,9 +310,6 @@ img[class^="img_"]{
     border-top-right-radius: 0px;    
   }
   .grp_cartes_heb_pop{
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
     width: 100%;
     border-bottom-left-radius: 0px;
     border-bottom-right-radius: 0px;
@@ -352,6 +358,7 @@ a[class^="lien_carte_act"]{
 .parent_logo{
   display: flex;
   margin-top: 10px;
+  width: 60px;
 }
 .img_logo{
   margin-left: 40px;
@@ -482,16 +489,18 @@ a[class^="lien_carte_act"]{
 .bloc_criteres{
   display: flex;
   flex-direction: row;
-  margin-top: 0.2cm;
+  flex-wrap: wrap;
+   margin-top: 0.2cm;
 }
 #section_filtres_et_info{
   display: flex;
   flex-direction: column;
+ 
   }
 .text_filtre{
   font-size: 0.9em;
   font-weight: 800;
-   width: 1.8cm;
+   width:75px;
 }
 .bloc_filtre_et_criteres{
   display: flex;
@@ -506,6 +515,7 @@ div[class*="parent_i_text_critere"]{
   border-top-left-radius: 19px; border-top-right-radius: 19px;
   border-bottom-left-radius: 19px; border-bottom-right-radius: 19px;
   height: 38px;
+  width: fit-content;
   margin-left: 0.3cm;
   margin-bottom: 10px;
 }
@@ -667,7 +677,9 @@ p[class^="etoiles"]{
 }
 .art_heb_pop{
   display: flex;
- 
+  flex-direction: column;
+  justify-content: flex-start;
+
 }
 .parent_titre-pop_et_i{
   display: flex;
@@ -680,6 +692,9 @@ p[class^="etoiles"]{
 }
 .grp_cartes_heb_pop{
   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   padding-top: 5px;
   padding-bottom: 20px;
   background-color: #F2F2F2;
