@@ -197,7 +197,7 @@ img[class^="img_"]{
   .parent_logo{
     justify-content: center;
     align-items: center;
-    width: 15%;
+    width: 80px;
   }
   .nav_types{
     align-items: center;
@@ -208,11 +208,20 @@ img[class^="img_"]{
     border-top:none;
     padding-bottom: 10px;
   }
-  .titres>h1{
-    width: 5.5cm;
+  .titres_entete{
+    align-items: center;
   }
-  #recherche{
-    width: 260px;
+  .titres_entete>h1,.titres_entete>h2{
+    width: 70%;
+  }
+  #recherche_et_filtres{
+    justify-content: center;
+  }
+   #recherche{
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+
    }
 .parent_rech{
   width: 18%;
@@ -225,16 +234,16 @@ img[class^="img_"]{
     margin-left: 20px;
   }
   .bloc_filtre_et_criteres{
-       flex-direction: column;
-    justify-content: space-around;
-    width: 273px;
+   flex-direction: row;
+   flex-wrap: wrap;
+    width: 100%;
   }
-  
+  .bloc_criteres{
+    flex-wrap: wrap;
+  }
   .parent_i_text_info{
-    flex-direction: row;
-    align-items: center;
-    padding-top: 15px;
-    width: 273px;
+    justify-content: center;
+    width: 90%;
    }
    .parent_i_info{
      margin-bottom: 12px;
@@ -327,7 +336,8 @@ a[class^="lien_carte_act"]{
   padding-left: 20px;
   background-color: #F2F2F2;
 }
-.nav_heb,.nav_ass{
+.nav_propos,.nav_heb,.nav_ass{
+  flex-direction: column;
   margin-left: 0px;
 }
 }
@@ -342,9 +352,8 @@ xxxxxxxxxxxxxxxxx CSS HORS MEDIA QUERYS pour toute largeur d'écran xxxxxxxxxxxx
   margin-top: 10px;
 }
 .img_logo{
-  width: 1.9cm;
-  margin-left: 0.9cm;
-  margin-right: 0.9cm;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 .nav_types{
   display:flex;
@@ -371,24 +380,28 @@ xxxxxxxxxxxxxxxxx CSS HORS MEDIA QUERYS pour toute largeur d'écran xxxxxxxxxxxx
   color: #0065FC;
 }
 /* ---- Debut ZONE TITRES ---- */
-.titres{
+.titres_entete{
   display: flex;
   flex-direction: column;
-   font-weight: 800;
+  font-weight: 800;
 }
-.titres>h1{
+.titres_entete>h1{
   font-size: 1em;
   padding-top: 0px;
 }
-.titres>h2 {
+.titres_entete>h2 {
   font-weight: 400;
   font-size: 0.72em;
   padding-bottom: 22px;
 }
 /* ---- Debut ZONE RECHERCHE ---- */
+#recherche_et_filtres{
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 #recherche{
   display: flex;
-  align-items: center;
   width: 100%;
 }
 .bloc_gauche_rech{
@@ -466,6 +479,7 @@ xxxxxxxxxxxxxxxxx CSS HORS MEDIA QUERYS pour toute largeur d'écran xxxxxxxxxxxx
 /* ---- Debut ZONE FILTRES ----- */
 .bloc_criteres{
   display: flex;
+  flex-direction: row;
   margin-top: 0.2cm;
 }
 #section_filtres_et_info{
@@ -536,17 +550,21 @@ p[class^="text_critere"]{
   margin-left: 0.3cm; margin-right: 0.3cm
  }
  .parent_i_text_info{
-   display: flex;
+  display: flex;
   height: 35px; 
-  margin-bottom: 25px;
+  margin-top: 15px;
+  margin-bottom: 15px;
  }
  .parent_i_info{
   display: flex;
-  border:solid 1.5px; border-color:#F2F2F2;
+  flex-direction: row;
+  border:solid 1.5px;
   border-radius: 10px;
+  border-color:#F2F2F2;
  }
 #info{
   font-size: 9px;
+  padding-top: 15px;
   margin-right: 0.2cm;
   margin-left: 0.2cm
 }
@@ -754,6 +772,7 @@ a[class^="footer"]{
 }
 .nav_propos,.nav_heb,.nav_ass{
   display: flex;
+  
   
 }
 
