@@ -203,8 +203,16 @@ a[class^="lien_carte_act"]{
     margin-right: 20px;
     width: 70%;
    }
+   .parent_titre-pop_et_i{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+   }
    .art_heb_pop{
      width: 30%;
+   }
+   .grp_cartes_heb_pop{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
    }
    .aff_plus{
      background-color: #F2F2F2;
@@ -279,7 +287,7 @@ a[class^="lien_carte_act"]{
 
    }
 .parent_rech{
-  width: 18%;
+  width: 10%;
 }
   .rech{
     display: none;
@@ -457,15 +465,15 @@ div[class^="container_img_act"]{
 }
 #recherche{
   display: flex;
-  width: 100%;
-}
+  align-items: center;
+  }
 .bloc_gauche_rech{
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  height: 46px;
-  width: 223px;
+  height: 40px;
+  width: 216px;
   border-style: solid;
   border-bottom-width: 2px;
   border-top-width: 2px;
@@ -480,8 +488,8 @@ div[class^="container_img_act"]{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 46px;
-  width:45px;
+  height: 40px;
+  width:60px;
   border-top-left-radius: 8px;
   border-bottom-left-radius: 8px;
   background-color: #F2F2F2;
@@ -489,29 +497,24 @@ div[class^="container_img_act"]{
 #i_localisation{
   font-size: 1em;
 }
-#i_loupe{
-  color:white;
-  font-size:0.9em;
-  padding-top: 2px;
-  padding-right: 10px;
-}
+
 .saisie_ville{
   display: flex;
   align-items: center;
-  height: 42px;
-  width: 168px;
+  height: 38px;
+  width: 224px;
 }
 #nomville{
   border-style:none;
   font-size: 0.9em;
   font-weight:800;
   padding-left: 0.3cm;
-  height: 42px;
+  height: 38px;
   width: 100%;
 }
 .partie_gauche_parent_rech{
-  height: 46px;
-  width: 10px;
+  height: 40px;
+  width: 16px;
   border-top-left-radius: 10px;
   border-bottom-left-radius: 10px;
   background-color: #0065FC;
@@ -520,16 +523,22 @@ div[class^="container_img_act"]{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 46px;
+  height: 40px;
   border-top-right-radius: 10px;
   border-bottom-right-radius: 10px;
   background-color:#0065FC;
+}
+#i_loupe{
+  color:white;
+  font-size:0.8em;
+  padding-top: 2px;
+  padding-right: 10px;
 }
 .rech{
   font-size: 13px;
   color:white;
   font-weight: 800;
-  padding-right: 0.3cm;
+  padding-right: 12px;
 }
 /* ---- Debut ZONE FILTRES ----- */
 .bloc_criteres{
@@ -688,7 +697,7 @@ p[class^="nom_carte"]{
   font-weight: 800;
   margin: 0px;
   padding-left: 10px;   
-  padding-top: 4px;
+  padding-top: 10px;
   background-color: white;
 }
 .lien_carte_pop{
@@ -702,6 +711,7 @@ p[class^="nom_carte"]{
 p[class^="tarif_carte"]{
   font-size: 0.7em;
   margin: 0px;
+  padding-top: 5px;
   padding-left: 10px;
   background-color: white;
 }
@@ -742,8 +752,7 @@ p[class^="etoiles"]{
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
-  padding-top: 5px;
-  padding-bottom: 20px;
+  padding-top: 15px;
   background-color: #F2F2F2;
 }
 .corps_carte_pop{
