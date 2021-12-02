@@ -97,9 +97,7 @@ img[class^="img_"]{
     border-top-right-radius: 20px;
      width: auto;
    }
-   .parent_i_info{
-     margin-bottom: 0px;
-   }
+
    .text_info{
      margin-top: 0cm;
    }
@@ -110,6 +108,8 @@ img[class^="img_"]{
    .grp_cartes_heb_marseille{
     padding-left: 10px;
     padding-right: 10px;
+    flex-wrap: wrap;
+    justify-content: space-around;
      background-color:#F2F2F2;
    }
     .lien_carte_heb{
@@ -124,12 +124,7 @@ img[class^="img_"]{
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;    
    }
-  .grp_cartes_act1{
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  
-  }
+
   a[class^="lien_carte_act"]{
     width: 220px;
   }
@@ -142,12 +137,12 @@ img[class^="img_"]{
   .container_img_act3{
     height: 75px; 
    }
-   .grp_cartes_act2{
+   .grp_cartes_acts{
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: space-around;
  
   }
+
   .container_img_act4{
     height: 285px;
   }
@@ -179,6 +174,31 @@ img[class^="img_"]{
   justify-content: space-around;
   width: 40%;
 }
+.grp_cartes_act1{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  background-color: aqua;
+}
+.grp_cartes_act2{
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  background-color: rgb(31, 88, 88);
+}
+.grp_cartes_act1-1{
+  align-items: center;
+  width: 100%;
+}
+.grp_cartes_act2-1{
+  align-items: center;
+  width: 100%;
+}
+a[class^="lien_carte_act"]{
+  width: 90%;
+}
 }
 /* XXXXXXXXXX ECRANS LARG >= 480 px XXXXXXXXXX */
 @media screen and (min-width: 480px){
@@ -194,6 +214,9 @@ img[class^="img_"]{
   .text_filtre{
     margin-left: 8px;
   }
+  .parent_i_info{
+    margin-bottom: 10px;
+  }
   .art_heb_marseille{
     flex-direction: column;
     margin-right: 20px;
@@ -202,6 +225,10 @@ img[class^="img_"]{
    .art_heb_pop{
      width: 30%;
    }
+   .grp_cartes_act1-1,.grp_cartes_act2-1{
+    flex-direction: column;
+  }
+
 } 
 /* XXXXXXXXXX ECRANS LARG <= 479 px XXXXXXXXXX */
 @media screen and (max-width: 479px)
@@ -316,7 +343,7 @@ img[class^="img_"]{
 
   }
   #activites{
-    flex-direction: column;
+
     width: 100%;
   }
   .titre_act{
@@ -576,9 +603,10 @@ p[class^="text_critere"]{
  }
 #info{
   font-size: 9px;
-  padding-top: 15px;
-  margin-right: 0.2cm;
-  margin-left: 0.2cm
+  padding-top: 4px;
+  padding-bottom: 5px;
+  margin-right: 8px;
+  margin-left: 8px;
 }
 .text_info{
 font-size: 0.8em;
@@ -736,6 +764,7 @@ p[class^="etoiles"]{
 /* ---- Debut Zone ACTIVITES ---*/
 #activites{
   display: flex;
+  flex-direction: column;
 }
 .titre_act{
   padding-top: 30px;
