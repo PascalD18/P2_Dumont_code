@@ -20,72 +20,7 @@ img[class^="img_"]{
   height: 100%;
   width: 100%;
 }
-/* CSS pour écran larg >=980 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-/*
-@media screen and (min-width: 980px){
-#hebergements{
-  flex-direction: row;
-  justify-content: flex-start;
-  width: auto;
- }
-#bloc_menu,#entete,#recherche_et_filtres,#pied_de_page{
-  width: 997px;
-}
-.grp_cartes_act1{
-  padding-right: 20px;
-  width: 498.5px;
-}
-.grp_cartes_act2{
-  padding-left: 20px;
-  width: 498.5px;
-}
-#bloc_menu{
-  width: auto;
- }
 
-
-}
-*/
-/* CSS pour écran larg < 960 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-/*
-@media screen and (max-width: 960px){*/
-/*
-  .grp_cartes_act1{
-    padding-right: 0px;
-  }
-
-  .grp_cartes_act2{
-    padding-left: 0px;
-  }
-
-  .choix_heb,.choix_act{
-    border-top-style: solid;
-    border-color: white;
-    border-bottom:none;
-    padding-top: 20px;
-  }
-
-
-
-  .bloc_filtre_et_criteres{
-    flex-direction: row;
-    align-items: center;
-    margin-top: 15px;
-    width: auto;
-  }
-  .parent_i_text_info{
-    align-items: flex-end;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-     width: auto;
-   }
-
-   .text_info{
-     margin-top: 0cm;
-   }
-   .titre_marseille{
-     background-color: #F2F2F2;
-   }*/
    .grp_cartes_heb_marseille{
     padding-left: 10px;
     padding-right: 10px;
@@ -97,24 +32,7 @@ img[class^="img_"]{
      margin-right: 15px;
      margin-left: 15px;
      width: 40%;
-   }/*
-   .aff_plus{
-     background-color: #F2F2F2;
    }
-     .parent_titre-pop_et_i{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;    
-   }
-/*
-  a[class^="lien_carte_act"]{
-    width: 220px;
-  }
-*/
-
-
- 
-
-
 /* XXXXXXXXXX ECRANS LARG > 763 PX XXXXXXXXXX*/
 @media screen and (min-width: 763px) {
   .lien_carte_heb{
@@ -138,15 +56,7 @@ img[class^="img_"]{
    }
    .lien_carte_act2,.lien_carte_act3,.lien_carte_act5,.lien_carte_act6{
      width: 80%;
-   }/*
-   #pied_de_page{
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-left: 0px;
-    margin-right: auto;
-    margin-left: auto;
-    background-color:white;
-  }*/
+   }
 }
 /* XXXXXXXXXX ECRANS LARG >480 ET <= 763 PX XXXXXXXXXX*/
 @media screen and (min-width: 480px) and (max-width: 768px){
@@ -182,6 +92,12 @@ a[class^="lien_carte_act"]{
   #entete{
     justify-content: space-between;
    }
+   .choix_heb,.choix_act{
+    border-top-style: solid;
+    border-color: #F2F2F2;
+    border-bottom:none;
+    padding-top: 10px;
+  }
   .parent_rech{
     width: 84px;
   }
@@ -267,12 +183,12 @@ a[class^="lien_carte_act"]{
   .nav_types{
     align-items: center;
     }
-  .choix_heb,.choix_act{
-    border-bottom-style: solid;
-    border-color: #F2F2F2;
-    border-top:none;
-    padding-bottom: 10px;
-  }
+    .choix_heb,.choix_act{
+      border-bottom-style: solid;
+      border-color: #F2F2F2;
+      border-top:none;
+      padding-bottom: 10px;
+    }
   .titres_entete{
     align-items: center;
   }
@@ -593,11 +509,7 @@ div[class*="parent_i_text_critere"]:hover{
   height: 34px; width: 34px;
   border-radius: 17px;
   background-color: #DEEBFF;
-}/*
-.parent_i_critere:hover{
-  box-shadow: 0px 5px 20px #999;
-  background-color: #999;
-}*/
+}
 #finance{
   font-size: 13px;
   margin-right: 0.3cm;
