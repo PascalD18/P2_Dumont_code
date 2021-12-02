@@ -251,7 +251,7 @@ img[class^="img_"]{
  #hebergements{
   flex-direction: row;
   flex-wrap: wrap-reverse;
-  width: 310px;
+  width: 100%;
   }
   .titre_marseille{
     background-color: white;
@@ -259,15 +259,22 @@ img[class^="img_"]{
   }
   .art_heb_marseille{
     flex-direction: column;
+    width: 100%;
     margin-right: 0px;
   }
   .grp_cartes_heb_marseille{
-    padding-left: 0px; padding-right: 0px;
+    flex-direction: column;
+    align-items: center;
+    padding-left: 0px;
+    padding-right: 0px;
     background-color:white;
   }
   .lien_carte_heb{
-    margin-left: 0px; margin-right: 0px;
-    width: 232px;
+    flex-direction: column;
+     align-items: center;
+    margin-left: 0px;
+    margin-right: 0px;
+    width: 80%;
   }
    .container_img_heb,.nom_carte_heb,.tarif_carte_heb,.etoiles_heb{
     box-shadow: 2px 2px 2px 2px #f2f2f2;
@@ -294,6 +301,8 @@ img[class^="img_"]{
 
   }
   #activites{
+    flex-direction: column;
+    align-items: center;
     width: 100%;
   }
   .titre_act{
@@ -303,21 +312,17 @@ img[class^="img_"]{
   div[class^="grp_cartes_act"]{
     flex-direction: column;
     align-items: center;
+    width: 100%;
     padding-right: 0px;
     padding-left: 0px;
   }
-  .grp_cartes_acts{
-    width: 100%;
-    background-color: yellow;
-  }
-
 div[class^="container_img_act"]{
  height: 75px;  
 }
 a[class^="lien_carte_act"]{
   width: 80%;
 }
-#pied_de_page{
+#pied_de_page{  
   flex-direction: column;
   width: 260px;
   padding-left: 20px;
@@ -592,7 +597,7 @@ a[class^="lien_carte"]{
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   height: 84px;
-  width: auto;
+  width: 100%;
   padding: 3px;
   background-color: white;
 }
@@ -696,6 +701,9 @@ p[class^="etoiles"]{
   border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
 }
 /* ---- Debut Zone ACTIVITES ---*/
+#activites{
+  display: flex;
+}
 .titre_act{
   padding-top: 30px;
 }
@@ -712,6 +720,7 @@ a[class^="lien_carte_act"]{
   }
 div[class^="container_img_act"]{
   box-shadow: 2px 2px 2px 2px #F2F2F2;
+  width: 100%;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -727,6 +736,7 @@ div[class^="container_img_act"]{
   padding-top: 13px;
   padding-left: 10px;
   padding-bottom: 20px;
+  margin: 0px;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   background-color: white;
