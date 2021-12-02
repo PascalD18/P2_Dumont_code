@@ -21,20 +21,17 @@ img[class^="img_"]{
   height: 100%;
   width: 100%;
 }
-/* CSS suivant type d'écran */
-
 /* CSS pour écran larg >=980 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-@media screen and (min-width: 980px)
-{/*
+/*
+@media screen and (min-width: 980px){
 #hebergements{
   flex-direction: row;
   justify-content: flex-start;
   width: auto;
- }*/
+ }
 #bloc_menu,#entete,#recherche_et_filtres,#pied_de_page{
   width: 997px;
 }
-/*
 .grp_cartes_act1{
   padding-right: 20px;
   width: 498.5px;
@@ -42,13 +39,14 @@ img[class^="img_"]{
 .grp_cartes_act2{
   padding-left: 20px;
   width: 498.5px;
-}*/
+}
 #bloc_menu{
   width: auto;
  }
 
 
 }
+*/
 /* CSS pour écran larg < 960 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 /*
 @media screen and (max-width: 960px){*/
@@ -60,7 +58,7 @@ img[class^="img_"]{
   .grp_cartes_act2{
     padding-left: 0px;
   }
-*/
+
   .choix_heb,.choix_act{
     border-top-style: solid;
     border-color: white;
@@ -88,8 +86,7 @@ img[class^="img_"]{
    }
    .titre_marseille{
      background-color: #F2F2F2;
-   }
- 
+   }*/
    .grp_cartes_heb_marseille{
     padding-left: 10px;
     padding-right: 10px;
@@ -101,7 +98,7 @@ img[class^="img_"]{
      margin-right: 15px;
      margin-left: 15px;
      width: 40%;
-   }
+   }/*
    .aff_plus{
      background-color: #F2F2F2;
    }
@@ -117,14 +114,7 @@ img[class^="img_"]{
 
 
  
-#pied_de_page{
-  flex-direction: row;
-  justify-content: flex-start;
-  padding-left: 0px;
-  margin-right: auto;
-  margin-left: auto;
-  background-color:white;
-}
+
 
 /* XXXXXXXXXX ECRANS LARG > 763 PX XXXXXXXXXX*/
 @media screen and (min-width: 763px) {
@@ -149,7 +139,15 @@ img[class^="img_"]{
    }
    .lien_carte_act2,.lien_carte_act3,.lien_carte_act5,.lien_carte_act6{
      width: 80%;
-   }
+   }/*
+   #pied_de_page{
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color:white;
+  }*/
 }
 /* XXXXXXXXXX ECRANS LARG >480 ET <= 763 PX XXXXXXXXXX*/
 @media screen and (min-width: 480px) and (max-width: 768px){
@@ -229,6 +227,17 @@ a[class^="lien_carte_act"]{
   }
   .container_img_act6{
     height: 110px;
+  }
+  #pied_de_page{
+    flex-direction: row;
+    justify-content: flex-start;
+    padding-left: 0px;
+    margin-right: auto;
+    margin-left: auto;
+    background-color:white;
+  }
+  .nav_propos,.nav_heb,.nav_ass{
+    flex-wrap: wrap;
   }
 } 
 /* XXXXXXXXXX ECRANS LARG <= 479 px XXXXXXXXXX */
@@ -329,6 +338,7 @@ a[class^="lien_carte_act"]{
   }
   .aff_plus{
     background-color: white;
+    padding-left: 10%;
   }
   .art_heb_pop{
      width: 100%;
@@ -370,8 +380,7 @@ div[class^="container_img_act"]{
   box-shadow: 2px 2px 2px 2px #F2F2F2;
 }
 #pied_de_page{  
-  flex-direction: column;
-  width: 260px;
+  width: 100%;
   padding-left: 20px;
   background-color: #F2F2F2;
 }
@@ -763,7 +772,6 @@ p[class^="etoiles"]{
   font-weight: 800;
   margin: 0px;
   padding-bottom: 35px;
-  padding-left: 20px;
   border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
 }
 /* ---- Debut Zone ACTIVITES ---*/
@@ -809,6 +817,7 @@ div[class^="container_img_act"]{
 /* ---- SECTION PIED DE PAGE ---- */
 #pied_de_page{
   display: flex;
+  flex-direction: column;
   margin-top: 10px;
   width: 100%;
 }
