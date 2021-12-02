@@ -194,9 +194,10 @@ a[class^="lien_carte_act"]{
   .text_filtre{
     margin-left: 8px;
   }
-  .parent_i_info{
-    margin-bottom: 10px;
+  .parent_i_text_info{
+    align-items: center;
   }
+
   .art_heb_marseille{
     flex-direction: column;
     margin-right: 20px;
@@ -379,13 +380,14 @@ div[class^="container_img_act"]{
 .lien_carte_act{
   box-shadow: 2px 2px 2px 2px #F2F2F2;
 }
-#pied_de_page{  
+#pied_de_page{
+  flex-direction: column;  
   width: 100%;
   padding-left: 20px;
   background-color: #F2F2F2;
 }
 .nav_propos,.nav_heb,.nav_ass{
-  flex-direction: column;
+
   margin-left: 0px;
 }
 }
@@ -817,8 +819,7 @@ div[class^="container_img_act"]{
 /* ---- SECTION PIED DE PAGE ---- */
 #pied_de_page{
   display: flex;
-  flex-direction: column;
-  margin-top: 10px;
+   margin-top: 10px;
   width: 100%;
 }
 a[class^="footer"]{
@@ -831,6 +832,8 @@ a[class^="footer"]{
 }
 .nav_propos,.nav_heb,.nav_ass{
   display: flex;  
+  flex-direction: column;
+
 }
 ul[class^="liens_footer"]{
   display: flex;
