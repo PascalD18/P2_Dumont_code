@@ -771,10 +771,16 @@ a[class^="footer"]{
   padding-top: 8px;
 }
 .nav_propos,.nav_heb,.nav_ass{
-  display: flex;
-  
-  
+  display: flex;  
 }
-
+.liens_footer{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  list-style-type:none;
+  padding: 0px;
+  margin: 0px;
+  height: 70px;
+}
 
  
