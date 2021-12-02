@@ -25,16 +25,16 @@ img[class^="img_"]{
 
 /* CSS pour écran larg >=980 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
 @media screen and (min-width: 980px)
-{
+{/*
 #hebergements{
   flex-direction: row;
   justify-content: flex-start;
   width: auto;
- }
+ }*/
 #bloc_menu,#entete,#recherche_et_filtres,#pied_de_page{
   width: 997px;
 }
-
+/*
 .grp_cartes_act1{
   padding-right: 20px;
   width: 498.5px;
@@ -42,30 +42,16 @@ img[class^="img_"]{
 .grp_cartes_act2{
   padding-left: 20px;
   width: 498.5px;
-}
+}*/
 #bloc_menu{
   width: auto;
- }/*
- #activites{
-   width: 480px;
  }
-.grp_cartes_acts{
-  flex-direction: column;
-  width: 480px;
- }
-.grp_cartes_act1{
-  width: 480px;
-  }
-.grp_cartes_act2{
-  width: 480px;
- }*/
- #pied_de_page{
-  width: min-content;
- }
+
+
 }
 /* CSS pour écran larg < 960 px xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/
-
-@media screen and (max-width: 960px){
+/*
+@media screen and (max-width: 960px){*/
 /*
   .grp_cartes_act1{
     padding-right: 0px;
@@ -82,9 +68,7 @@ img[class^="img_"]{
     padding-top: 20px;
   }
 
-#recherche{
-  width: 298px;
-}
+
 
   .bloc_filtre_et_criteres{
     flex-direction: row;
@@ -141,9 +125,12 @@ img[class^="img_"]{
   margin-left: auto;
   background-color:white;
 }
-}
+
 /* XXXXXXXXXX ECRANS LARG > 763 PX XXXXXXXXXX*/
-@media screen and (min-width: 763px){
+@media screen and (min-width: 763px) {
+  .lien_carte_heb{
+    width: 25%;
+  }
   .grp_cartes_acts{
     flex-direction: row;
     justify-content: space-around;
