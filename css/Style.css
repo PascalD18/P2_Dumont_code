@@ -190,6 +190,8 @@ a[class^="lien_carte_act"]{
   }
   .text_filtre{
     margin-left: 8px;
+    margin-top: auto;
+    margin-bottom: auto;
   }
   .parent_i_text_info{
     align-items: center;
@@ -416,10 +418,10 @@ div[class^="container_img_act"]{
 .parent_logo{
   display: flex;
   margin-top: 10px;
-  width: 60px;
+  width: 75px;
 }
 .img_logo{
-  margin-left: 40px;
+  margin-left: 5px;
   margin-right: 40px;
 }
 .nav_types{
@@ -580,8 +582,9 @@ div[class*="parent_i_text_critere"]{
 }
 
 div[class*="parent_i_text_critere"]:hover{
-  box-shadow: 0px 5px 20px #999;
-  background-color: #999;
+  box-shadow: 0px 5px 20px #F2F2F2;
+  background-color: #0065FC;
+  color: white;
 }
  .parent_i_critere{
   display: flex;
@@ -590,11 +593,11 @@ div[class*="parent_i_text_critere"]:hover{
   height: 34px; width: 34px;
   border-radius: 17px;
   background-color: #DEEBFF;
-}
+}/*
 .parent_i_critere:hover{
   box-shadow: 0px 5px 20px #999;
   background-color: #999;
-}
+}*/
 #finance{
   font-size: 13px;
   margin-right: 0.3cm;
