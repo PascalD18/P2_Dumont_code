@@ -393,13 +393,17 @@ div[class^="container_img_act"]{
 #pied_de_page{
   flex-direction: column;  
   width: 90%;
+  padding-top: 8px;
   padding-left: 20px;
-  margin: auto;
+  padding-bottom: 8px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
   background-color: #F2F2F2;
 }
 .nav_propos,.nav_heb,.nav_ass{
-
   margin-left: 0px;
+  margin-top: 15px;
 }
 }
 /*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
@@ -706,7 +710,7 @@ p[class^="nom_carte"]{
   width: 90%;
 }
 .nom_carte_pop{
-  padding-top: 10px;
+  height: 35px;
 }
 p[class^="tarif_carte"]{
   font-size: 0.7em;
@@ -716,7 +720,7 @@ p[class^="tarif_carte"]{
   background-color: white;
 }
 .tarif_carte_pop{
-  padding-bottom: 20px;
+  height: 35px;
 }
 p[class^="etoiles"]{
   border-bottom-left-radius: 12px;
@@ -730,7 +734,8 @@ p[class^="etoiles"]{
   background-color: white;
 }
 .etoiles_pop{
-  padding-bottom: 3px;
+  padding-top: 15px;
+  padding-bottom: 20px;
 }
 .art_heb_pop{
   display: flex;
