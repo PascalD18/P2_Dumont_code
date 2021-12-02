@@ -77,12 +77,6 @@ img[class^="img_"]{
     justify-content: space-between;
     
    }
-  .parent_logo{
-   justify-content: flex-start;
-   align-items: flex-end;
-   width: 40%;
-
-  }
   .choix_heb,.choix_act{
     border-top-style: solid;
     border-color: white;
@@ -198,11 +192,16 @@ img[class^="img_"]{
 {
    #entete{
       flex-direction: column;
+      align-items: center;
     }
   .parent_logo{
     justify-content: center;
     align-items: center;
+    width: 15%;
   }
+  .nav_types{
+    align-items: center;
+    }
   .choix_heb,.choix_act{
     border-bottom-style: solid;
     border-color: #F2F2F2;
@@ -340,8 +339,7 @@ xxxxxxxxxxxxxxxxx CSS HORS MEDIA QUERYS pour toute largeur d'écran xxxxxxxxxxxx
  }
 .parent_logo{
   display: flex;
-  margin-left: 0.6cm;
-  height:2cm;
+  margin-top: 10px;
 }
 .img_logo{
   width: 1.9cm;
@@ -350,8 +348,8 @@ xxxxxxxxxxxxxxxxx CSS HORS MEDIA QUERYS pour toute largeur d'écran xxxxxxxxxxxx
 }
 .nav_types{
   display:flex;
+  flex-direction: row;
   padding-bottom: 15px;
-  width: 6cm;
 }
 .choix_heb,.choix_act{
   text-decoration: none;
