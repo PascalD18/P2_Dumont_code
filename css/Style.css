@@ -148,7 +148,8 @@ body{
   justify-content: flex-start;
   align-items: center;
   height: 40px;
-  width: 216px;
+  width: 70%;
+  max-width: 450px;
   border-style: solid;
   border-bottom-width: 2px;
   border-top-width: 2px;
@@ -202,12 +203,13 @@ body{
   color:white;
   font-weight: 800;
   padding-right: 12px;
+  padding-left: 12px;
 }
 #i_loupe{
   font-size:0.8em;
   color:white;
   padding-top: 2px;
-  padding-right: 10px;
+  padding-right: 2px;
 }
 /* ---- Debut ZONE FILTRES ----- */
 .bloc_criteres{
@@ -309,6 +311,9 @@ padding-left: 0.2cm;
 @media screen and (min-width: 768px){/*---------------------------------------- LARG ECRAN >= 768 PX ------------------*/
 #i_loupe{
   display: none;
+}
+.bloc_filtre_et_criteres{
+  display: flex;
 }
 .text_filtre{
   margin-left: 8px;
@@ -785,6 +790,8 @@ div[class^="container_img_act"]{
 }
 .container_liens_footer{
   display: flex;
+  padding-top: 10px;
+  margin-top: 20px;
 }
 a[class^="footer"]{
   text-decoration: none;
@@ -818,7 +825,7 @@ ul[class^="liens_footer"]{
     flex-direction: row;
     justify-content: space-between;
     padding-left: 30px;
-    width: 80%;
+    width: 68%;
   }
   .nav_propos,.nav_heb,.nav_ass{
     flex-wrap: wrap;
@@ -828,11 +835,9 @@ ul[class^="liens_footer"]{
  .container_liens_footer{
   flex-direction: column;  
   width: 90%;
-  padding-top: 8px;
   padding-left: 20px;
   padding-bottom: 8px;
   margin-left: 15px;
-   margin-top: 20px;
   }
   .nav_propos,.nav_heb,.nav_ass{
   margin-left: 0px;
