@@ -335,10 +335,6 @@ padding-left: 0.2cm;
     width: 100%;
     margin: auto;
   }
-  .bloc_filtre_et_criteres{
-    display: flex;
-    flex-direction: column;
-  }
   #recherche_et_filtres{
     justify-content: center;
   }
@@ -440,8 +436,7 @@ a[class^="lien_carte"]{
   font-size: 0.8em;
   font-weight: 800;
   margin: 0px;
-  padding-bottom: 25px;
-  border-bottom-left-radius: 20px;
+   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
 }
 .parent_titre-pop_et_i{
@@ -449,7 +444,6 @@ a[class^="lien_carte"]{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding-bottom: 0px;
   background-color: #F2F2F2;
 }
 .titre_pop{
@@ -463,7 +457,6 @@ a[class^="lien_carte"]{
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding-top: 15px;
   background-color: #F2F2F2;
 }
 .lien_carte_pop{
@@ -524,7 +517,7 @@ a[class^="lien_carte"]{
     width: 30%;
   }
   .grp_cartes_heb_pop{
-  padding-bottom: 55px;
+  padding-bottom: 40px;
   height: 450px;
   }
   .corps_carte_pop{
@@ -547,7 +540,7 @@ a[class^="lien_carte"]{
   }
   .grp_cartes_heb_pop{
     height: 500px;
-    padding-bottom: 75px;
+    padding-bottom: 60px;
   }
   .corps_carte_pop{
     height: 130px;
@@ -717,8 +710,7 @@ div[class^="container_img_act"]{
   .grp_cartes_act1-1,.grp_cartes_act2-1{
     flex-direction: column;
     align-items: center;
-    width: 100%;
-  }
+   }
   a[class^="lien_carte_act"]{
     width: 100%;
     padding-left: 20px;
@@ -751,7 +743,6 @@ div[class^="container_img_act"]{
   .grp_cartes_acts{
     flex-direction: row;
     justify-content: space-around;
-    align-content: center;
    } 
     .grp_cartes_act1,.grp_cartes_act2{
      flex-direction: row;
