@@ -1,340 +1,40 @@
-*{
+ /* ------------------------------------------- PAR DEFAUT --------------------------------------------------------*/
+ /*----------------------------------------------------------------------------------------------------------------*/
+
+ /* ---------------------------------------PROPRIETES ET POLICE ------------------------------------------------------*/
+ *{
    box-sizing: border-box;
    /* Largeur de la boîte de contenu : width - (2 * padding) - (2 * border)
       Hauteur de la boîte de contenu : height - (2 * padding) - (2 * border) */
-  font-family: 'Raleway', sans-serif; /*font-weight: normal;*/
-  max-width: 1350px;
+   font-family: 'Raleway', sans-serif; /*font-weight: normal;*/
  }
+/*---------------------------------------------- TITRES -----------------------------------------------------------*/
 p[class^="titre"]{
   font-weight: 800;
-  margin: 0px;
 }
 h1[class^="titre"]{
   font-weight: 800;
   font-size: 0.75em;
   padding-bottom: 5px;
 }
-
+/*----------------------------------------------- IMAGES --------------------------------------------------------------*/
 img[class^="img_"]{
   object-fit: cover;
   height: 100%;
   width: 100%;
 }
+/*---------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------- SUIVANT BLOC --------------------------------------------------------*/
+/*---------------------------------------------------------------------------------------------------------------------*/
 
-   .grp_cartes_heb_marseille{
-    padding-left: 10px;
-    padding-right: 10px;
-    flex-wrap: wrap;
-    justify-content: space-around;
-     background-color:#F2F2F2;
-   }
-    .lien_carte_heb{
-     margin-right: 15px;
-     margin-left: 15px;
-     width: 40%;
-   }
-/* XXXXXXXXXX ECRANS LARG > 763 PX XXXXXXXXXX*/
-@media screen and (min-width: 763px) {
-  .lien_carte_heb{
-    width: 25%;
-  }
-  .grp_cartes_acts{
-    flex-direction: row;
-    justify-content: space-around;
-   }
-   .grp_cartes_act1,.grp_cartes_act2{
-     justify-content: space-around;
-     width: 100%;
-   }
-   .grp_cartes_act1-1,.grp_cartes_act2-1{
-    justify-content: space-around;
-    width: 100%;
-  }
-
-   .lien_carte_act1,.lien_carte_act4{
-     width: 90%;
-   }
-   .lien_carte_act2,.lien_carte_act3,.lien_carte_act5,.lien_carte_act6{
-     width: 80%;
-   }
+/*----------------------------------------------- BODY ----------------------------------------------------------------*/
+body{
+  max-width: 1350px;
+  margin: auto;
 }
-/* XXXXXXXXXX ECRANS LARG >480 ET <= 763 PX XXXXXXXXXX*/
-@media screen and (min-width: 480px) and (max-width: 768px){
-.grp_cartes_heb_marseille{
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-}
-.lien_carte_heb{
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-around;
-  width: 40%;
-}
-.grp_cartes_act1{
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-}
-.grp_cartes_act2{
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: center;
-  width: 100%;
-}
-a[class^="lien_carte_act"]{
-  width: 90%;
-}
-}
-/* XXXXXXXXXX ECRANS LARG >= 480 px XXXXXXXXXX */
-@media screen and (min-width: 480px){
-  #entete{
-    justify-content: space-between;
-   }
-   .choix_heb,.choix_act{
-    border-top-style: solid;
-    border-color: #F2F2F2;
-    border-bottom:none;
-    padding-top: 10px;
-  }
-  .parent_rech{
-    width: 84px;
-  }
-  #i_loupe{
-    display: none;
-  }
-  .text_filtre{
-    margin-left: 8px;
-    margin-top: auto;
-    margin-bottom: auto;
-  }
-  .parent_i_text_info{
-    align-items: center;
-  }
-.titre_marseille{
-  padding-left: 7%;
-  background-color: #F2F2F2;
-}
-  .art_heb_marseille{
-    flex-direction: column;
-    margin-right: 20px;
-    width: 70%;
-   }
-   .parent_titre-pop_et_i{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-   }
-   .art_heb_pop{
-     width: 30%;
-   }
-   .grp_cartes_heb_pop{
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-   }
-   .aff_plus{
-     background-color: #F2F2F2;
-   }
-   .grp_cartes_act1-1,.grp_cartes_act2-1{
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
-  .container_img_act1{
-    height: 285px;
-  }
-   .container_img_act2{
-    height: 135px; 
-   }
-  .container_img_act3{
-    height: 75px; 
-   }
-   .container_img_act4{
-    height: 285px;
-  }
-  .container_img_act5{
-    height: 100px;
-  }
-  .container_img_act6{
-    height: 110px;
-  }
-  #pied_de_page{
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 0px;
-    width: 80%;
-    background-color:white;
-  }
-  .nav_propos,.nav_heb,.nav_ass{
-    flex-wrap: wrap;
-  }
-} 
-/* XXXXXXXXXX ECRANS LARG <= 479 px XXXXXXXXXX */
-@media screen and (max-width: 479px)
-{
-   #entete{
-      flex-direction: column;
-      align-items: center;
-    }
-  .parent_logo{
-    justify-content: center;
-    align-items: center;
-  }
-  .nav_types{
-    align-items: center;
-    }
-    .choix_heb,.choix_act{
-      border-bottom-style: solid;
-      border-color: #F2F2F2;
-      border-top:none;
-      padding-bottom: 10px;
-    }
-  .titres_entete{
-    align-items: center;
-  }
-  .titres_entete>h1,.titres_entete>h2{
-    width: 70%;
-  }
-  #recherche_et_filtres{
-    justify-content: center;
-  }
-   #recherche{
-    flex-direction: row;
-    justify-content: center;
-    width: 100%;
-
-   }
-.parent_rech{
-  width: 10%;
-}
-  .rech{
-    display: none;
-  }
-   .text_filtre{
-    margin-top: 30px;
-    margin-left: 20px;
-  }
-  .bloc_filtre_et_criteres{
-   flex-direction: row;
-   flex-wrap: wrap;
-    width: 100%;
-  }
-  .parent_i_text_info{
-    justify-content: center;
-    width: 90%;
-   }
-   .parent_i_info{
-     margin-bottom: 12px;
-   }
-  .text_info{
-    margin-top: 0.1cm;
-  }
-  #bloc_menu{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
- #hebergements{
-  flex-direction: row;
-  flex-wrap: wrap-reverse;
-  width: 100%;
-  }
-  .titre_marseille{
-    background-color: white;
-    padding-left: 10%;
-    width: auto;
-  }
-  .art_heb_marseille{
-    flex-direction: column;
-    width: 100%;
-    margin-right: 0px;
-  }
-  .grp_cartes_heb_marseille{
-    flex-direction: column;
-    align-items: center;
-    padding-left: 0px;
-    padding-right: 0px;
-    background-color:white;
-  }
-  .lien_carte_heb{
-    flex-direction: column;
-     align-items: center;
-    margin-left: 0px;
-    margin-right: 0px;
-    width: 80%;
-  }
-   .container_img_heb,.nom_carte_heb,.tarif_carte_heb,.etoiles_heb{
-    box-shadow: 2px 2px 2px 2px #f2f2f2;
-  }
-  .aff_plus{
-    background-color: white;
-    padding-left: 10%;
-  }
-  .art_heb_pop{
-     width: 100%;
-  }
-  .parent_titre-pop_et_i{
-    border-top-left-radius: 0px;
-    border-top-right-radius: 0px;    
-  }
-  .grp_cartes_heb_pop{
-    width: 100%;
-    border-bottom-left-radius: 0px;
-    border-bottom-right-radius: 0px;
-
-  }
-  #activites{
-
-    width: 100%;
-  }
-  .titre_act{
-    text-align: left;
-    padding-left: 10%;
-  }
-
-  div[class^="grp_cartes_act"]{
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding-right: 0px;
-    padding-left: 0px;
-  }
-  a[class^="lien_carte_act"]{
-    width: 80%;
-  }
-div[class^="container_img_act"]{
-  height: 75px;  
-}
-.lien_carte_act{
-  box-shadow: 2px 2px 2px 2px #F2F2F2;
-}
-#pied_de_page{
-  flex-direction: column;  
-  width: 90%;
-  padding-top: 8px;
-  padding-left: 20px;
-  padding-bottom: 8px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 20px;
-  background-color: #F2F2F2;
-}
-.nav_propos,.nav_heb,.nav_ass{
-  margin-left: 0px;
-  margin-top: 15px;
-}
-}
-/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
-  xxxxxxxxxxxxxxx CSS HORS MEDIA QUERYS pour toute largeur d'écran xxxxxxxxxxxx
-  xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
- ---- Debut ZONE ENTETE ---- */
- #entete{
-   display: flex;
- }
+/*----------------------------------------------- HEADER / ENTETE -----------------------------------------------------*/
 .parent_logo{
-  display: flex;
   margin-top: 10px;
-  width: 75px;
 }
 .img_logo{
   margin-left: 5px;
@@ -347,13 +47,8 @@ div[class^="container_img_act"]{
 }
 .choix_heb,.choix_act{
   text-decoration: none;
-  padding-left: 25px;
-  padding-right: 25px;
   font-size: 0.8em; font-weight: 400;
 }
-
-  /* -- la selection .choix_heb,.choix_act:hover ne fonctionne que pour .choix_act
-    => décomposition en .choix_heb:hover puis .choix_act:hover -- */
 .choix_heb:hover{
   font-weight: 800;
   border-color: #0065FC;
@@ -364,10 +59,7 @@ div[class^="container_img_act"]{
   border-color: #0065FC;
   color: #0065FC;
 }
-/* ---- Debut ZONE TITRES ---- */
 .titres_entete{
-  display: flex;
-  flex-direction: column;
   font-weight: 800;
 }
 .titres_entete>h1{
@@ -377,9 +69,70 @@ div[class^="container_img_act"]{
 .titres_entete>h2 {
   font-weight: 400;
   font-size: 0.72em;
-  padding-bottom: 22px;
+  padding-bottom: 15px;
 }
-/* ---- Debut ZONE RECHERCHE ---- */
+@media screen and (min-width: 769px){/*---------------------------------------- LARG ECRAN > 768 PX -------------------*/
+  #entete{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+   }
+   .parent_logo{
+     margin: 20px;
+     width: 100px;
+   }
+   .choix_heb,.choix_act{
+    border-top-style: solid;
+    border-color: #F2F2F2;
+    border-bottom:none;
+    width: 50%;
+    text-align: center;
+    padding: 30px;
+  }
+}
+@media screen and (max-width: 768px){/*---------------------------------------- LARG ECRAN <= 768 PX ------------------*/
+  #entete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .parent_logo{
+    justify-content: center;
+    align-items: center;
+    width: 130px;
+  }
+.nav_types{
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  }
+   .choix_heb,.choix_act{
+    border-bottom-style: solid;
+    border-color: #F2F2F2;
+    border-top:none;
+    text-align: center;
+    width: 50%;
+    padding-bottom: 30px;
+  }
+  .titres_entete{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: left;
+    margin: auto;  
+   }
+  .titres_entete>h1,.titres_entete>h2{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    width: 70%;
+  }
+  .titres_entete>h2{
+    margin-top: 0px;
+    margin-bottom: 15px;
+  }
+}
+/*----------------------------------------------- NAV / RECHERCHE ET FILTRES ------------------------------------------*/
 #recherche_et_filtres{
   display: flex;
   flex-direction: column;
@@ -450,24 +203,25 @@ div[class^="container_img_act"]{
   border-bottom-right-radius: 10px;
   background-color:#0065FC;
 }
-#i_loupe{
-  color:white;
-  font-size:0.8em;
-  padding-top: 2px;
-  padding-right: 10px;
-}
+
 .rech{
   font-size: 13px;
   color:white;
   font-weight: 800;
   padding-right: 12px;
 }
+#i_loupe{
+  font-size:0.8em;
+  color:white;
+  padding-top: 2px;
+  padding-right: 10px;
+}
 /* ---- Debut ZONE FILTRES ----- */
 .bloc_criteres{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-   margin-top: 0.2cm;
+   margin-top: 15px;
 }
 #section_filtres_et_info{
   display: flex;
@@ -493,7 +247,7 @@ div[class*="parent_i_text_critere"]{
   border-bottom-left-radius: 19px; border-bottom-right-radius: 19px;
   height: 38px;
   width: fit-content;
-  margin-left: 0.3cm;
+  margin-left: 12px;
   margin-bottom: 10px;
 }
 
@@ -506,8 +260,9 @@ div[class*="parent_i_text_critere"]:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 34px; width: 34px;
-  border-radius: 17px;
+  height: 38px; width: 38px;
+  border-radius: 19px;
+  margin-left: -3px;
   background-color: #DEEBFF;
 }
 #finance{
@@ -560,11 +315,93 @@ font-size: 0.8em;
 font-weight: 400;
 padding-left: 0.2cm;  
 }
-/* ---- Debut ZONE MENU ----- */
- /* ---- Debut ZONE HEBERGEMENTS ---- */
- #hebergements{
-   display: flex;
- }
+@media screen and (min-width: 768px){/*---------------------------------------- LARG ECRAN >= 768 PX ------------------*/
+#i_loupe{
+  display: none;
+}
+.text_filtre{
+  margin-left: 8px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+.parent_i_text_info{
+  align-items: center;
+}
+}
+@media screen and (max-width: 767px){/*---------------------------------------- LARG ECRAN < 767 PX -------------------*/
+  #recherche{
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin: auto;
+  }
+  .bloc_filtre_et_criteres{
+    display: flex;
+    flex-direction: column;
+  }
+  #recherche_et_filtres{
+    justify-content: center;
+  }
+.parent_rech{
+  width: 10%;
+}
+  .rech{
+    display: none;
+  }
+   .text_filtre{
+    margin-top: 30px;
+    margin-left: 20px;
+  }
+  .bloc_filtre_et_criteres{
+   flex-direction: row;
+   flex-wrap: wrap;
+    width: 100%;
+  }
+  .parent_i_text_info{
+    justify-content: center;
+    width: 90%;
+   }
+   .parent_i_info{
+     margin-bottom: 12px;
+   }
+  .text_info{
+    margin-top: 0.1cm;
+  }
+}
+/*----------------------------------------------- MAIN ----------------------------------------------------------------*/
+/*----------------------------------------------- PROPRIETES PAR DEFAUT POUR HEBERGENTS/ACTIVITES ---------------------*/
+a[class^="lien_carte"]{
+  text-decoration: none;
+  color:black;
+  border: none;
+  }
+  p[class^="nom_carte"]{
+    font-size: 0.7em;
+    font-weight: 800;
+    margin: 0px;
+    padding-left: 10px;   
+    padding-top: 10px;
+    background-color: white;
+  }
+  p[class^="tarif_carte"]{
+    font-size: 0.7em;
+    margin: 0px;
+    padding-top: 5px;
+    padding-left: 10px;
+    background-color: white;
+  }
+  p[class^="etoiles"]{
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    margin: 0px;
+    padding-left: 10px;
+    font-size: 1.9em;
+    font-weight: 800;
+    height: 20px;
+    color: #0065FC;
+    background-color: white;
+  }
+/*----------------------------------------------- HEBERGEMENTS --------------------------------------------------------*/
 .titre_marseille{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -573,152 +410,269 @@ padding-left: 0.2cm;
   padding-bottom: 0px;
 
 }
-article[class^="art_heb"]{
-  background-color: white;
-}
 .art_heb_marseille{
  display: flex;
+ flex-direction: column;
+ width: 100%;
 }
 
-.grp_cartes_heb_marseille{
+.container_carte_heb{
   display: flex;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  height: 100%;
+ flex-direction: column;
 }
-a[class^="lien_carte"]{
-  text-decoration: none;
-  color:black;
-  border: none;
-  }
-
-.lien_carte_heb{
-  height: 150px;
-}
-
 .container_img_heb{
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
-  height: 84px;
+  height: 60%;
   width: 100%;
   padding: 3px;
   background-color: white;
 }
-
 .img_carte_heb{
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
   height: 100%;
 }
-
-p[class^="nom_carte"]{
-  font-size: 0.7em;
+.aff_plus{
+  text-decoration: none;
+  color: black;
+  border: none;
+  font-size: 0.8em;
   font-weight: 800;
   margin: 0px;
-  padding-left: 10px;   
-  padding-top: 10px;
-  background-color: white;
-}
-.lien_carte_pop{
-  margin-top: 8px;
-  margin-bottom: 8px;
-  width: 90%;
-}
-.nom_carte_pop{
-  height: 35px;
-}
-p[class^="tarif_carte"]{
-  font-size: 0.7em;
-  margin: 0px;
-  padding-top: 5px;
-  padding-left: 10px;
-  background-color: white;
-}
-.tarif_carte_pop{
-  height: 35px;
-}
-p[class^="etoiles"]{
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  margin: 0px;
-  padding-left: 10px;
-  font-size: 1.5em;
-  font-weight: 800;
-  height: 20px;
-  color: #0065FC;
-  background-color: white;
-}
-.etoiles_pop{
-  padding-top: 15px;
-  padding-bottom: 20px;
-}
-.art_heb_pop{
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-
+  padding-bottom: 25px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 .parent_titre-pop_et_i{
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
-  padding-top: 30px;
   padding-bottom: 0px;
   background-color: #F2F2F2;
+}
+.titre_pop{
+  margin-left: 5%;
+}
+#i_populaire{
+  margin-right: 5%;
 }
 .grp_cartes_heb_pop{
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-evenly;
   align-items: center;
   padding-top: 15px;
   background-color: #F2F2F2;
+}
+.lien_carte_pop{
+  margin-top: 15px;
+  margin-bottom: 15px;
+  width: 90%;
 }
 .corps_carte_pop{
   display: flex;
   flex-direction: row;
 }
+
 .container_img_pop{
   border-bottom-left-radius: 12px;
   border-top-left-radius: 12px;
-  height: 105px;
+  height: 100%;
   width: 40%;
   padding: 3px;
   background-color: white;
 } 
 .img_carte_pop{
   border-bottom-left-radius: 0.3cm; border-top-left-radius: 0.3cm;
-  height: 100%; width: auto;
+  height: 100%; width:100%;
 }
 .bloc_infos_pop{
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   border-bottom-right-radius: 12px;
   border-top-right-radius: 12px;
-  height: 105px;
+  height: 100%;
   width: 60%;
-  
   background-color: white;
 }
-.aff_plus{
-  font-size: 0.8em;
-  font-weight: 800;
-  margin: 0px;
-  padding-bottom: 35px;
-  border-bottom-left-radius: 20px; border-bottom-right-radius: 20px;
+.nom_carte_pop{
+  height: 35px;
 }
-/* ---- Debut Zone ACTIVITES ---*/
+.tarif_carte_pop{
+  height: 35px;
+}
+.etoiles_pop{
+  padding-top: 15px;
+  padding-bottom: 20px;
+}
+@media screen and (min-width: 992px){/*---------------------------------------- LARG ECRAN >= 992 PX ------------------*/
+  .art_heb_marseille{
+    height: 530px;
+    width: 70%;
+  }
+  .lien_carte_heb{
+    height: 200px;
+  width: 32%;
+  }
+  .container_carte_heb{
+  height: 185px;
+  }
+  .art_heb_pop{
+    width: 30%;
+  }
+  .grp_cartes_heb_pop{
+  padding-bottom: 55px;
+  height: 450px;
+  }
+  .corps_carte_pop{
+  height: 120px;
+  }
+}
+@media screen and (min-width: 768px) and (max-width: 992px) {/*---------------- LARG ECRAN >= 768 PX ET <992 PX -------*/
+  .art_heb_marseille{
+    width: 60%;
+  }
+  .lien_carte_heb{
+    width: 50%;
+  }
+  .container_carte_heb{
+    padding-bottom: 15px;
+    height: 130px;
+  }
+  .art_heb_pop{
+    width: 40%;
+  }
+  .grp_cartes_heb_pop{
+    height: 500px;
+    padding-bottom: 75px;
+  }
+  .corps_carte_pop{
+    height: 130px;
+  }
+}
+@media screen and (min-width: 768px){/*---------------------------------------- LARG ECRAN >= 768 PX ------------------*/
+  #hebergements{
+    display: flex;
+    flex-direction: row;
+    padding-left: 25px;
+    padding-right: 25px;
+  }
+  .art_heb_marseille{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+   margin-right: 15px;
+    background-color: #f2f2f2;
+  }
+  .titre_marseille{
+    padding-left: 35px;
+  }
+  .grp_cartes_heb_marseille{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   justify-content: space-around;
+   padding-left: 10px;
+   padding-right: 10px;
+   padding-top: 15px;
+   background-color: #F2F2F2;
+  }
+  .lien_carte_heb{
+    padding: 10px;
+  } 
+   .aff_plus{
+    padding-top: 20px;
+    padding-left: 5%;
+    background-color: #F2F2F2;
+  }
+  .art_heb_pop{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+    padding-left: 15px;
+  }
+  .parent_titre-pop_et_i{
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+  }
+  .grp_cartes_heb_pop{
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+  }
+}
+@media screen and (max-width: 767px){/*------------------------------------------ LARG ECRAN < 768 PX ---------------*/
+  #hebergements{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap-reverse;
+   width: 100%;
+  }
+  .titre_marseille{
+    padding-left: 5%;
+    padding-bottom: 10px;
+  }
+  .grp_cartes_heb_marseille{
+   padding-left: 5%;
+   padding-right: 5%;
+  }
+  .lien_carte_heb{
+   margin-top: 8px;
+   margin-bottom: 8px;
+   width: 90%;
+  }
+  .container_img_heb,.nom_carte_heb,.tarif_carte_heb,.etoiles_heb{
+   box-shadow: 2px 2px 2px 2px #f2f2f2;
+  }
+  .container_carte_heb{
+   margin-bottom: 15px;
+   height: 150px;
+  }
+  .aff_plus{
+   padding-top: 10px;
+   padding-bottom: 20px;
+   padding-left: 5%;
+   background-color: white;
+  }
+  .art_heb_pop{
+   width: 100%;
+  }
+  .parent_titre-pop_et_i{
+   border-top-left-radius: 0px;
+   border-top-right-radius: 0px; 
+   padding-top: 10px;   
+  }
+  .grp_cartes_heb_pop{
+   padding-bottom: 10px;
+   padding-top: 0px;
+   width: 100%;
+   border-bottom-left-radius: 0px;
+   border-bottom-right-radius: 0px;
+  }
+  .corps_carte_pop{
+   height: 110px;
+  }
+}
+/*----------------------------------------------- ACTIVITES -----------------------------------------------------------*/
 #activites{
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .titre_act{
   padding-top: 30px;
+  text-align: left;
 }
 
 div[class^="grp_cartes_act"]{
   display: flex;
+  align-content: center;
+  width: 100%;
 }
 a[class^="lien_carte_act"]{
   height: fit-content;
@@ -727,6 +681,7 @@ a[class^="lien_carte_act"]{
   margin-left: 0px;
   margin-right: 0px;
   }
+
 div[class^="container_img_act"]{
   width: 100%;
   box-shadow: 2px 2px 2px 2px #F2F2F2;
@@ -750,8 +705,96 @@ div[class^="container_img_act"]{
   border-bottom-right-radius: 12px;
   background-color: white;
 }
-/* ---- SECTION PIED DE PAGE ---- */
+@media screen and (min-width: 992px){/*---------------------------------------- LARG ECRAN >= 992 PX ------------------*/
+  .titre_act{
+    padding-left: 35px;
+   }
+   .grp_cartes_acts{
+    justify-content: space-around;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  .grp_cartes_act1-1,.grp_cartes_act2-1{
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  a[class^="lien_carte_act"]{
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .container_img_act1{
+    height: 285px;
+  }
+   .container_img_act2{
+    height: 135px; 
+   }
+  .container_img_act3{
+    height: 75px; 
+   }
+   .container_img_act4{
+    height: 285px;
+  }
+  .container_img_act5{
+    height: 100px;
+  }
+  .container_img_act6{
+    height: 110px;
+  }
+
+}
+@media screen and (min-width: 768px) and (max-width: 992px){/*----------------- LARG ECRAN >= 768 PX < 992 PX----------*/
+  .titre_act{
+    padding-left: 3%;
+   }
+  .grp_cartes_acts{
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+   } 
+    .grp_cartes_act1,.grp_cartes_act2{
+     flex-direction: row;
+     flex-wrap: wrap;
+     justify-content: space-around;
+   }
+    .grp_cartes_act1-1,.grp_cartes_act2-1{
+     flex-direction: column;
+     flex-wrap: wrap;
+    width: 100%;
+    }
+    div[class^="container_img_act"]{
+      height: 150px;
+    }
+  
+    a[class^="lien_carte_act"]{
+      width: 90%;
+    }  }
+@media screen and (max-width: 768px){/*---------------------------------------- LARG ECRAN < 768 PX ------------------*/
+  .titre_act{
+   padding-left: 5%;
+  }
+  div[class^="grp_cartes_act"]{
+    flex-direction: column;
+   align-items: center;
+   padding-right: 0px;
+   padding-left: 0px;
+  }
+  a[class^="lien_carte_act"]{
+    width: 90%;
+  }
+  div[class^="container_img_act"]{
+    height: 130px;  
+  }
+  .lien_carte_act{
+    box-shadow: 2px 2px 2px 2px #F2F2F2;
+  }
+}
+/* ---------------------------------------------- FOOTER --------------------------------------------------------------*/
 #pied_de_page{
+  background-color: #F2F2F2;
+}
+.container_liens_footer{
   display: flex;
 }
 a[class^="footer"]{
@@ -781,5 +824,29 @@ ul[class^="liens_footer"]{
 .liens_footer_2_lgs{
   height: 46px;
 }
-
- 
+@media screen and (min-width: 768px){/*---------------------------------------- LARG ECRAN >= 768 PX ------------------*/
+ .container_liens_footer{
+    flex-direction: row;
+    justify-content: space-between;
+    padding-left: 30px;
+    width: 80%;
+  }
+  .nav_propos,.nav_heb,.nav_ass{
+    flex-wrap: wrap;
+  }
+}
+@media screen and (max-width: 768px){/*---------------------------------------- LARG ECRAN < 768 PX -------------------*/
+ .container_liens_footer{
+  flex-direction: column;  
+  width: 90%;
+  padding-top: 8px;
+  padding-left: 20px;
+  padding-bottom: 8px;
+  margin-left: 15px;
+   margin-top: 20px;
+  }
+  .nav_propos,.nav_heb,.nav_ass{
+  margin-left: 0px;
+  margin-top: 15px;
+  }
+}
