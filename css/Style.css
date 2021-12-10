@@ -778,7 +778,8 @@ div[class^="container_img_act"]{
     width: 90%;
   }
   div[class^="container_img_act"]{
-    height: 130px;  
+    width: 100vw;
+    height: 25vw;  
   }
   .lien_carte_act{
     box-shadow: 2px 2px 2px 2px #F2F2F2;
