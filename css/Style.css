@@ -14,7 +14,6 @@ p[class^="titre"]{
 }
 h1[class^="titre"]{
   font-weight: 800;
-  font-size: 0.75em;
   padding-bottom: 5px;
 }
 /*----------------------------------------------- IMAGES --------------------------------------------------------------*/
@@ -32,9 +31,16 @@ body{
   max-width: 1350px;
   margin: auto;
 }
-/*----------------------------------------------- HEADER / ENTETE -----------------------------------------------------*/
-.parent_logo{
+/*----------------------------------------------- HEADER / ENTETE - PAR DEFAUT - PC DESKTOP FIRST ----------------------------------------------------*/
+#entete{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+ }
+ .parent_logo{
   margin-top: 10px;
+  margin: 25px;
+  width: 75px;
 }
 .img_logo{
   margin-left: 5px;
@@ -47,50 +53,40 @@ body{
 }
 .choix_heb,.choix_act{
   text-decoration: none;
-  font-size: 0.8em; font-weight: 400;
+  font-size: 0.8em;
+  font-weight: 400;
+  border-top-style: solid;
+  border-bottom:none;
+  width: 50%;
+  text-align: center;
+  padding-right: 20px;
+  padding-left: 40px;
+  padding-top: 30px;
+  border-color: #F2F2F2;
 }
 .choix_heb:hover{
-  font-weight: 800;
   border-color: #0065FC;
   color: #0065FC;
 }
 .choix_act:hover{
-  font-weight: 800;
   border-color: #0065FC;
   color: #0065FC;
 }
 .titres_entete{
   font-weight: 800;
+  width: 90%;
+  margin-left: 30px;
 }
 .titres_entete>h1{
   font-size: 1em;
   padding-top: 0px;
 }
 .titres_entete>h2 {
+  font-size: 0.8em;
   font-weight: 400;
-  font-size: 0.72em;
   padding-bottom: 15px;
 }
-@media screen and (min-width: 769px){/*---------------------------------------- LARG ECRAN > 768 PX -------------------*/
-  #entete{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-   }
-   .parent_logo{
-     margin: 20px;
-     width: 100px;
-   }
-   .choix_heb,.choix_act{
-    border-top-style: solid;
-    border-color: #F2F2F2;
-    border-bottom:none;
-    width: 50%;
-    text-align: center;
-    padding: 30px;
-  }
-}
-@media screen and (max-width: 768px){/*---------------------------------------- LARG ECRAN <= 768 PX ------------------*/
+@media screen and (max-width: 767px){/*-TELEPHONE PORTABLE LARG ECRAN < 768 PX ------------------*/
   #entete{
     display: flex;
     flex-direction: column;
@@ -99,7 +95,8 @@ body{
   .parent_logo{
     justify-content: center;
     align-items: center;
-    width: 130px;
+    width: 100px;
+    padding-bottom: 20px;
   }
 .nav_types{
   justify-content: space-between;
@@ -111,8 +108,9 @@ body{
     border-color: #F2F2F2;
     border-top:none;
     text-align: center;
+    font-size: 1em;
     width: 50%;
-    padding-bottom: 30px;
+    padding-bottom: 15px;
   }
   .titres_entete{
     display: flex;
@@ -125,9 +123,15 @@ body{
     display: flex;
     flex-direction: column;
     text-align: left;
-    width: 70%;
+    width: 90%;
+  }
+  .titres_entete>h1{
+    font-size: 1.2em;
+    margin-top: 0px;
+    margin-bottom: 15px;
   }
   .titres_entete>h2{
+    font-size: 1em;
     margin-top: 0px;
     margin-bottom: 15px;
   }
@@ -136,7 +140,7 @@ body{
 #recherche_et_filtres{
   display: flex;
   flex-direction: column;
-  width: 100%;
+  margin-left: 30px;
 }
 #recherche{
   display: flex;
@@ -147,54 +151,74 @@ body{
   flex-direction: row;
   justify-content: flex-start;
   align-items: center;
-  height: 40px;
-  width: 70%;
-  max-width: 450px;
   border-style: solid;
   border-bottom-width: 2px;
   border-top-width: 2px;
   border-left-width: 0px;
   border-right-width: 0px;
   border-color: #f2f2f2;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
-   background-color: white;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  height: 35px;
+  width: 220px;
+  background-color: white;
 }
+
 .parent_i_loc{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  width:60px;
-  border-top-left-radius: 8px;
-  border-bottom-left-radius: 8px;
+  border-top-left-radius: 12px;
+  border-bottom-left-radius: 12px;
+  height: 35px;
+  width: 35px;
   background-color: #F2F2F2;
 }
 #i_localisation{
-  font-size: 1em;
+  font-size: 0.8em;
 }
 
 .saisie_ville{
   display: flex;
-  align-items: center;
-  height: 38px;
-  width: 224px;
+  flex-direction: column;
+  justify-content: center;
+  border-bottom-style: solid;
+  border-bottom-width: 2px;
+  height: 31px;
+  width: 35%; 
+  border-color: #f2f2f2;
+
 }
 #nomville{
   border-style:none;
-  font-size: 0.9em;
   font-weight:800;
-  padding-left: 0.3cm;
-  height: 38px;
-  width: 100%;
+  padding-left: 15px;
+  width: 190px;
+  font-size: 0.9em; 
+  height: 31px;
+}
+.container_parent_rech{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-style: solid;
+  border-top-width : 2px;
+  border-right-width: 0px;
+  border-bottom-width: 2px;
+  border-left-width: 0px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
+  height: 39px;
+  border-color: #f2f2f2;
 }
 .parent_rech{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 40px;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
+  height: 100%;
+  width: 100%;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
   background-color:#0065FC;
 }
 
@@ -205,17 +229,12 @@ body{
   padding-right: 12px;
   padding-left: 12px;
 }
-#i_loupe{
-  font-size:0.8em;
-  color:white;
-  padding-top: 2px;
-  padding-right: 2px;
-}
 /* ---- Debut ZONE FILTRES ----- */
 .bloc_criteres{
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
+  margin-top: 15px;
 }
 #section_filtres_et_info{
   display: flex;
@@ -224,11 +243,15 @@ body{
 .text_filtre{
   font-size: 0.9em;
   font-weight: 800;
-   width:75px;
-}/*
+  margin-right: 20px;
+  width: 30px;
+  margin-left: 8px;
+  margin-top: auto;
+  margin-bottom: auto;
+}
 .bloc_filtre_et_criteres{
   display: flex;
-}*/
+}
 div[class*="parent_i_text_critere"]{
   display: flex;
   flex-direction: row;
@@ -236,9 +259,9 @@ div[class*="parent_i_text_critere"]{
   align-items: center;
   border:solid 2px;
   border-color:#F2F2F2;
-  border-top-left-radius: 19px; border-top-right-radius: 19px;
-  border-bottom-left-radius: 19px; border-bottom-right-radius: 19px;
-  height: 38px;
+  border-top-left-radius: 17px; border-top-right-radius: 17px;
+  border-bottom-left-radius: 17px; border-bottom-right-radius: 17px;
+  height: 31px;
   width: fit-content;
   margin-left: 12px;
   margin-bottom: 10px;
@@ -253,38 +276,41 @@ div[class*="parent_i_text_critere"]:hover{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 38px; width: 38px;
-  border-radius: 19px;
+  height: 35px; width: 35px;
+  border-radius: 17px;
   margin-left: -3px;
+
   background-color: #DEEBFF;
 }
 #finance{
-  font-size: 13px;
-  margin-right: 0.3cm;
-  margin-left: 0.3cm;
+  font-size: 0.8em;
+  margin-right: 12px;
+  margin-left: 12px;
 }
 #famille{
-  font-size: 17px;
-  margin-right: 0.3cm;
-  margin-left: 0.3cm;
+  font-size: 1em;
+  margin-right: 12px;
+  margin-left: 12px;
 }
 #romantique{
-  font-size: 15px;
-  margin-right: 0.3cm;
-  margin-left: 0.3cm;
+  font-size: 1em;
+  margin-right: 12px;
+  margin-left: 12px;
 }
 #animaux{
-  font-size: 16px;
+  font-size: 0.9em;
   margin-right: 0.3cm;
   margin-left: 0.3cm;
 }
 p[class^="text_critere"]{
   font-size: 0.8em;
   font-weight: 800;
-  margin-left: 0.3cm; margin-right: 0.3cm
+  margin-left: 12px;
+  margin-right: 12px
  }
  .parent_i_text_info{
   display: flex;
+  align-items: center;
   height: 35px; 
   margin-top: 15px;
   margin-bottom: 15px;
@@ -304,58 +330,122 @@ p[class^="text_critere"]{
   margin-left: 8px;
 }
 .text_info{
-font-size: 0.8em;
+font-size: 0.9em;
 font-weight: 400;
 padding-left: 0.2cm;  
 }
-@media screen and (min-width: 768px){/*---------------------------------------- LARG ECRAN >= 768 PX ------------------*/
-#i_loupe{
+@media screen and (min-width: 768px){/*-TABLETTE ET PC LARG ECRAN > 767 PX */
+  #i_loupe{
   display: none;
 }
-.bloc_filtre_et_criteres{
-  display: flex;
 }
-.text_filtre{
-  margin-left: 8px;
-  margin-top: auto;
-  margin-bottom: auto;
-}
-.bloc_criteres{
- margin-top: 15px;
-}
-.parent_i_text_info{
-  align-items: center;
-}
-}
-@media screen and (max-width: 767px){/*---------------------------------------- LARG ECRAN < 767 PX -------------------*/
-  #recherche{
+@media screen and (max-width: 767px){/*- TELEPHONE PORTABLE LARG ECRAN < 768 PX */
+  #recherche_et_filtres{
+    justify-content: center;
+    width: 95%;
+    margin: auto;
+    padding-left: 0px;
+  }
+   #recherche{
     flex-direction: row;
     justify-content: center;
     width: 100%;
     margin: auto;
   }
+  .bloc_gauche_rech{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 60px;
+    width: 100%;
+  }
+  .parent_i_loc{
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    height: 60px;
+    width:60px;
+  }
+  #i_localisation{
+    font-size: 1.4em;
+  }
+  .saisie_ville{
+    margin-top: 2px;
+    height: 56px;
+    width: 90%; 
+  }
+  #nomville{
+    font-size: 1.3em; 
+    height: 56px;
+    width: 100%;
+  }
+  .container_parent_rech{
+    height: 60px;
+    width: 60px;
+  }
+  #i_loupe{
+  font-size:1.1em;
+  color:white;
+  padding-top: 2px;
+  padding-right: 2px;
+  }
   .parent_rech{
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    height: 60px;
     width: 60px;
   }
   .bloc_criteres{
     margin-top: 0px;
   }
-  #recherche_et_filtres{
-    justify-content: center;
-  }
-
+ 
   .rech{
     display: none;
   }
    .text_filtre{
+    font-size: 1.1em;
     margin-top: 30px;
     margin-left: 20px;
+    margin-right: 0px;
+    margin-bottom: 15px;
   }
   .bloc_filtre_et_criteres{
    flex-direction: row;
    flex-wrap: wrap;
     width: 100%;
   }
+  .parent_i_critere{
+    height: 60px; width: 60px;
+    border-radius: 32px;
+    margin-left: -6px;
+  }
+  #finance{
+    font-size: 1.2em;
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+  #famille{
+    font-size: 1.4em;
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+  #romantique{
+    font-size: 1.4em;
+    margin-right: 12px;
+    margin-left: 12px;
+  }
+  #animaux{
+    font-size: 1.2em;
+    margin-right: 0.3cm;
+    margin-left: 0.3cm;
+  }
+  div[class*="parent_i_text_critere"]{
+    border-top-left-radius: 32px; border-top-right-radius: 32px;
+    border-bottom-left-radius: 32px; border-bottom-right-radius: 32px;
+    height: 56px;
+  }
+  p[class^="text_critere"]{
+    font-size: 1em;
+    font-weight: 800;
+   }
   .parent_i_text_info{
     justify-content: center;
     width: 90%;
@@ -369,55 +459,80 @@ padding-left: 0.2cm;
 }
 /*----------------------------------------------- MAIN ----------------------------------------------------------------*/
 /*----------------------------------------------- PROPRIETES PAR DEFAUT POUR HEBERGENTS/ACTIVITES ---------------------*/
+
 a[class^="lien_carte"]{
   text-decoration: none;
   color:black;
   border: none;
   }
   p[class^="nom_carte"]{
-    font-size: 0.7em;
     font-weight: 800;
-    margin: 0px;
     padding-left: 10px;   
-    padding-top: 10px;
-    background-color: white;
+    margin-bottom: 0px;
   }
   p[class^="tarif_carte"]{
-    font-size: 0.7em;
-    margin: 0px;
-    padding-top: 5px;
+    margin-bottom: 0px;
     padding-left: 10px;
-    background-color: white;
-  }
+    }
   p[class^="etoiles"]{
-    border-bottom-left-radius: 12px;
-    border-bottom-right-radius: 12px;
-    margin: 0px;
-    padding-left: 10px;
-    font-size: 1.9em;
     font-weight: 800;
+    padding-left: 10px;
     height: 20px;
     color: #0065FC;
-    background-color: white;
   }
-/*----------------------------------------------- HEBERGEMENTS --------------------------------------------------------*/
-.titre_marseille{
+/*----------------------------------------------- HEBERGEMENTS - PAR DEFAUT DESKTOP FIRST -------------------------------------------*/
+ #bloc_menu{
+   width: 95%;
+   margin: auto;
+ } 
+ #hebergements{
+    display: flex;
+    flex-direction: row;
+  }
+
+  .titre_marseille{
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   margin: 0px;
-  padding-top: 30px;
+  padding-top: 35px;
   padding-bottom: 0px;
+  padding-left: 35px;
 
 }
 .art_heb_marseille{
  display: flex;
  flex-direction: column;
- width: 100%;
+ border-top-left-radius: 20px;
+ border-top-right-radius: 20px;
+ border-bottom-left-radius: 20px;
+ border-bottom-right-radius: 20px;
+ margin-right: 15px;
+ height: 420px;
+ width: 66%;
+ background-color: #f2f2f2;
+ 
 }
-
-.container_carte_heb{
+.grp_cartes_heb_marseille{
   display: flex;
- flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-top: 0px;
+  background-color: #F2F2F2;
+ }
+.carte_heb,.carte_pop{
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  background-color: white;
+}
+.carte_heb{
+  margin: 15px 5px 5px 5px;
+  height: 135px;
+  width: 30%;
 }
 .container_img_heb{
   border-top-left-radius: 12px;
@@ -428,9 +543,20 @@ a[class^="lien_carte"]{
   background-color: white;
 }
 .img_carte_heb{
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-  height: 100%;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+.nom_carte_heb{
+  margin-top: 0px;
+  font-size: 0.8em;
+}
+.tarif_carte_heb{
+  margin-top: 5px;
+  font-size: 0.7em;
+}
+.etoiles_heb{
+  font-size: 1.7em;
+  margin-top: 0px;
 }
 .aff_plus{
   text-decoration: none;
@@ -441,47 +567,71 @@ a[class^="lien_carte"]{
   margin: 0px;
    border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
+  padding-top: 20px;
+  padding-left: 6%;
+  background-color: #F2F2F2;
 }
 .parent_titre-pop_et_i{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-top: 20px;
   background-color: #F2F2F2;
 }
+
 .titre_pop{
-  margin-left: 5%;
+  font-size: 1em;
+  margin-left: 6%;
 }
 #i_populaire{
+  font-size: 1.4em;
   margin-right: 5%;
+}
+.art_heb_pop{
+  display: flex;
+  flex-direction: column;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  padding-left: 15px;
+  width: 33%;
 }
 .grp_cartes_heb_pop{
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
+  height: 350px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
   background-color: #F2F2F2;
 }
+
 .lien_carte_pop{
-  margin-top: 15px;
-  margin-bottom: 15px;
-  width: 90%;
+ display: flex;
+ width: 100%;
 }
-.corps_carte_pop{
+.carte_pop{
   display: flex;
   flex-direction: row;
+  margin-bottom: 15px;
+  height: 100px;
+  width: 78%;
 }
 
 .container_img_pop{
-  border-bottom-left-radius: 12px;
-  border-top-left-radius: 12px;
+  border-bottom-left-radius: 15px;
+  border-top-left-radius: 15px;
   height: 100%;
   width: 40%;
   padding: 3px;
   background-color: white;
 } 
 .img_carte_pop{
-  border-bottom-left-radius: 0.3cm; border-top-left-radius: 0.3cm;
+  border-bottom-left-radius: 15px;
+   border-top-left-radius: 15px;
   height: 100%; width:100%;
 }
 .bloc_infos_pop{
@@ -495,143 +645,97 @@ a[class^="lien_carte"]{
   background-color: white;
 }
 .nom_carte_pop{
-  height: 35px;
+  margin-top: 5px;
+  font-size: 0.8em;
 }
 .tarif_carte_pop{
-  height: 35px;
+  margin-top: 5px;
+  font-size: 0.7em;
 }
 .etoiles_pop{
-  padding-top: 15px;
+  font-size: 1.7em;
+  padding-top: -5px;
   padding-bottom: 20px;
 }
-@media screen and (min-width: 992px){/*---------------------------------------- LARG ECRAN >= 992 PX ------------------*/
+
+@media screen and (min-width: 768px) and (max-width: 991px) {/*-TABLETTES LARG ECRAN > 767 PX ET < 992 PX -------*/
   .art_heb_marseille{
-    height: 530px;
-    width: 70%;
-  }
-  .lien_carte_heb{
-    height: 200px;
-  width: 32%;
-  }
-  .container_carte_heb{
-  height: 185px;
-  }
-  .art_heb_pop{
-    width: 30%;
-  }
-  .grp_cartes_heb_pop{
-  padding-bottom: 40px;
-  height: 450px;
-  }
-  .corps_carte_pop{
-  height: 120px;
-  }
-}
-@media screen and (min-width: 768px) and (max-width: 992px) {/*---------------- LARG ECRAN >= 768 PX ET <992 PX -------*/
-  .art_heb_marseille{
+    height: 636px;
     width: 60%;
   }
-  .lien_carte_heb{
-    width: 50%;
-  }
-  .container_carte_heb{
-    padding-bottom: 15px;
-    height: 130px;
+  .carte_heb{
+    height: 155px;
+    width: 45%;
   }
   .art_heb_pop{
     width: 40%;
   }
   .grp_cartes_heb_pop{
-    height: 500px;
-    padding-bottom: 60px;
+    padding-bottom: 50px;
+    height: 565px
   }
-  .corps_carte_pop{
-    height: 130px;
-  }
-}
-@media screen and (min-width: 768px){/*---------------------------------------- LARG ECRAN >= 768 PX ------------------*/
-  #hebergements{
-    display: flex;
-    flex-direction: row;
-    padding-left: 25px;
-    padding-right: 25px;
-  }
-  .art_heb_marseille{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-   margin-right: 15px;
-    background-color: #f2f2f2;
-  }
-  .titre_marseille{
-    padding-left: 35px;
-  }
-  .grp_cartes_heb_marseille{
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   justify-content: space-around;
-   padding-left: 10px;
-   padding-right: 10px;
-   padding-top: 15px;
-   background-color: #F2F2F2;
-  }
-  .lien_carte_heb{
-    padding: 10px;
-  } 
-   .aff_plus{
-    padding-top: 20px;
-    padding-left: 5%;
-    background-color: #F2F2F2;
-  }
-  .art_heb_pop{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-
-    padding-left: 15px;
-  }
-  .parent_titre-pop_et_i{
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-  }
-  .grp_cartes_heb_pop{
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
+  .carte_pop{
+    height: 110px;
   }
 }
-@media screen and (max-width: 767px){/*------------------------------------------ LARG ECRAN < 768 PX ---------------*/
+@media screen and (max-width: 767px){/*- TELEPHONE PORTABLE LARG ECRAN < 768 PX ---------------------------------------*/
+  #bloc_menu{
+    width: 100%;
+    margin: 0%;
+  }
   #hebergements{
    display: flex;
-   flex-direction: row;
-   flex-wrap: wrap-reverse;
+   flex-direction: column-reverse;
+   align-content: center;
+   padding-left: 0px;
+   padding-right: 0px;
    width: 100%;
+   height: 100%;
   }
   .titre_marseille{
+    font-size: 1.4em;
     padding-left: 5%;
     padding-bottom: 10px;
+    background-color: white;
+  }
+  .art_heb_marseille{
+    padding-left: 0px;
+    margin-top: 20px;
+    height: 100%;
+    width: 100%;
   }
   .grp_cartes_heb_marseille{
+   flex-direction: column;
    padding-left: 5%;
    padding-right: 5%;
-  }
-  .lien_carte_heb{
-   margin-top: 8px;
-   margin-bottom: 8px;
-   width: 90%;
-  }
-  .container_img_heb,.nom_carte_heb,.tarif_carte_heb,.etoiles_heb{
+   background-color: white;
+   }
+  .carte_heb{
+   margin: 5px 0px;
+   height: 195px;
    box-shadow: 2px 2px 2px 2px #f2f2f2;
+   width: 100%;
   }
-  .container_carte_heb{
-   margin-bottom: 15px;
-   height: 150px;
+  .container_img_heb{
+   height: 65%;
   }
+   .nom_carte_heb{
+     font-size: 1.1em;
+     padding-right: 25px;
+     margin-top: 2px;
+   }
+   .tarif_carte_heb{
+     font-size: 0.9em;
+     margin-top: 5px;
+   }
+   .etoiles_heb{
+     font-size: 2.7em;
+     margin-top: -8px;
+     margin-bottom: 20px;
+   }
   .aff_plus{
-   padding-top: 10px;
-   padding-bottom: 20px;
+    font-size: 1.2em;
+   padding-top: 20px;
    padding-left: 5%;
    background-color: white;
   }
@@ -643,44 +747,109 @@ a[class^="lien_carte"]{
    border-top-right-radius: 0px; 
    padding-top: 10px;   
   }
+  .titre_pop{
+    font-size: 1.4em;
+  }
   .grp_cartes_heb_pop{
    padding-bottom: 10px;
    padding-top: 0px;
+   height: 100%;
    width: 100%;
    border-bottom-left-radius: 0px;
    border-bottom-right-radius: 0px;
   }
-  .corps_carte_pop{
-   height: 110px;
+  .carte_pop{
+   height: 147px;
+   width: 88%;
+  }
+  .nom_carte_pop{
+    font-size: 1em;
+    padding-right: 25px;
+    margin-top: 15px;
+  }
+  .tarif_carte_pop{
+    font-size: 0.9em;
+    margin-top: 10px;
+  }
+  .etoiles_pop{
+    font-size: 2.7em;
+    margin-top:20px;
+    margin-bottom: 10px;
   }
 }
-/*----------------------------------------------- ACTIVITES -----------------------------------------------------------*/
+/*----------------------------------------------- ACTIVITES PAR DEFAUT PC DESKTOP FIRST -------------------------------*/
 #activites{
   display: flex;
   flex-direction: column;
-  width: 100%;
 }
 .titre_act{
+  font-size: 1em;
   padding-top: 30px;
   text-align: left;
 }
 
 div[class^="grp_cartes_act"]{
-  display: flex;
-  align-content: center;
+display: flex;
+}
+.grp_cartes_acts{
+  justify-content: space-around;
+}
+.grp_cartes_act1,.grp_cartes_act2{
+  flex-direction: row;
+  justify-content: space-around;
   width: 100%;
 }
-a[class^="lien_carte_act"]{
-  height: fit-content;
-  margin-top: 15px;
+.grp_cartes_act1-1,.grp_cartes_act2-1{
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+ }
+div[class^="carte_act"]{
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+.carte_act1{
+  height: 330px;
+  margin-right: 10px;
+}
+.carte_act2{
+  height: 155px;
+  margin-right: 15px;
   margin-bottom: 15px;
-  margin-left: 0px;
-  margin-right: 0px;
-  }
+  margin-left: 15px;
+}
+.carte_act3{
+  margin-top: 15px;
+  margin-right: 15px;
+  margin-left: 15px;
+  height: 100px;
+}
+.carte_act4{
+  margin-left: 15px;
+  margin-right: 15px;
+  height: 330px;
+}
+.carte_act5{
+  margin-left: 15px;
+  margin-bottom: 15px;
+  height: 125px;
+}
+.carte_act6{
+  margin-top: 15px;
+  margin-left: 15px;
+  height: 125px;
+}
+a[class^="lien_carte_act"]{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+div[class^="container_img_act"]{
+  height: 80%;
+}
 
 div[class^="container_img_act"]{
-  width: 100%;
-  box-shadow: 2px 2px 2px 2px #F2F2F2;
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
@@ -689,57 +858,19 @@ div[class^="container_img_act"]{
   border-top-left-radius: 12px;
   border-top-right-radius: 12px;
 }
-.lieu_carte_act{
-  font-size: 0.7em;
+.nom_carte_act{
   font-weight: 800;
-  padding-top: 13px;
+  font-size: 0.8em;
+  padding-top: 10px;
   padding-left: 10px;
-  padding-bottom: 20px;
+  padding-bottom: 10px;
   margin: 0px;
   box-shadow: 2px 2px 2px 2px #F2F2F2;
   border-bottom-left-radius: 12px;
   border-bottom-right-radius: 12px;
   background-color: white;
 }
-@media screen and (min-width: 992px){/*---------------------------------------- LARG ECRAN >= 992 PX ------------------*/
-  .titre_act{
-    padding-left: 35px;
-   }
-   .grp_cartes_acts{
-    justify-content: space-around;
-    padding-left: 10px;
-    padding-right: 10px;
-  }
-  .grp_cartes_act1-1,.grp_cartes_act2-1{
-    flex-direction: column;
-    align-items: center;
-   }
-  a[class^="lien_carte_act"]{
-    width: 100%;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
-  .container_img_act1{
-    height: 285px;
-  }
-   .container_img_act2{
-    height: 135px; 
-   }
-  .container_img_act3{
-    height: 75px; 
-   }
-   .container_img_act4{
-    height: 285px;
-  }
-  .container_img_act5{
-    height: 100px;
-  }
-  .container_img_act6{
-    height: 110px;
-  }
-
-}
-@media screen and (min-width: 768px) and (max-width: 992px){/*----------------- LARG ECRAN >= 768 PX < 992 PX----------*/
+@media screen and (min-width: 768px) and (max-width: 991px){/*-TABLETTES LARG ECRAN > 767 PX < 992 PX------------------*/
   .titre_act{
     padding-left: 3%;
    }
@@ -754,35 +885,40 @@ div[class^="container_img_act"]{
    }
     .grp_cartes_act1-1,.grp_cartes_act2-1{
      flex-direction: column;
-     flex-wrap: wrap;
-    width: 100%;
+     align-items: center;
+     width: 100%;
     }
     div[class^="container_img_act"]{
       height: 150px;
     }
-  
-    a[class^="lien_carte_act"]{
+    div[class^="carte_act"]{
+      height: 210px;
       width: 90%;
-    }  }
-@media screen and (max-width: 768px){/*---------------------------------------- LARG ECRAN < 768 PX ------------------*/
+    }
+   }
+@media screen and (max-width: 767px){/*- TELEPHONE PORTABLE  LARG ECRAN < 768 PX --------------------------------------*/
   .titre_act{
+    font-size: 1.3em;
    padding-left: 5%;
   }
   div[class^="grp_cartes_act"]{
-    flex-direction: column;
+   flex-direction: column;
    align-items: center;
+   width: 100%;
    padding-right: 0px;
    padding-left: 0px;
   }
-  a[class^="lien_carte_act"]{
+  div[class^="carte_act"]{
+    padding-bottom: 10px;
+    padding-top: 10px;
+    height: 210px;
     width: 90%;
   }
   div[class^="container_img_act"]{
-    width: 100vw;
-    height: 25vw;  
+    height: 80%;  
   }
-  .lien_carte_act{
-    box-shadow: 2px 2px 2px 2px #F2F2F2;
+  .nom_carte_act{
+    font-size: 1em;
   }
 }
 /* ---------------------------------------------- FOOTER --------------------------------------------------------------*/
@@ -791,8 +927,12 @@ div[class^="container_img_act"]{
 }
 .container_liens_footer{
   display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   padding-top: 10px;
   margin-top: 20px;
+  padding-left: 30px;
+  width: 68%;
 }
 a[class^="footer"]{
   text-decoration: none;
@@ -805,7 +945,11 @@ a[class^="footer"]{
 .nav_propos,.nav_heb,.nav_ass{
   display: flex;  
   flex-direction: column;
+  flex-wrap: wrap;
 
+}
+h1[class^="titre"]{
+  font-size: 0.9em;
 }
 ul[class^="liens_footer"]{
   display: flex;
@@ -821,18 +965,10 @@ ul[class^="liens_footer"]{
 .liens_footer_2_lgs{
   height: 46px;
 }
-@media screen and (min-width: 768px){/*---------------------------------------- LARG ECRAN >= 768 PX ------------------*/
- .container_liens_footer{
-    flex-direction: row;
-    justify-content: space-between;
-    padding-left: 30px;
-    width: 68%;
-  }
-  .nav_propos,.nav_heb,.nav_ass{
-    flex-wrap: wrap;
-  }
-}
 @media screen and (max-width: 768px){/*---------------------------------------- LARG ECRAN < 768 PX -------------------*/
+  #pied_de_page{
+    margin-top: 40px;
+  }
  .container_liens_footer{
   flex-direction: column;  
   width: 90%;
@@ -840,8 +976,14 @@ ul[class^="liens_footer"]{
   padding-bottom: 8px;
   margin-left: 15px;
   }
+  h1[class^="titre"]{
+    font-size: 1.2em;
+  }
   .nav_propos,.nav_heb,.nav_ass{
   margin-left: 0px;
   margin-top: 15px;
   }
+ a[class^="footer"]{
+  font-size: 1em;
+}
 }
