@@ -481,7 +481,7 @@ a[class^="lien_carte"]{
     color: #0065FC;
   }
   .ligne_etoiles{
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px 10px 10px;
     font-size: 0.5em;
   }
   .nom_tarif{
