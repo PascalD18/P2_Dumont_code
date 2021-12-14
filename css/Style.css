@@ -471,22 +471,20 @@ a[class^="lien_carte"]{
     margin-bottom: 0px;
   }
   p[class^="tarif_carte"]{
-    margin-bottom: 0px;
-    padding-left: 10px;
+    margin: 8px 0px 0px 10px;
     }
-  p[class^="etoiles"]{
-    font-weight: 800;
-    padding-left: 10px;
-    height: 20px;
-    color: #0065FC;
-  }
-  .ligne_etoiles{
-    margin: 10px 0px 10px 10px;
+ .container_nom_tarif{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 60%;
+  margin-top: 10px;
+  } 
+   .ligne_etoiles{
+    margin: 0px 0px 10px 10px;
     font-size: 0.5em;
   }
-  .nom_tarif{
-    margin-top: 10px;
-  }
+ 
 /*----------------------------------------------- HEBERGEMENTS - PAR DEFAUT DESKTOP FIRST -------------------------------------------*/
  #bloc_menu{
    width: 95%;
@@ -629,12 +627,8 @@ a[class^="lien_carte"]{
 }
 
 .container_img_pop{
-  border-bottom-left-radius: 15px;
-  border-top-left-radius: 15px;
-  height: 100%;
   width: 40%;
   padding: 3px;
-  background-color: white;
 } 
 .img_carte_pop{
   border-bottom-left-radius: 15px;
@@ -645,11 +639,7 @@ a[class^="lien_carte"]{
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  border-bottom-right-radius: 12px;
-  border-top-right-radius: 12px;
-  height: 100%;
   width: 60%;
-  background-color: white;
 }
 .nom_carte_pop{
   margin-top: 5px;
