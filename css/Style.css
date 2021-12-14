@@ -480,6 +480,10 @@ a[class^="lien_carte"]{
     height: 20px;
     color: #0065FC;
   }
+  .ligne_etoiles{
+    padding-left: 10px;
+    font-size: 0.5em;
+  }
 /*----------------------------------------------- HEBERGEMENTS - PAR DEFAUT DESKTOP FIRST -------------------------------------------*/
  #bloc_menu{
    width: 95%;
