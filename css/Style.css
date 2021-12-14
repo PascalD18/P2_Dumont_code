@@ -472,11 +472,7 @@ p[class^="nom_carte"]{
 p[class^="tarif_carte"]{
   margin: 8px 0px 0px 10px;
 }
-.bloc_infos_heb{
-   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-}
+
 .nom_carte{
   margin: 8px 0px 0px 10px;
   font-size: 0.8em;
@@ -554,6 +550,11 @@ p[class^="tarif_carte"]{
 .img_carte_heb{
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
+}
+.bloc_infos_heb{
+   display: flex;
+  flex-direction: column;
+  justify-content: space-around;
 }
 .aff_plus{
   text-decoration: none;
