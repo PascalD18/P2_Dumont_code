@@ -464,26 +464,19 @@ a[class^="lien_carte"]{
   color:black;
   border: none;
 }
-p[class^="nom_carte"]{
-  font-weight: 800;
-  padding-left: 10px;   
-  margin-bottom: 0px;
-}
-p[class^="tarif_carte"]{
-  margin: 8px 0px 0px 10px;
-}
-
 .nom_carte{
-  margin: 8px 0px 0px 10px;
+  font-weight: 800;
+  margin: 0px 0px 0px 10px;
   font-size: 0.8em;
 }
 .tarif_carte{
-  margin: 8px 0px 0px 10px;
+  font-weight: 400;
+  margin: 5px 0px 0px 10px;
   font-size: 0.7em;
 }
 .ligne_etoiles{
-  margin: 0px 0px 10px 10px;
-  font-size: 0.5em;
+  margin: 0px 0px 0px 10px;
+  font-size: 0.6em;
 } 
 /*----------------------------------------------- HEBERGEMENTS - PAR DEFAUT DESKTOP FIRST -------------------------------------------*/
 #bloc_menu{
@@ -632,6 +625,14 @@ p[class^="tarif_carte"]{
   flex-direction: column;
   justify-content: space-between;
   width: 60%;
+  margin: 5px 0px;
+}
+.bloc_nom_tarif_pop{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 5px 0px 0px 0px;
+  height: 60%;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {/*-TABLETTES LARG ECRAN > 767 PX ET < 992 PX -------*/
   .art_heb_marseille{
