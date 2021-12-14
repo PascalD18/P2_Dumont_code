@@ -459,41 +459,45 @@ padding-left: 0.2cm;
 }
 /*----------------------------------------------- MAIN ----------------------------------------------------------------*/
 /*----------------------------------------------- PROPRIETES PAR DEFAUT POUR HEBERGENTS/ACTIVITES ---------------------*/
-
 a[class^="lien_carte"]{
   text-decoration: none;
   color:black;
   border: none;
-  }
-  p[class^="nom_carte"]{
-    font-weight: 800;
-    padding-left: 10px;   
-    margin-bottom: 0px;
-  }
-  p[class^="tarif_carte"]{
-    margin: 8px 0px 0px 10px;
-    }
- .container_nom_tarif{
-  display: flex;
+}
+p[class^="nom_carte"]{
+  font-weight: 800;
+  padding-left: 10px;   
+  margin-bottom: 0px;
+}
+p[class^="tarif_carte"]{
+  margin: 8px 0px 0px 10px;
+}
+.bloc_infos_heb{
+   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  height: 60%;
-  margin-top: 10px;
-  } 
-   .ligne_etoiles{
-    margin: 0px 0px 10px 10px;
-    font-size: 0.5em;
-  }
- 
+  justify-content: space-around;
+}
+.nom_carte{
+  margin: 8px 0px 0px 10px;
+  font-size: 0.8em;
+}
+.tarif_carte{
+  margin: 8px 0px 0px 10px;
+  font-size: 0.7em;
+}
+.ligne_etoiles{
+  margin: 0px 0px 10px 10px;
+  font-size: 0.5em;
+} 
 /*----------------------------------------------- HEBERGEMENTS - PAR DEFAUT DESKTOP FIRST -------------------------------------------*/
- #bloc_menu{
-   width: 95%;
-   margin: auto;
- } 
- #hebergements{
-    display: flex;
-    flex-direction: row;
-  }
+#bloc_menu{
+  width: 95%;
+  margin: auto;
+} 
+#hebergements{
+  display: flex;
+  flex-direction: row;
+}
 
   .titre_marseille{
   border-top-left-radius: 20px;
@@ -551,18 +555,6 @@ a[class^="lien_carte"]{
   border-top-left-radius: 15px;
   border-top-right-radius: 15px;
 }
-.nom_carte_heb{
-  margin-top: 0px;
-  font-size: 0.8em;
-}
-.tarif_carte_heb{
-  margin-top: 5px;
-  font-size: 0.7em;
-}
-.etoiles_heb{
-  font-size: 1.7em;
-  margin-top: 0px;
-}
 .aff_plus{
   text-decoration: none;
   color: black;
@@ -586,7 +578,6 @@ a[class^="lien_carte"]{
   padding-top: 20px;
   background-color: #F2F2F2;
 }
-
 .titre_pop{
   font-size: 1em;
   margin-left: 6%;
@@ -641,18 +632,6 @@ a[class^="lien_carte"]{
   justify-content: space-between;
   width: 60%;
 }
-.nom_carte_pop{
-  margin-top: 5px;
-  font-size: 0.8em;
-}
-.tarif_carte_pop{
-  margin-top: 5px;
-  font-size: 0.7em;
-}
-#i_etoiles{
-  font-size: 1.3em;
-}
-
 @media screen and (min-width: 768px) and (max-width: 991px) {/*-TABLETTES LARG ECRAN > 767 PX ET < 992 PX -------*/
   .art_heb_marseille{
     height: 636px;
@@ -714,20 +693,6 @@ a[class^="lien_carte"]{
   .container_img_heb{
    height: 65%;
   }
-   .nom_carte_heb{
-     font-size: 1.1em;
-     padding-right: 25px;
-     margin-top: 2px;
-   }
-   .tarif_carte_heb{
-     font-size: 0.9em;
-     margin-top: 5px;
-   }
-   .etoiles_heb{
-     font-size: 2.7em;
-     margin-top: -8px;
-     margin-bottom: 20px;
-   }
   .aff_plus{
     font-size: 1.2em;
    padding-top: 20px;
@@ -756,20 +721,6 @@ a[class^="lien_carte"]{
   .carte_pop{
    height: 147px;
    width: 88%;
-  }
-  .nom_carte_pop{
-    font-size: 1em;
-    padding-right: 25px;
-    margin-top: 15px;
-  }
-  .tarif_carte_pop{
-    font-size: 0.9em;
-    margin-top: 10px;
-  }
-  .etoiles_pop{
-    font-size: 2.7em;
-    margin-top:20px;
-    margin-bottom: 10px;
   }
 }
 /*----------------------------------------------- ACTIVITES PAR DEFAUT PC DESKTOP FIRST -------------------------------*/
@@ -855,7 +806,7 @@ div[class^="container_img_act"]{
 }
 .nom_carte_act{
   font-weight: 800;
-  font-size: 0.8em;
+  font-size: 0.75em;
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
