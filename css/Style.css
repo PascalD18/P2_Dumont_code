@@ -467,12 +467,12 @@ a[class^="lien_carte"]{
 .nom_carte{
   font-weight: 800;
   margin: 0px 0px 0px 10px;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 .tarif_carte{
   font-weight: 400;
   margin: 3px 0px 0px 10px;
-  font-size: 0.7em;
+  font-size: 0.8em;
 }
 .ligne_etoiles{
   margin: 0px 0px 0px 10px;
@@ -555,7 +555,7 @@ a[class^="lien_carte"]{
   height: 40%;
   margin: 5px 0px 0px 0px;
 }
-}
+
 .aff_plus{
   text-decoration: none;
   color: black;
@@ -649,6 +649,15 @@ a[class^="lien_carte"]{
   .carte_heb{
     height: 155px;
     width: 45%;
+  }
+  .nom_carte{
+    font-size: 0.85em;
+  }
+  .tarif_carte{
+    font-size: 0.85em;
+  }
+  .ligne_etoiles{
+    font-size: 0.6em;
   }
   .art_heb_pop{
     width: 40%;
@@ -837,6 +846,7 @@ div[class^="container_img_act"]{
 }
 @media screen and (min-width: 768px) and (max-width: 991px){/*-TABLETTES LARG ECRAN > 767 PX < 992 PX------------------*/
   .titre_act{
+    font-size: 1.2em;
     padding-left: 3%;
    }
   .grp_cartes_acts{
@@ -859,6 +869,9 @@ div[class^="container_img_act"]{
     div[class^="carte_act"]{
       height: 210px;
       width: 90%;
+    }
+    .nom_carte_act{
+      font-size: 0.85em;
     }
    }
 @media screen and (max-width: 767px){/*- TELEPHONE PORTABLE  LARG ECRAN < 768 PX --------------------------------------*/
