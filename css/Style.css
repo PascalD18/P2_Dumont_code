@@ -124,7 +124,7 @@ body{
     width: 90%;
   }
   .titres_entete>h1{
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-bottom: 15px;
   }
   .titres_entete>h2{
@@ -157,7 +157,7 @@ body{
   border-top-left-radius: 12px;
   border-bottom-left-radius: 12px;
   height: 35px;
-  width: 220px;
+  width: 200px;
   background-color: white;
 }
 
@@ -339,7 +339,7 @@ padding-left: 0.2cm;
 @media screen and (max-width: 767px){/*- TELEPHONE PORTABLE LARG ECRAN < 768 PX */
   #recherche_et_filtres{
     justify-content: center;
-    width: 95%;
+    width: 91%;
     margin: auto;
     padding-left: 0px;
   }
@@ -350,33 +350,33 @@ padding-left: 0.2cm;
     margin: auto;
   }
   .bloc_gauche_rech{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    height: 60px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 52px;
     width: 100%;
   }
   .parent_i_loc{
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    height: 60px;
-    width:60px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    height: 52px;
+    width:58px;
   }
   #i_localisation{
-    font-size: 1.4em;
+    font-size: 1.2em;
   }
   .saisie_ville{
     margin-top: 2px;
-    height: 56px;
+    height: 48px;
     width: 90%; 
   }
   #nomville{
-    font-size: 1.3em; 
-    height: 56px;
+    font-size: 1.1em; 
+    height: 48px;
     width: 100%;
   }
   .container_parent_rech{
-    height: 60px;
-    width: 60px;
+    height: 52px;
+    width: 52px;
   }
   #i_loupe{
   font-size:1.1em;
@@ -387,8 +387,8 @@ padding-left: 0.2cm;
   .parent_rech{
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
-    height: 60px;
-    width: 60px;
+    height: 52px;
+    width: 52px;
   }
   .bloc_criteres{
     margin-top: 0px;
@@ -410,34 +410,37 @@ padding-left: 0.2cm;
     width: 100%;
   }
   .parent_i_critere{
-    height: 60px; width: 60px;
-    border-radius: 32px;
+    height: 52px;
+    width: 52px;
+    border-radius: 26px;
     margin-left: -6px;
   }
   #finance{
-    font-size: 1.2em;
+    font-size: 1em;
     margin-right: 12px;
     margin-left: 12px;
   }
   #famille{
-    font-size: 1.4em;
+    font-size: 1.3em;
     margin-right: 12px;
     margin-left: 12px;
   }
   #romantique{
-    font-size: 1.4em;
+    font-size: 1.3em;
     margin-right: 12px;
     margin-left: 12px;
   }
   #animaux{
-    font-size: 1.2em;
-    margin-right: 0.3cm;
-    margin-left: 0.3cm;
+    font-size: 1.3em;
+    margin-right: 12px;
+    margin-left: 12px;
   }
   div[class*="parent_i_text_critere"]{
-    border-top-left-radius: 32px; border-top-right-radius: 32px;
-    border-bottom-left-radius: 32px; border-bottom-right-radius: 32px;
-    height: 56px;
+    border-top-left-radius: 26px;
+    border-top-right-radius: 26px;
+    border-bottom-left-radius: 26px;
+    border-bottom-right-radius: 26px;
+    height: 52px;
   }
   p[class^="text_critere"]{
     font-size: 1em;
@@ -464,12 +467,12 @@ a[class^="lien_carte"]{
 .nom_carte{
   font-weight: 800;
   margin: 0px 0px 0px 10px;
-  font-size: 0.8em;
+  font-size: 0.em;
 }
 .tarif_carte{
   font-weight: 400;
   margin: 3px 0px 0px 10px;
-  font-size: 0.8em;
+  font-size: 0.75em;
 }
 .ligne_etoiles{
   margin: 0px 0px 0px 10px;
