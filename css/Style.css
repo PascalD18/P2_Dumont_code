@@ -702,6 +702,15 @@ a[class^="lien_carte"]{
   .container_img_heb{
    height: 65%;
   }
+  .nom_carte{
+    font-size: 1.2em;
+  }
+  .tarif_carte{
+    font-size: 1.2em;
+  }
+  .ligne_etoiles{
+    font-size: 1em;
+  }
   .aff_plus{
     font-size: 1.2em;
    padding-top: 20px;
