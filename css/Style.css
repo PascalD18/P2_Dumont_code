@@ -658,7 +658,8 @@ a[class^="lien_carte"]{
     height: 565px
   }
   .carte_pop{
-    height: 110px;
+    height: 145px;
+    width: 88%;
   }
 }
 @media screen and (max-width: 767px){/*- TELEPHONE PORTABLE LARG ECRAN < 768 PX ---------------------------------------*/
