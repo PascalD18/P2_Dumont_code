@@ -551,7 +551,7 @@ a[class^="lien_carte"]{
   flex-direction: column;
   justify-content: flex-start;
   height: 40%;
-  margin: 5px 0px 0px 0px;
+  margin: 3px 0px 0px 0px;
 }
 
 .aff_plus{
@@ -720,13 +720,13 @@ a[class^="lien_carte"]{
    height: 65%;
   }
   .nom_carte{
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
   .tarif_carte{
-    font-size: 1.2em;
+    font-size: 0.9em;
   }
   .ligne_etoiles{
-    font-size: 1em;
+    font-size: 0.75em;
   }
   .aff_plus{
     font-size: 1.2em;
@@ -756,7 +756,7 @@ a[class^="lien_carte"]{
    border-bottom-right-radius: 0px;
   }
   .carte_pop{
-   height: 147px;
+   height: 125px;
    width: 88%;
   }
 }
