@@ -327,7 +327,7 @@ p[class^="text_critere"]{
   margin-left: 8px;
 }
 .text_info{
-font-size: 0.9em;
+font-size: 0.7em;
 font-weight: 400;
 padding-left: 0.2cm;  
 }
@@ -902,12 +902,14 @@ div[class^="container_img_act"]{
   div[class^="carte_act"]{
     height: 190px;
     width: 90%;
+    margin: 10px 0px;
   }
   div[class^="container_img_act"]{
-    height: 70%;  
+    height: 135px;  
   }
   .nom_carte_act{
     font-size: 1.1em;
+    padding: 18px 0px 18px 15px;
   }
 }
 /* ---------------------------------------------- FOOTER --------------------------------------------------------------*/
