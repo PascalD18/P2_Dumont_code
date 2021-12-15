@@ -54,7 +54,7 @@ body{
 .choix_heb,.choix_act{
   text-decoration: none;
   font-size: 0.8em;
-  font-weight: 400;
+  font-weight: 800;
   border-top-style: solid;
   border-bottom:none;
   width: 50%;
@@ -488,7 +488,7 @@ a[class^="lien_carte"]{
   flex-direction: row;
 }
 
-  .titre_marseille{
+  .titre_heb{
   font-size: 1.1em;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
@@ -644,7 +644,7 @@ a[class^="lien_carte"]{
     height: 636px;
     width: 60%;
   }
-  .titre_marseille{
+  .titre_heb{
     font-size: 1.2em;
   }
   .carte_heb{
@@ -690,10 +690,11 @@ a[class^="lien_carte"]{
    width: 100%;
    height: 100%;
   }
-  .titre_marseille{
+  .titre_heb{
     font-size: 1.4em;
-    padding-left: 5%;
-    padding-bottom: 10px;
+    margin-bottom: 10px;
+    margin-top: 15px;
+    margin-left: 6%;
     background-color: white;
   }
   .art_heb_marseille{
@@ -701,6 +702,7 @@ a[class^="lien_carte"]{
     margin-top: 20px;
     height: 100%;
     width: 100%;
+    background-color: white;
   }
   .grp_cartes_heb_marseille{
    flex-direction: column;
@@ -733,6 +735,7 @@ a[class^="lien_carte"]{
    background-color: white;
   }
   .art_heb_pop{
+    padding-left: 0px;
    width: 100%;
   }
   .parent_titre-pop_et_i{
@@ -742,7 +745,7 @@ a[class^="lien_carte"]{
   }
   .titre_pop{
     font-size: 1.4em;
-    padding-left: 5%;
+    margin-left: 6%;
   }
   .grp_cartes_heb_pop{
    padding-bottom: 10px;
@@ -763,7 +766,7 @@ a[class^="lien_carte"]{
   flex-direction: column;
 }
 .titre_act{
-  font-size: 1em;
+  font-size: 1.1em;
   padding-top: 30px;
   text-align: left;
 }
@@ -840,7 +843,7 @@ div[class^="container_img_act"]{
 }
 .nom_carte_act{
   font-weight: 800;
-  font-size: 0.75em;
+  font-size: 0.85em;
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
@@ -877,12 +880,12 @@ div[class^="container_img_act"]{
       width: 90%;
     }
     .nom_carte_act{
-      font-size: 0.85em;
+      font-size: 0.9em;
     }
    }
 @media screen and (max-width: 767px){/*- TELEPHONE PORTABLE  LARG ECRAN < 768 PX --------------------------------------*/
   .titre_act{
-    font-size: 1.3em;
+    font-size: 1.4em;
     padding-left: 5%;
   }
   div[class^="grp_cartes_act"]{
@@ -902,7 +905,7 @@ div[class^="container_img_act"]{
     height: 80%;  
   }
   .nom_carte_act{
-    font-size: 1em;
+    font-size: 1.2em;
   }
 }
 /* ---------------------------------------------- FOOTER --------------------------------------------------------------*/
