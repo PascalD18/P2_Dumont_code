@@ -38,7 +38,6 @@ body{
   justify-content: space-between;
  }
  .parent_logo{
-  margin-top: 10px;
   margin: 25px;
   width: 75px;
 }
@@ -79,12 +78,11 @@ body{
 }
 .titres_entete>h1{
   font-size: 1em;
-  padding-top: 0px;
+  margin: 0px;
 }
 .titres_entete>h2 {
   font-size: 0.8em;
-  font-weight: 400;
-  padding-bottom: 15px;
+  font-weight: 400
 }
 @media screen and (max-width: 767px){/*-TELEPHONE PORTABLE LARG ECRAN < 768 PX ------------------*/
   #entete{
@@ -96,7 +94,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 100px;
-    padding-bottom: 20px;
+    margin-bottom: 0px;
   }
 .nav_types{
   justify-content: space-between;
@@ -127,7 +125,6 @@ body{
   }
   .titres_entete>h1{
     font-size: 1.2em;
-    margin-top: 0px;
     margin-bottom: 15px;
   }
   .titres_entete>h2{
