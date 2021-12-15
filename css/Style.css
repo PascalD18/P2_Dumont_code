@@ -11,6 +11,7 @@
 /*---------------------------------------------- TITRES -----------------------------------------------------------*/
 p[class^="titre"]{
   font-weight: 800;
+  font-size: 0.9em;
 }
 h1[class^="titre"]{
   font-weight: 800;
@@ -467,12 +468,12 @@ a[class^="lien_carte"]{
 .nom_carte{
   font-weight: 800;
   margin: 0px 0px 0px 10px;
-  font-size: 0.em;
+  font-size: 0.8em;
 }
 .tarif_carte{
   font-weight: 400;
   margin: 3px 0px 0px 10px;
-  font-size: 0.75em;
+  font-size: 0.7em;
 }
 .ligne_etoiles{
   margin: 0px 0px 0px 10px;
@@ -480,7 +481,7 @@ a[class^="lien_carte"]{
 } 
 /*----------------------------------------------- HEBERGEMENTS - PAR DEFAUT DESKTOP FIRST -------------------------------------------*/
 #bloc_menu{
-  width: 95%;
+  width: 93%;
   margin: auto;
 } 
 #hebergements{
@@ -535,7 +536,7 @@ a[class^="lien_carte"]{
   flex-direction: column;
   justify-content: space-between;
   height: 100%;
-  padding: 0px 0px 4px 0px;  
+  padding: 0px 0px 6px 0px;  
 }
 .container_img_heb{
   height: 60%;
@@ -630,7 +631,7 @@ a[class^="lien_carte"]{
   flex-direction: column;
   justify-content: space-between;
   width: 60%;
-  margin: 5px 0px;
+  margin: 4px 0px 6px 0px;
 }
 .bloc_nom_tarif_pop{
   display: flex;
@@ -847,7 +848,7 @@ div[class^="container_img_act"]{
 }
 .nom_carte_act{
   font-weight: 800;
-  font-size: 0.85em;
+  font-size: 0.7em;
   padding-top: 10px;
   padding-left: 10px;
   padding-bottom: 10px;
