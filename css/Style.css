@@ -489,12 +489,10 @@ a[class^="lien_carte"]{
 }
 
   .titre_marseille{
+  font-size: 1.1em;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
-  margin: 0px;
-  padding-top: 35px;
-  padding-bottom: 0px;
-  padding-left: 35px;
+  margin: 35px 0px 0px 35px;
 
 }
 .art_heb_marseille{
@@ -580,8 +578,8 @@ a[class^="lien_carte"]{
   background-color: #F2F2F2;
 }
 .titre_pop{
-  font-size: 1em;
-  margin-left: 6%;
+  font-size: 1.1em;
+  margin: 20px 0px 15px 11%;
 }
 #i_populaire{
   font-size: 1.4em;
@@ -646,6 +644,9 @@ a[class^="lien_carte"]{
     height: 636px;
     width: 60%;
   }
+  .titre_marseille{
+    font-size: 1.2em;
+  }
   .carte_heb{
     height: 155px;
     width: 45%;
@@ -661,6 +662,10 @@ a[class^="lien_carte"]{
   }
   .art_heb_pop{
     width: 40%;
+  }
+  .titre_pop{
+    font-size: 1.2em;
+    margin-left: 6%;
   }
   .grp_cartes_heb_pop{
     padding-bottom: 50px;
@@ -737,6 +742,7 @@ a[class^="lien_carte"]{
   }
   .titre_pop{
     font-size: 1.4em;
+    padding-left: 5%;
   }
   .grp_cartes_heb_pop{
    padding-bottom: 10px;
@@ -877,7 +883,7 @@ div[class^="container_img_act"]{
 @media screen and (max-width: 767px){/*- TELEPHONE PORTABLE  LARG ECRAN < 768 PX --------------------------------------*/
   .titre_act{
     font-size: 1.3em;
-   padding-left: 5%;
+    padding-left: 5%;
   }
   div[class^="grp_cartes_act"]{
    flex-direction: column;
