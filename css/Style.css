@@ -447,14 +447,14 @@ padding-left: 0.2cm;
     font-weight: 800;
    }
   .parent_i_text_info{
-    justify-content: center;
-    width: 90%;
+    width: 100%;
    }
    .parent_i_info{
      margin-bottom: 12px;
    }
   .text_info{
-    margin-top: 0.1cm;
+    font-size: 1em;
+    margin-top: 5px;
   }
 }
 /*----------------------------------------------- MAIN ----------------------------------------------------------------*/
@@ -724,6 +724,7 @@ a[class^="lien_carte"]{
   }
   .tarif_carte{
     font-size: 0.9em;
+    margin-top: 5px;
   }
   .ligne_etoiles{
     font-size: 0.75em;
@@ -756,8 +757,11 @@ a[class^="lien_carte"]{
    border-bottom-right-radius: 0px;
   }
   .carte_pop{
-   height: 125px;
+   height: 147px;
    width: 88%;
+  }
+  .bloc_infos_pop{
+    padding-bottom: 5px;
   }
 }
 /*----------------------------------------------- ACTIVITES PAR DEFAUT PC DESKTOP FIRST -------------------------------*/
@@ -896,16 +900,14 @@ div[class^="container_img_act"]{
    padding-left: 0px;
   }
   div[class^="carte_act"]{
-    padding-bottom: 10px;
-    padding-top: 10px;
-    height: 210px;
+    height: 190px;
     width: 90%;
   }
   div[class^="container_img_act"]{
-    height: 80%;  
+    height: 70%;  
   }
   .nom_carte_act{
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 }
 /* ---------------------------------------------- FOOTER --------------------------------------------------------------*/
