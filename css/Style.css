@@ -787,14 +787,15 @@ display: flex;
 /*.grp_cartes_acts{
   justify-content: space-around;
 }*/
-.grp_cartes_act1,.grp_cartes_act2,.grp_cartes_act1-1,.grp_cartes_act2-1{
-  /*flex-direction: row;
-  justify-content: space-between;*/
+.grp_cartes_act1,.grp_cartes_act2{
+  flex-direction: row;
+  justify-content: space-between;
   width: 50%;
 }
 .grp_cartes_act1-1,.grp_cartes_act2-1{
   flex-direction: column;
   justify-content: space-between;
+  align-items: center;
  }
 div[class^="carte_act"]{
   display: flex;
@@ -804,18 +805,13 @@ div[class^="carte_act"]{
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   box-shadow: 2px 2px 2px 2px #F2F2F2;
-  width: 80%;
+  width: 60%;
 }
 .carte_act1{
-  margin-right: 10px;
-  height: 305px;
+ height: 305px;
 }
 .carte_act2{
-
-  margin-right: 15px;
-  margin-bottom: 15px;
-  margin-left: 15px;
-  height: 168px;
+ height: 168px;
 }
 .carte_act3{
   margin-top: 15px;
@@ -824,19 +820,13 @@ div[class^="carte_act"]{
   height: 118px;
 }
 .carte_act4{
-  margin-left: 15px;
-  margin-right: 15px;
-  height: 305px;
+ height: 305px;
 }
 .carte_act5{
-  margin-left: 15px;
-  margin-bottom: 15px;
-  height: 135px;
+ height: 135px;
 }
 .carte_act6{
-  margin-top: 15px;
-  margin-left: 15px;
-  height: 147px;
+ height: 147px;
 }
 a[class^="lien_carte_act"]{
   display: flex;
