@@ -796,6 +796,7 @@ display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+  width: 46.4%;
  }
 div[class^="carte_act"]{
   display: flex;
@@ -805,25 +806,31 @@ div[class^="carte_act"]{
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   box-shadow: 2px 2px 2px 2px #F2F2F2;
-  width: 210px;
+
 }
 .carte_act1{
  height: 305px;
+ width: 47.5%;
 }
 .carte_act2{
  height: 168px;
+ width: 100%;
 }
 .carte_act3{
   height: 118px;
+  width: 100%;
 }
 .carte_act4{
  height: 305px;
+ width: 47.5%;
 }
 .carte_act5{
  height: 135px;
+ width: 100%
 }
 .carte_act6{
  height: 147px;
+ width: 100%;
 }
 a[class^="lien_carte_act"]{
   display: flex;
