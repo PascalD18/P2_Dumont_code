@@ -770,10 +770,9 @@ a[class^="lien_carte"]{
   }
 }
 /*----------------------------------------------- ACTIVITES PAR DEFAUT PC DESKTOP FIRST -------------------------------*/
-#activites{
+/*#activites{
   display: flex;
-  flex-direction: column;
-}
+}*/
 .titre_act{
   font-size: 1.1em;
   padding-top: 30px;
@@ -785,18 +784,17 @@ a[class^="lien_carte"]{
 div[class^="grp_cartes_act"]{
 display: flex;
 }
-.grp_cartes_acts{
+/*.grp_cartes_acts{
   justify-content: space-around;
-}
-.grp_cartes_act1,.grp_cartes_act2{
-  flex-direction: row;
-  justify-content: space-around;
-  width: 100%;
+}*/
+.grp_cartes_act1,.grp_cartes_act2,.grp_cartes_act1-1,.grp_cartes_act2-1{
+  /*flex-direction: row;
+  justify-content: space-between;*/
+  width: 50%;
 }
 .grp_cartes_act1-1,.grp_cartes_act2-1{
   flex-direction: column;
-  align-items: center;
-  width: 100%;
+  justify-content: space-between;
  }
 div[class^="carte_act"]{
   display: flex;
@@ -806,13 +804,14 @@ div[class^="carte_act"]{
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   box-shadow: 2px 2px 2px 2px #F2F2F2;
-  width: 90%;
+  width: 80%;
 }
 .carte_act1{
   margin-right: 10px;
   height: 305px;
 }
 .carte_act2{
+
   margin-right: 15px;
   margin-bottom: 15px;
   margin-left: 15px;
@@ -913,8 +912,6 @@ a[class^="lien_carte_act"]{
    flex-direction: column;
    align-items: center;
    width: 100%;
-   padding-right: 0px;
-   padding-left: 0px;
   }
   div[class^="carte_act"]{
     height: 190px;
