@@ -8,7 +8,7 @@
       Hauteur de la boîte de contenu : height - (2 * padding) - (2 * border) */
    font-family: 'Raleway', sans-serif; /*font-weight: normal;*/
  }
-/*---------------------------------------------- TITRES -----------------------------------------------------------*/
+/*---------------------------------------------- COMMUNS A TOUS LES BLOCS -----------------------------------------------------------*/
 p[class^="titre"]{
   font-weight: 800;
 }
@@ -16,11 +16,13 @@ h1[class^="titre"]{
   font-weight: 800;
   padding-bottom: 5px;
 }
-/*----------------------------------------------- IMAGES --------------------------------------------------------------*/
 img[class^="img_"]{
   object-fit: cover;
   height: 100%;
   width: 100%;
+}
+div[class^="carte_"]{
+  background-color: white;
 }
 /*---------------------------------------------------------------------------------------------------------------------*/
 /*----------------------------------------------- SUIVANT BLOC --------------------------------------------------------*/
@@ -776,6 +778,8 @@ a[class^="lien_carte"]{
   font-size: 1.1em;
   padding-top: 30px;
   text-align: left;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 div[class^="grp_cartes_act"]{
@@ -797,10 +801,15 @@ display: flex;
 div[class^="carte_act"]{
   display: flex;
   flex-direction: column;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  border-bottom-left-radius: 15px;
+  box-shadow: 2px 2px 2px 2px #F2F2F2;
   width: 90%;
 }
 .carte_act1{
-  height: 330px;
+  height: 305px;
   margin-right: 10px;
 }
 .carte_act2{
@@ -835,14 +844,12 @@ a[class^="lien_carte_act"]{
   flex-direction: column;
   height: 100%;
 }
+/*
 div[class^="container_img_act"]{
   height: 80%;
-}
+}*/
 
-div[class^="container_img_act"]{
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
-}
+
 
 .img_act{
   border-top-left-radius: 15px;
@@ -851,15 +858,9 @@ div[class^="container_img_act"]{
 .nom_carte_act{
   font-weight: 800;
   font-size: 0.7em;
-  padding-top: 10px;
-  padding-left: 10px;
-  padding-bottom: 10px;
-  margin: 0px;
-  box-shadow: 2px 2px 2px 2px #F2F2F2;
-  border-bottom-left-radius: 12px;
-  border-bottom-right-radius: 12px;
-  background-color: white;
-}
+  height: 42px;
+  margin: auto 0px auto 10px;
+ }
 @media screen and (min-width: 768px) and (max-width: 991px){/*-TABLETTES LARG ECRAN > 767 PX < 992 PX------------------*/
   .titre_act{
     font-size: 1.2em;
@@ -906,6 +907,8 @@ div[class^="container_img_act"]{
     height: 190px;
     width: 90%;
     margin: 10px 0px;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
   }
   div[class^="container_img_act"]{
     height: 135px;  
