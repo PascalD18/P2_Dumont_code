@@ -937,10 +937,12 @@ a[class^="lien_carte_act"]{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  padding-top: 10px;
-  margin-top: 20px;
+  margin-top: 40px;
+  padding-top: 20px;
   padding-left: 30px;
-  width: 68%;
+  padding-bottom: 15px;
+  height: 160px;
+  width: 75%;
 }
 a[class^="footer"]{
   text-decoration: none;
