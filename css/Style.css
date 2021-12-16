@@ -38,10 +38,12 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 93%;
+  margin: auto;
  }
  .parent_logo{
-  margin: 25px;
-  width: 75px;
+  margin: 35px 0px 30px 0px;
+  width: 55px;
 }
 .img_logo{
   margin-left: 5px;
@@ -75,8 +77,8 @@ body{
 }
 .titres_entete{
   font-weight: 800;
-  width: 90%;
-  margin-left: 30px;
+  width: 93%;
+  margin: auto;
 }
 .titres_entete>h1{
   font-size: 1em;
@@ -101,6 +103,7 @@ body{
 .nav_types{
   justify-content: space-between;
   align-items: center;
+  padding-bottom: 35px;
   width: 100%;
   }
    .choix_heb,.choix_act{
@@ -139,7 +142,8 @@ body{
 #recherche_et_filtres{
   display: flex;
   flex-direction: column;
-  margin-left: 30px;
+  margin: auto;
+  width: 93%;
 }
 #recherche{
   display: flex;
@@ -218,6 +222,7 @@ body{
   width: 100%;
   border-top-right-radius: 12px;
   border-bottom-right-radius: 12px;
+  height: 35px;
   background-color:#0065FC;
 }
 
@@ -493,7 +498,7 @@ a[class^="lien_carte"]{
 }
 
 .titre_heb{
-  font-size: 0.9em;
+  font-size: 1em;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   margin: 35px 0px 0px 35px;
@@ -582,7 +587,7 @@ a[class^="lien_carte"]{
   background-color: #F2F2F2;
 }
 .titre_pop{
-  font-size: 0.9em;
+  font-size: 1em;
   margin: 20px 0px 15px 11%;
 }
 #i_populaire{
@@ -617,7 +622,7 @@ a[class^="lien_carte"]{
   flex-direction: row;
   margin-bottom: 15px;
   height: 100px;
-  width: 78%;
+  width: 82%;
 }
 
 .container_img_pop{
@@ -774,7 +779,7 @@ a[class^="lien_carte"]{
   display: flex;
 }*/
 .titre_act{
-  font-size: 1.1em;
+  font-size: 1em;
   padding-top: 30px;
   text-align: left;
   border-bottom-left-radius: 15px;
@@ -983,8 +988,9 @@ ul[class^="liens_footer"]{
   flex-direction: column;  
   width: 90%;
   padding-left: 20px;
-  padding-bottom: 8px;
+  padding-bottom: 50px;
   margin-left: 15px;
+  height: 470px;
   }
   h1[class^="titre"]{
     font-size: 1.2em;
