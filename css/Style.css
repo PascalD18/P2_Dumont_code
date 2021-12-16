@@ -142,6 +142,7 @@ body{
 #recherche{
   display: flex;
   align-items: center;
+  margin-bottom: 8px;
   }
 .bloc_gauche_rech{
   display: flex;
@@ -212,10 +213,9 @@ body{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100%;
   width: 100%;
-  border-top-right-radius: 15px;
-  border-bottom-right-radius: 15px;
+  border-top-right-radius: 12px;
+  border-bottom-right-radius: 12px;
   background-color:#0065FC;
 }
 
@@ -347,7 +347,7 @@ padding-left: 0.2cm;
     flex-direction: row;
     justify-content: center;
     width: 100%;
-    margin: auto;
+    margin-top: 25px;
   }
   .bloc_gauche_rech{
     border-top-left-radius: 15px;
@@ -387,6 +387,8 @@ padding-left: 0.2cm;
   .parent_rech{
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     height: 52px;
     width: 52px;
   }
@@ -664,7 +666,7 @@ a[class^="lien_carte"]{
     width: 40%;
   }
   .titre_pop{
-    font-size: 1.3em;
+    font-size: 1em;
     margin-left: 6%;
   }
   .grp_cartes_heb_pop{
@@ -747,6 +749,7 @@ a[class^="lien_carte"]{
   .titre_pop{
     font-size: 1.4em;
     margin-left: 6%;
+    margin-bottom: 30px;
   }
   .grp_cartes_heb_pop{
    padding-bottom: 10px;
@@ -842,8 +845,8 @@ div[class^="container_img_act"]{
 }
 
 .img_act{
-  border-top-left-radius: 12px;
-  border-top-right-radius: 12px;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 .nom_carte_act{
   font-weight: 800;
@@ -910,6 +913,10 @@ div[class^="container_img_act"]{
   .nom_carte_act{
     font-size: 1.1em;
     padding: 18px 0px 18px 15px;
+  }
+  .img_act{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
   }
 }
 /* ---------------------------------------------- FOOTER --------------------------------------------------------------*/
