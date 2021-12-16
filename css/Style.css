@@ -809,45 +809,59 @@ div[class^="carte_act"]{
   width: 90%;
 }
 .carte_act1{
-  height: 305px;
   margin-right: 10px;
+  height: 305px;
 }
 .carte_act2{
-  height: 155px;
   margin-right: 15px;
   margin-bottom: 15px;
   margin-left: 15px;
+  height: 168px;
 }
 .carte_act3{
   margin-top: 15px;
   margin-right: 15px;
   margin-left: 15px;
-  height: 100px;
+  height: 118px;
 }
 .carte_act4{
   margin-left: 15px;
   margin-right: 15px;
-  height: 330px;
+  height: 305px;
 }
 .carte_act5{
   margin-left: 15px;
   margin-bottom: 15px;
-  height: 125px;
+  height: 135px;
 }
 .carte_act6{
   margin-top: 15px;
   margin-left: 15px;
-  height: 125px;
+  height: 147px;
 }
 a[class^="lien_carte_act"]{
   display: flex;
   flex-direction: column;
   height: 100%;
 }
-/*
-div[class^="container_img_act"]{
-  height: 80%;
-}*/
+.container_img_act1{
+  height: 265px;
+}
+.container_img_act2{
+  height: 125px;
+}
+.container_img_act3{
+  height: 75px;
+}
+.container_img_act4{
+  height: 265px;
+}
+.container_img_act5{
+  height: 95px;
+}
+.container_img_act6{
+  height: 105px;
+}
 
 
 
@@ -858,7 +872,6 @@ div[class^="container_img_act"]{
 .nom_carte_act{
   font-weight: 800;
   font-size: 0.7em;
-  height: 42px;
   margin: auto 0px auto 10px;
  }
 @media screen and (min-width: 768px) and (max-width: 991px){/*-TABLETTES LARG ECRAN > 767 PX < 992 PX------------------*/
