@@ -784,13 +784,13 @@ a[class^="lien_carte"]{
 div[class^="grp_cartes_act"]{
 display: flex;
 }
-/*.grp_cartes_acts{
-  justify-content: space-around;
-}*/
+.grp_cartes_acts{
+  justify-content: space-between;
+}
 .grp_cartes_act1,.grp_cartes_act2{
   flex-direction: row;
   justify-content: space-between;
-  width: 50%;
+  width: 48.5%;
 }
 .grp_cartes_act1-1,.grp_cartes_act2-1{
   flex-direction: column;
@@ -805,7 +805,7 @@ div[class^="carte_act"]{
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
   box-shadow: 2px 2px 2px 2px #F2F2F2;
-  width: 60%;
+  width: 210px;
 }
 .carte_act1{
  height: 305px;
@@ -814,9 +814,6 @@ div[class^="carte_act"]{
  height: 168px;
 }
 .carte_act3{
-  margin-top: 15px;
-  margin-right: 15px;
-  margin-left: 15px;
   height: 118px;
 }
 .carte_act4{
