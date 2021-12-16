@@ -11,7 +11,6 @@
 /*---------------------------------------------- TITRES -----------------------------------------------------------*/
 p[class^="titre"]{
   font-weight: 800;
-  font-size: 0.9em;
 }
 h1[class^="titre"]{
   font-weight: 800;
@@ -489,8 +488,8 @@ a[class^="lien_carte"]{
   flex-direction: row;
 }
 
-  .titre_heb{
-  font-size: 1.1em;
+.titre_heb{
+  font-size: 0.9em;
   border-top-left-radius: 20px;
   border-top-right-radius: 20px;
   margin: 35px 0px 0px 35px;
@@ -579,7 +578,7 @@ a[class^="lien_carte"]{
   background-color: #F2F2F2;
 }
 .titre_pop{
-  font-size: 1.1em;
+  font-size: 0.9em;
   margin: 20px 0px 15px 11%;
 }
 #i_populaire{
@@ -646,7 +645,7 @@ a[class^="lien_carte"]{
     width: 60%;
   }
   .titre_heb{
-    font-size: 1.2em;
+    font-size: 1em;
   }
   .carte_heb{
     height: 155px;
@@ -665,7 +664,7 @@ a[class^="lien_carte"]{
     width: 40%;
   }
   .titre_pop{
-    font-size: 1.2em;
+    font-size: 1.3em;
     margin-left: 6%;
   }
   .grp_cartes_heb_pop{
