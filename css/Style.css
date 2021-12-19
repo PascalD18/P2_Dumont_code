@@ -203,7 +203,7 @@ body{
   font-size: 0.9em; 
   height: 31px;
 }
-.container_parent_rech{
+.parent_parent_rech{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -383,7 +383,7 @@ padding-left: 0.2cm;
     height: 48px;
     width: 100%;
   }
-  .container_parent_rech{
+  .parent_parent_rech{
     height: 52px;
     width: 52px;
   }
@@ -548,7 +548,7 @@ a[class^="lien_carte"]{
   height: 100%;
   padding: 0px 0px 6px 0px;  
 }
-.container_img_heb{
+.parent_img_heb{
   height: 60%;
   width: 100%;
   padding: 3px 3px 0px 3px;
@@ -627,7 +627,7 @@ a[class^="lien_carte"]{
   width: 82%;
 }
 
-.container_img_pop{
+.parent_img_pop{
   width: 40%;
   padding: 3px;
 } 
@@ -727,7 +727,7 @@ a[class^="lien_carte"]{
    box-shadow: 2px 2px 2px 2px #f2f2f2;
    width: 100%;
   }
-  .container_img_heb{
+  .parent_img_heb{
    height: 65%;
   }
   .nom_carte{
@@ -844,22 +844,22 @@ a[class^="lien_carte_act"]{
   flex-direction: column;
   height: 100%;
 }
-.container_img_act1{
+.parent_img_act1{
   height: 265px;
 }
-.container_img_act2{
+.parent_img_act2{
   height: 125px;
 }
-.container_img_act3{
+.parent_img_act3{
   height: 75px;
 }
-.container_img_act4{
+.parent_img_act4{
   height: 265px;
 }
-.container_img_act5{
+.parent_img_act5{
   height: 95px;
 }
-.container_img_act6{
+.parent_img_act6{
   height: 105px;
 }
 
@@ -896,7 +896,7 @@ a[class^="lien_carte_act"]{
      height: 435px;
      width: 100%;
     }
-    div[class^="container_img_act"]{
+    div[class^="parent_img_act"]{
       height: 150px;
     }
     div[class^="carte_act"]{
@@ -924,7 +924,7 @@ a[class^="lien_carte_act"]{
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
   }
-  div[class^="container_img_act"]{
+  div[class^="parent_img_act"]{
     height: 135px;  
   }
   .nom_carte_act{
@@ -940,7 +940,7 @@ a[class^="lien_carte_act"]{
 #pied_de_page{
   background-color: #F2F2F2;
 }
-.container_liens_footer{
+.parent_liens_footer{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -959,7 +959,7 @@ a[class^="footer"]{
   font-size: 0.75em;
   padding-top: 8px;
 }
-.nav_propos,.nav_heb,.nav_ass{
+.parent_propos,.parent_heb,.parent_ass{
   display: flex;  
   flex-direction: column;
   flex-wrap: wrap;
@@ -992,7 +992,7 @@ ul[class^="liens_footer"]{
   #pied_de_page{
     margin-top: 40px;
   }
- .container_liens_footer{
+ .parent_liens_footer{
   flex-direction: column;  
   width: 90%;
   padding-left: 20px;
@@ -1003,7 +1003,7 @@ ul[class^="liens_footer"]{
   h1[class^="titre"]{
     font-size: 1.2em;
   }
-  .nav_propos,.nav_heb,.nav_ass{
+  .parent_propos,.parent_heb,.parent_ass{
   margin-left: 0px;
   margin-top: 15px;
   }
