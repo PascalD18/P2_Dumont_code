@@ -475,6 +475,9 @@ a[class^="lien_carte"]{
   color:black;
   border: none;
 }
+div[class^="carte_"]:hover{
+  transform: scale(1.05);
+}
 .nom_carte{
   font-weight: 800;
   margin: 0px 0px 0px 10px;
@@ -777,9 +780,6 @@ a[class^="lien_carte"]{
   }
 }
 /*----------------------------------------------- ACTIVITES PAR DEFAUT PC DESKTOP FIRST -------------------------------*/
-/*#activites{
-  display: flex;
-}*/
 .titre_act{
   font-size: 1em;
   padding-top: 30px;
