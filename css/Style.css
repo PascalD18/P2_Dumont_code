@@ -9,13 +9,17 @@
    font-family: 'Raleway', sans-serif; /*font-weight: normal;*/
  }
 /*---------------------------------------------- COMMUNS A TOUS LES BLOCS -----------------------------------------------------------*/
+
 p[class^="titre"]{
   font-weight: 800;
 }
-h1[class^="titre"]{
-  font-weight: 800;
-  padding-bottom: 5px;
+
+h1,.titre_charte{
+  font-size: 2em;
+  color: green;
+  background-color: greenyellow;
 }
+
 img[class^="img_"]{
   object-fit: cover;
   height: 100%;
@@ -980,7 +984,13 @@ ul[class^="liens_footer"]{
 .liens_footer_2_lgs{
   height: 46px;
 }
-@media screen and (max-width: 768px){/*---------------------------------------- LARG ECRAN < 768 PX -------------------*/
+@media screen and (min-width: 768px) and (max-width: 991px) {
+.titre_charte{
+ color: green;
+  }
+  
+}
+@media screen and (max-width: 767px){/*---------------------------------------- LARG ECRAN < 768 PX -------------------*/
   #pied_de_page{
     margin-top: 40px;
   }
