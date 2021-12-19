@@ -13,11 +13,19 @@
 p[class^="titre"]{
   font-weight: 800;
 }
-
-h1,.titre_charte{
-  font-size: 2em;
-  color: green;
+h1[class^="titre"]{
+  font-weight: 800;
+  /*color: rgb(59, 26, 182);*/
+  padding-bottom: 5px;
+  background-color: hotpink;
+}
+.titre_chartre,.titre_propos{
+  font-size: 5em;
+  color: red;
   background-color: greenyellow;
+}
+.titre_chartre>h1,.titre_propos>h1{
+  background-color: blue;
 }
 
 img[class^="img_"]{
