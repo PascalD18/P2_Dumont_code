@@ -221,7 +221,11 @@ body{
   height: 35px;
   background-color:#0065FC;
 }
+.parent_rech:hover{
+  transform: scale(1.03);
+}
 .rech{
+  text-decoration: none;
   font-size: 13px;
   color:white;
   font-weight: 800;
@@ -486,7 +490,7 @@ div[class^="carte_"]:hover{
 #bloc_menu{
   width: 93%;
   margin: auto;
-} 
+}
 #hebergements{
   display: flex;
   flex-direction: row;
@@ -656,7 +660,7 @@ div[class^="carte_"]:hover{
   }
   .tarif_carte{
     font-size: 0.75em;
-    margin-top: 2px;
+    margin-top: 0px;
   }
   .ligne_etoiles{
     font-size: 0.6em;
