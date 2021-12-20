@@ -272,7 +272,7 @@ a[class*="parent_i_text_critere"]{
   margin-bottom: 10px;
 }
 a[class*="parent_i_text_critere"]:hover{
-  transform: scale(1.03);
+  transform: scale(1.05);
   box-shadow: 0px 5px 20px #F2F2F2;
   background-color: #0065FC;
   color: white;
