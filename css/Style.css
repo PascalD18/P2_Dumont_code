@@ -509,7 +509,7 @@ div[class^="carte_"]:hover{
   margin: 35px 0px 0px 35px;
 
 }
-.art_heb_marseille{
+.sect_heb_marseille{
  display: flex;
  flex-direction: column;
  border-top-left-radius: 20px;
@@ -599,7 +599,7 @@ div[class^="carte_"]:hover{
   font-size: 1.4em;
   margin-right: 5%;
 }
-.art_heb_pop{
+.sect_heb_pop{
   display: flex;
   flex-direction: column;
   border-top-left-radius: 20px;
@@ -654,7 +654,7 @@ div[class^="carte_"]:hover{
   height: 60%;
 }
 @media screen and (min-width: 768px) and (max-width: 991px) {/*-TABLETTES LARG ECRAN > 767 PX ET < 992 PX -------*/
-  .art_heb_marseille{
+  .sect_heb_marseille{
     height: 636px;
     width: 60%;
   }
@@ -674,7 +674,7 @@ div[class^="carte_"]:hover{
   .ligne_etoiles{
     font-size: 0.6em;
   }
-  .art_heb_pop{
+  .sect_heb_pop{
     width: 40%;
   }
   .titre_pop{
@@ -711,7 +711,7 @@ div[class^="carte_"]:hover{
     margin-left: 6%;
     background-color: white;
   }
-  .art_heb_marseille{
+  .sect_heb_marseille{
     padding-left: 0px;
     margin-top: 20px;
     height: 100%;
@@ -749,7 +749,7 @@ div[class^="carte_"]:hover{
    padding-left: 5%;
    background-color: white;
   }
-  .art_heb_pop{
+  .sect_heb_pop{
     padding-left: 0px;
    width: 100%;
   }
@@ -787,12 +787,12 @@ div[class^="carte_"]:hover{
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
-
+.grp_cartes_acts{
+  display: flex;
+  justify-content: space-between;
+}
 div[class^="grp_cartes_act"]{
 display: flex;
-}
-.grp_cartes_acts{
-  justify-content: space-between;
 }
 .grp_cartes_act1,.grp_cartes_act2{
   flex-direction: row;
@@ -912,7 +912,7 @@ a[class^="lien_carte_act"]{
     font-size: 1.4em;
     padding-left: 5%;
   }
-  div[class^="grp_cartes_act"]{
+  div[class^="grp_cartes_act"],.grp_cartes_acts{
    flex-direction: column;
    align-items: center;
    width: 100%;
