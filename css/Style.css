@@ -565,14 +565,15 @@ div[class^="carte_"]:hover{
   text-decoration: none;
   color: black;
   border: none;
-  transform: scale(1.03);
+  margin-left: 35px;
+  width: 160px;
+
+  background-color: yellow;
 }
 .aff_plus{
   font-size: 0.8em;
   font-weight: 800;
-  margin: 0px;
-  padding-top: 20px;
-  padding-left: 6%;
+  margin: 20px 0px;
 }
 .parent_titre-pop_et_i{
   display: flex;
@@ -672,7 +673,7 @@ div[class^="carte_"]:hover{
     width: 40%;
   }
   .aff_plus{
-    padding-top: 15px;
+    margin: 10px 0px;
   }
   .titre_pop{
     font-size: 1em;
@@ -739,6 +740,9 @@ div[class^="carte_"]:hover{
   }
   .ligne_etoiles{
     font-size: 0.75em;
+  }
+  .parent_aff_plus{
+    padding-left: 6%;
   }
   .aff_plus{
     font-size: 1.2em;
