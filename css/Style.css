@@ -880,7 +880,6 @@ a[class^="lien_carte_act"]{
 @media screen and (min-width: 768px) and (max-width: 991px){/*-TABLETTES LARG ECRAN > 767 PX < 992 PX------------------*/
   .titre_act{
     font-size: 1.2em;
-    padding-left: 3%;
   }
   .grp_cartes_acts{
     flex-direction: row;
@@ -889,22 +888,25 @@ a[class^="lien_carte_act"]{
   .grp_cartes_act1,.grp_cartes_act2{
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
     height: 715px;
-    width: 100%;
+    width: 90%;
+  }
+  .carte_act1,.carte_act4{
+    width: 95%;
+  }
+  .grp_cartes_act2{
+    justify-content: flex-end;
   }
   .grp_cartes_act1-1,.grp_cartes_act2-1{
     flex-direction: column;
-    justify-content: space-between;
     height: 455px;
-    width: 100%;
+    width: 95%;
   }
   div[class^="parent_img_act"]{
     height: 150px;
   }
   div[class^="carte_act"]{
     height: 210px;
-    width: 90%;
   }
   .nom_carte_act{
     font-size: 0.9em;
@@ -926,6 +928,8 @@ a[class^="lien_carte_act"]{
     margin: 10px 0px;
     border-bottom-left-radius: 25px;
     border-bottom-right-radius: 25px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
   }
   div[class^="parent_img_act"]{
     height: 135px;  
