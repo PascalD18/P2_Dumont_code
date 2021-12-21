@@ -37,9 +37,10 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-left: 3%;
 }
 .parent_logo{
-  margin: 35px 0px 30px 35px;
+  margin: 35px 0px 30px 0px;
   width: 80px;
 }
 .img_logo{
@@ -95,7 +96,7 @@ body{
     justify-content: center;
     align-items: center;
     width: 100px;
-    margin-bottom: 0px;
+    margin: 25px 0px 0px 0px;
   }
   .nav_types{
     justify-content: space-between;
