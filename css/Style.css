@@ -37,12 +37,10 @@ body{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  width: 93%;
-  margin: auto;
 }
 .parent_logo{
-  margin: 35px 0px 30px 0px;
-  width: 55px;
+  margin: 35px 0px 30px 35px;
+  width: 80px;
 }
 .img_logo{
   margin-left: 5px;
@@ -51,7 +49,8 @@ body{
 .nav_types{
   display:flex;
   flex-direction: row;
-  padding-bottom: 15px;
+  justify-content: center;
+  width: 25%;
 }
 .choix_heb,.choix_act{
   text-decoration: none;
@@ -59,10 +58,8 @@ body{
   font-weight: 800;
   border-top-style: solid;
   border-bottom:none;
-  width: 50%;
   text-align: center;
-  padding-right: 20px;
-  padding-left: 40px;
+  width: 50%;
   padding-top: 30px;
   border-color: #F2F2F2;
 }
