@@ -473,16 +473,19 @@ div[class^="carte_"]:hover{
   transform: scale(1.05);
 }
 .nom_carte{
+  list-style-type:none;
   font-weight: 800;
   margin: 0px 0px 0px 10px;
   font-size: 0.8em;
 }
 .tarif_carte{
+  list-style-type:none;
   font-weight: 400;
   margin: 3px 0px 0px 10px;
   font-size: 0.7em;
 }
 .ligne_etoiles{
+  list-style-type:none;
   margin: 0px 0px 0px 10px;
   font-size: 0.5em;
 } 
@@ -554,8 +557,8 @@ div[class^="carte_"]:hover{
 .bloc_infos_heb{
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
   height: 40%;
+  padding: 0px;
   margin: 3px 0px 0px 0px;
 }
 .parent_aff_plus{
@@ -635,6 +638,7 @@ div[class^="carte_"]:hover{
   flex-direction: column;
   justify-content: space-between;
   width: 60%;
+  padding: 0px;
   margin: 4px 0px 6px 0px;
 }
 .bloc_nom_tarif_pop{
@@ -651,6 +655,9 @@ div[class^="carte_"]:hover{
   }
   .titre_heb{
     font-size: 1em;
+  }
+  .bloc_infos_heb{
+    height: 55%;
   }
   .carte_heb{
     height: 160px;
