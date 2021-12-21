@@ -55,6 +55,7 @@ body{
 .choix_heb,.choix_act{
   text-decoration: none;
   font-size: 0.8em;
+  color: black;
   font-weight: 800;
   border-top-style: solid;
   border-bottom:none;
@@ -873,6 +874,7 @@ a[class^="lien_carte_act"]{
 .nom_carte_act{
   font-weight: 800;
   font-size: 0.7em;
+  padding: 0px;
   margin: auto 0px auto 10px;
 }
 @media screen and (min-width: 768px) and (max-width: 991px){/*-TABLETTES LARG ECRAN > 767 PX < 992 PX------------------*/
@@ -888,13 +890,13 @@ a[class^="lien_carte_act"]{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    height: 670px;
+    height: 715px;
     width: 100%;
   }
   .grp_cartes_act1-1,.grp_cartes_act2-1{
     flex-direction: column;
     justify-content: space-between;
-    height: 435px;
+    height: 455px;
     width: 100%;
   }
   div[class^="parent_img_act"]{
@@ -902,7 +904,7 @@ a[class^="lien_carte_act"]{
   }
   div[class^="carte_act"]{
     height: 210px;
-    width: 95%;
+    width: 90%;
   }
   .nom_carte_act{
     font-size: 0.9em;
@@ -930,7 +932,6 @@ a[class^="lien_carte_act"]{
   }
   .nom_carte_act{
     font-size: 1.1em;
-    padding: 18px 0px 18px 15px;
   }
   .img_act{
     border-top-left-radius: 25px;
