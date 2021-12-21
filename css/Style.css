@@ -729,6 +729,12 @@ div[class^="carte_"]:hover{
    padding-right: 5%;
    background-color: white;
    }
+   .carte_heb,.carte_pop{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-bottom-left-radius: 25px;
+  }
   .carte_heb{
    margin: 5px 0px;
    height: 195px;
@@ -737,6 +743,10 @@ div[class^="carte_"]:hover{
   }
   .parent_img_heb{
    height: 65%;
+  }
+  .img_carte_heb{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
   }
   .nom_carte{
     font-size: 1.1em;
@@ -779,6 +789,10 @@ div[class^="carte_"]:hover{
   .carte_pop{
    height: 147px;
    width: 88%;
+  }
+  .img_carte_pop{
+    border-top-left-radius: 25px;
+    border-bottom-left-radius: 25px;
   }
   .bloc_infos_pop{
     padding-bottom: 5px;
@@ -1010,6 +1024,12 @@ ul[class^="liens_footer"]{
   .parent_propos,.parent_heb,.parent_ass{
     margin-left: 0px;
     margin-top: 15px;
+  }
+  .liens_footer_3_lgs{
+    height: 90px;
+  }
+  .liens_footer_2_lgs{
+    height: 60px;
   }
   a[class^="footer"]{
     font-size: 1em;
