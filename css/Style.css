@@ -645,6 +645,7 @@ div[class^="carte_"]:hover{
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding: 0px;
   margin: 5px 0px 0px 0px;
   height: 60%;
 }
