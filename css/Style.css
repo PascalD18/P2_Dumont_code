@@ -807,12 +807,12 @@ div[class^="carte_"]:hover{
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }
+div[class^="grp_cartes_act"]{
+  display: flex;
+}
 .grp_cartes_acts{
   display: flex;
   justify-content: space-between;
-}
-div[class^="grp_cartes_act"]{
-display: flex;
 }
 .grp_cartes_act_niv1_g,.grp_cartes_act_niv1_d{
   flex-direction: row;
@@ -832,12 +832,11 @@ div[class^="carte_act"]{
   border-top-left-radius: 15px;
   border-bottom-right-radius: 15px;
   border-bottom-left-radius: 15px;
-  padding-bottom: 10px;
   box-shadow: 2px 2px 2px 2px #F2F2F2;
 }
-  .carte_act1{
-   height: 305px;
-   width: 47.5%;
+.carte_act1{
+  height: 305px;
+  width: 47.5%;
 }
 .carte_act2{
   height: 168px;
