@@ -814,12 +814,12 @@ div[class^="carte_"]:hover{
 div[class^="grp_cartes_act"]{
 display: flex;
 }
-.grp_cartes_act1,.grp_cartes_act2{
+.grp_cartes_act_niv1_g,.grp_cartes_act_niv1_d{
   flex-direction: row;
   justify-content: space-between;
   width: 48.5%;
 }
-.grp_cartes_act1-1,.grp_cartes_act2-1{
+.grp_cartes_act_niv2{
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
@@ -859,7 +859,7 @@ div[class^="carte_act"]{
   height: 147px;
   width: 100%;
 }
-a[class^="lien_carte_act"]{
+.lien_carte_act{
   display: flex;
   flex-direction: column;
   height: 100%;
@@ -900,19 +900,21 @@ a[class^="lien_carte_act"]{
     flex-direction: row;
     justify-content: space-between;
    } 
-  .grp_cartes_act1,.grp_cartes_act2{
+  .grp_cartes_act_niv1_g,.grp_cartes_act_niv1_d{
     flex-direction: row;
     flex-wrap: wrap;
     height: 715px;
     width: 90%;
   }
+
+  .grp_cartes_act_niv1_d{
+    justify-content: flex-end;
+  }
   .carte_act1,.carte_act4{
     width: 95%;
   }
-  .grp_cartes_act2{
-    justify-content: flex-end;
-  }
-  .grp_cartes_act1-1,.grp_cartes_act2-1{
+
+  .grp_cartes_act_niv2{
     flex-direction: column;
     height: 455px;
     width: 95%;
