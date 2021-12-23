@@ -254,7 +254,7 @@ body{
 .bloc_filtre_et_criteres{
   display: flex;
 }
-a[class*="parent_i_text_critere"]{
+.parent_i_text_critere{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -270,7 +270,7 @@ a[class*="parent_i_text_critere"]{
   margin-left: 12px;
   margin-bottom: 10px;
 }
-a[class*="parent_i_text_critere"]:hover{
+.parent_i_text_critere:hover{
   transform: scale(1.05);
   box-shadow: 0px 5px 20px #F2F2F2;
   background-color: #0065FC;
@@ -305,7 +305,7 @@ a[class*="parent_i_text_critere"]:hover{
   margin-right: 0.3cm;
   margin-left: 0.3cm;
 }
-p[class^="text_critere"]{
+.text_critere{
   font-size: 0.8em;
   font-weight: 800;
   margin-left: 12px;
@@ -442,14 +442,14 @@ p[class^="text_critere"]{
     margin-right: 12px;
     margin-left: 12px;
   }
-  a[class*="parent_i_text_critere"]{
+  .parent_i_text_critere{
     border-top-left-radius: 26px;
     border-top-right-radius: 26px;
     border-bottom-left-radius: 26px;
     border-bottom-right-radius: 26px;
     height: 52px;
   }
-  p[class^="text_critere"]{
+  .text_critere{
     font-size: 1em;
     font-weight: 800;
    }
