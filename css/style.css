@@ -141,7 +141,6 @@ body{
   display: flex;
   flex-direction: column;
   margin: auto;
-  width: 93%;
 }
 #recherche{
   display: flex;

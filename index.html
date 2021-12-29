@@ -9,7 +9,8 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;1,400&display=swap" />
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,800;1,400&display=swap" />
   <link rel="icon" type="image/png" href="images/logo/Booki.png" />
   <link rel="stylesheet" href="css/style.css" />
 </head>
@@ -31,74 +32,74 @@
       <h2>En plein centre ville ou en pleine nature</h2>
     </div>
   </header>
-  <nav id="recherche_et_filtres">
-    <!-- SECTION RECHERCHE -->
-    <section id="recherche">
-      <div class="bloc_gauche_rech">
-        <div class="parent_i_loc">
-          <i class="fas fa-map-marker-alt" id="i_localisation"></i>
-        </div>
-        <!-- Formulaire pour la sasie de la ville, Pays-->
-        <form class="saisie_ville" method="post" action="#">
-          <p>
-            <input type="text" name="nomville" placeholder="Marseille, France" id="nomville">
-          </p>
-        </form>
-      </div>
-      <!-- Text 'Rechercher' pour Desktop ou icone Loupe pour Tel. portable -->
-      <div class="parent_parent_rech">
-        <a class="parent_rech" href="#">
-          <h4 class="rech">Rechercher</h4>
-          <i class="fas fa-search" id="i_loupe"></i>
-        </a>
-      </div>
-    </section>
-    <!-- SECTION FILTRES et INFO -->
-    <section id="section_filtres_et_info">
-      <div class="bloc_filtre_et_criteres">
-        <P class="text_filtre">Filtres</P>
-        <!-- Groupes Icones et texts de critére-->
-        <div class="bloc_criteres">
-          <!-- Economique -->
-          <a class="parent_i_text_critere" href="#">
-            <div class="parent_i_critere">
-              <i class="fas fa-money-bill-wave" id="finance" style="color:#0065FC;"></i>
-            </div>
-            <p class="text_critere">Économique</p>
-          </a>
-          <!-- Familial -->
-          <a class="parent_i_text_critere" href="#">
-            <div class="parent_i_critere">
-              <i class="fas fa-child" id="famille" style="color:#0065FC;"></i>
-            </div>
-            <p class="text_critere">Familial</p>
-          </a>
-          <!-- Romantique -->
-          <a class="parent_i_text_critere" href="#">
-            <div class="parent_i_critere">
-              <i class="fas fa-heart" id="romantique" style="color:#0065FC;"></i>
-            </div>
-            <p class="text_critere">Romantique</p>
-          </a>
-          <!-- Animaux-->
-          <a class="parent_i_text_critere" href="#">
-            <div class="parent_i_critere">
-              <i class="fas fa-dog" id="animaux" style="color:#0065FC;"></i>
-            </div>
-            <p class="text_critere">Animaux autorisés</p>
-          </a>
-        </div>
-      </div>
-      <!-- Zone INFO-->
-      <div class="parent_i_text_info">
-        <div class="parent_i_info">
-          <i class="fas fa-info" id="info" style="color:#0065FC;"></i>
-        </div>
-        <p class="text_info">Plus de 500 logements sont disponibles dans cette ville</p>
-      </div>
-    </section>
-  </nav>
   <main id="bloc_menu">
+    <article id="recherche_et_filtres">
+      <!-- SECTION RECHERCHE -->
+      <section id="recherche">
+        <div class="bloc_gauche_rech">
+          <div class="parent_i_loc">
+            <i class="fas fa-map-marker-alt" id="i_localisation"></i>
+          </div>
+          <!-- Formulaire pour la sasie de la ville, Pays-->
+          <form class="saisie_ville" method="post" action="#">
+            <p>
+              <input type="text" name="nomville" placeholder="Marseille, France" id="nomville">
+            </p>
+          </form>
+        </div>
+        <!-- Text 'Rechercher' pour Desktop ou icone Loupe pour Tel. portable -->
+        <div class="parent_parent_rech">
+          <a class="parent_rech" href="#">
+            <h4 class="rech">Rechercher</h4>
+            <i class="fas fa-search" id="i_loupe"></i>
+          </a>
+        </div>
+      </section>
+      <!-- SECTION FILTRES et INFO -->
+      <section id="section_filtres_et_info">
+        <div class="bloc_filtre_et_criteres">
+          <P class="text_filtre">Filtres</P>
+          <!-- Groupes Icones et texts de critére-->
+          <div class="bloc_criteres">
+            <!-- Economique -->
+            <a class="parent_i_text_critere" href="#">
+              <div class="parent_i_critere">
+                <i class="fas fa-money-bill-wave" id="finance" style="color:#0065FC;"></i>
+              </div>
+              <p class="text_critere">Économique</p>
+            </a>
+            <!-- Familial -->
+            <a class="parent_i_text_critere" href="#">
+              <div class="parent_i_critere">
+                <i class="fas fa-child" id="famille" style="color:#0065FC;"></i>
+              </div>
+              <p class="text_critere">Familial</p>
+            </a>
+            <!-- Romantique -->
+            <a class="parent_i_text_critere" href="#">
+              <div class="parent_i_critere">
+                <i class="fas fa-heart" id="romantique" style="color:#0065FC;"></i>
+              </div>
+              <p class="text_critere">Romantique</p>
+            </a>
+            <!-- Animaux-->
+            <a class="parent_i_text_critere" href="#">
+              <div class="parent_i_critere">
+                <i class="fas fa-dog" id="animaux" style="color:#0065FC;"></i>
+              </div>
+              <p class="text_critere">Animaux autorisés</p>
+            </a>
+          </div>
+        </div>
+        <!-- Zone INFO-->
+        <div class="parent_i_text_info">
+          <div class="parent_i_info">
+            <i class="fas fa-info" id="info" style="color:#0065FC;"></i>
+          </div>
+          <p class="text_info">Plus de 500 logements sont disponibles dans cette ville</p>
+        </div>
+      </section>
+    </article>
     <article id="hebergements">
       <!-- *** Cartes Hebergements Marseille *** -->
       <section class="sect_heb_marseille">
